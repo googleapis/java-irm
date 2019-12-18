@@ -1,0 +1,12 @@
+{
+  "name": "google-cloud-irm",
+  "name_pretty": "Stackdriver Incident Response & Management",
+  "product_documentation": "https://cloud.google.com/incident-response/",
+  "client_documentation": "https://googleapis.dev/java/java-irm/latest",
+  "release_level": "alpha",
+  "language": "java",
+  "repo": "googleapis/java-irm",
+  "repo_short": "java-irm",
+  "distribution_name": "com.google.cloud:google-cloud-irm",
+  "api_id": "irm.googleapis.com"
+}
