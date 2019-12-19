@@ -32,6 +32,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -54,6 +58,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User author = 2;</code>
+   *
+   * @return Whether the author field is set.
    */
   boolean hasAuthor();
   /**
@@ -64,6 +70,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User author = 2;</code>
+   *
+   * @return The author.
    */
   com.google.irm.service.v1alpha2.api.User getAuthor();
   /**
@@ -85,6 +93,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 3;</code>
+   *
+   * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
   /**
@@ -95,6 +105,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 3;</code>
+   *
+   * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
   /**
@@ -116,6 +128,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string content = 4;</code>
+   *
+   * @return The content.
    */
   java.lang.String getContent();
   /**
@@ -126,6 +140,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string content = 4;</code>
+   *
+   * @return The bytes for content.
    */
   com.google.protobuf.ByteString getContentBytes();
 
@@ -138,6 +154,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string content_type = 5;</code>
+   *
+   * @return The contentType.
    */
   java.lang.String getContentType();
   /**
@@ -149,6 +167,8 @@ public interface AnnotationOrBuilder
    * </pre>
    *
    * <code>string content_type = 5;</code>
+   *
+   * @return The bytes for contentType.
    */
   com.google.protobuf.ByteString getContentTypeBytes();
 }

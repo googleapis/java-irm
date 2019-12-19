@@ -50,6 +50,12 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new Signal();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -185,11 +191,11 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
             }
           case 130:
             {
-              if (!((mutable_bitField0_ & 0x00000800) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 signalArtifacts_ =
                     new java.util.ArrayList<
                         com.google.irm.service.v1alpha2.api.Signal.SignalArtifact>();
-                mutable_bitField0_ |= 0x00000800;
+                mutable_bitField0_ |= 0x00000001;
               }
               signalArtifacts_.add(
                   input.readMessage(
@@ -211,7 +217,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000800) != 0)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         signalArtifacts_ = java.util.Collections.unmodifiableList(signalArtifacts_);
       }
       this.unknownFields = unknownFields.build();
@@ -316,12 +322,20 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
       return value;
     }
 
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static State valueOf(int value) {
       return forNumber(value);
     }
 
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
     public static State forNumber(int value) {
       switch (value) {
         case 0:
@@ -392,6 +406,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_type = 2;</code>
+     *
+     * @return The userType.
      */
     java.lang.String getUserType();
     /**
@@ -402,6 +418,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_type = 2;</code>
+     *
+     * @return The bytes for userType.
      */
     com.google.protobuf.ByteString getUserTypeBytes();
 
@@ -413,6 +431,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string uri = 3;</code>
+     *
+     * @return The uri.
      */
     java.lang.String getUri();
     /**
@@ -423,6 +443,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string uri = 3;</code>
+     *
+     * @return The bytes for uri.
      */
     com.google.protobuf.ByteString getUriBytes();
 
@@ -453,6 +475,12 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
     }
 
     @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new SignalArtifact();
+    }
+
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
       return this.unknownFields;
     }
@@ -465,7 +493,6 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -527,7 +554,10 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
     private int artifactTypeCase_ = 0;
     private java.lang.Object artifactType_;
 
-    public enum ArtifactTypeCase implements com.google.protobuf.Internal.EnumLite {
+    public enum ArtifactTypeCase
+        implements
+            com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
       USER_TYPE(2),
       ARTIFACTTYPE_NOT_SET(0);
       private final int value;
@@ -535,7 +565,11 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
       private ArtifactTypeCase(int value) {
         this.value = value;
       }
-      /** @deprecated Use {@link #forNumber(int)} instead. */
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
       @java.lang.Deprecated
       public static ArtifactTypeCase valueOf(int value) {
         return forNumber(value);
@@ -570,6 +604,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_type = 2;</code>
+     *
+     * @return The userType.
      */
     public java.lang.String getUserType() {
       java.lang.Object ref = "";
@@ -595,6 +631,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_type = 2;</code>
+     *
+     * @return The bytes for userType.
      */
     public com.google.protobuf.ByteString getUserTypeBytes() {
       java.lang.Object ref = "";
@@ -623,6 +661,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string uri = 3;</code>
+     *
+     * @return The uri.
      */
     public java.lang.String getUri() {
       java.lang.Object ref = uri_;
@@ -643,6 +683,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string uri = 3;</code>
+     *
+     * @return The bytes for uri.
      */
     public com.google.protobuf.ByteString getUriBytes() {
       java.lang.Object ref = uri_;
@@ -1042,6 +1084,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string user_type = 2;</code>
+       *
+       * @return The userType.
        */
       public java.lang.String getUserType() {
         java.lang.Object ref = "";
@@ -1067,6 +1111,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string user_type = 2;</code>
+       *
+       * @return The bytes for userType.
        */
       public com.google.protobuf.ByteString getUserTypeBytes() {
         java.lang.Object ref = "";
@@ -1092,6 +1138,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string user_type = 2;</code>
+       *
+       * @param value The userType to set.
+       * @return This builder for chaining.
        */
       public Builder setUserType(java.lang.String value) {
         if (value == null) {
@@ -1110,6 +1159,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string user_type = 2;</code>
+       *
+       * @return This builder for chaining.
        */
       public Builder clearUserType() {
         if (artifactTypeCase_ == 2) {
@@ -1127,6 +1178,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string user_type = 2;</code>
+       *
+       * @param value The bytes for userType to set.
+       * @return This builder for chaining.
        */
       public Builder setUserTypeBytes(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -1148,6 +1202,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string uri = 3;</code>
+       *
+       * @return The uri.
        */
       public java.lang.String getUri() {
         java.lang.Object ref = uri_;
@@ -1168,6 +1224,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string uri = 3;</code>
+       *
+       * @return The bytes for uri.
        */
       public com.google.protobuf.ByteString getUriBytes() {
         java.lang.Object ref = uri_;
@@ -1188,6 +1246,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string uri = 3;</code>
+       *
+       * @param value The uri to set.
+       * @return This builder for chaining.
        */
       public Builder setUri(java.lang.String value) {
         if (value == null) {
@@ -1206,6 +1267,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string uri = 3;</code>
+       *
+       * @return This builder for chaining.
        */
       public Builder clearUri() {
 
@@ -1221,6 +1284,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        * </pre>
        *
        * <code>string uri = 3;</code>
+       *
+       * @param value The bytes for uri to set.
+       * @return This builder for chaining.
        */
       public Builder setUriBytes(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -1285,7 +1351,6 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
     }
   }
 
-  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
@@ -1297,6 +1362,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -1318,6 +1385,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -1342,6 +1411,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The etag.
    */
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
@@ -1363,6 +1434,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The bytes for etag.
    */
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
@@ -1387,6 +1460,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string incident = 3;</code>
+   *
+   * @return The incident.
    */
   public java.lang.String getIncident() {
     java.lang.Object ref = incident_;
@@ -1408,6 +1483,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string incident = 3;</code>
+   *
+   * @return The bytes for incident.
    */
   public com.google.protobuf.ByteString getIncidentBytes() {
     java.lang.Object ref = incident_;
@@ -1431,6 +1508,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 4;</code>
+   *
+   * @return Whether the createTime field is set.
    */
   public boolean hasCreateTime() {
     return createTime_ != null;
@@ -1443,6 +1522,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 4;</code>
+   *
+   * @return The createTime.
    */
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
@@ -1471,6 +1552,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp close_time = 10;</code>
+   *
+   * @return Whether the closeTime field is set.
    */
   public boolean hasCloseTime() {
     return closeTime_ != null;
@@ -1484,6 +1567,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp close_time = 10;</code>
+   *
+   * @return The closeTime.
    */
   public com.google.protobuf.Timestamp getCloseTime() {
     return closeTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : closeTime_;
@@ -1513,6 +1598,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+   *
+   * @return Whether the detectTime field is set.
    */
   public boolean hasDetectTime() {
     return detectTime_ != null;
@@ -1526,6 +1613,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+   *
+   * @return The detectTime.
    */
   public com.google.protobuf.Timestamp getDetectTime() {
     return detectTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : detectTime_;
@@ -1556,6 +1645,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+   *
+   * @return Whether the creator field is set.
    */
   public boolean hasCreator() {
     return creator_ != null;
@@ -1570,6 +1661,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+   *
+   * @return The creator.
    */
   public com.google.irm.service.v1alpha2.api.User getCreator() {
     return creator_ == null
@@ -1602,6 +1695,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string title = 6;</code>
+   *
+   * @return The title.
    */
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
@@ -1623,6 +1718,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string title = 6;</code>
+   *
+   * @return The bytes for title.
    */
   public com.google.protobuf.ByteString getTitleBytes() {
     java.lang.Object ref = title_;
@@ -1649,6 +1746,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string content_type = 7;</code>
+   *
+   * @return The contentType.
    */
   public java.lang.String getContentType() {
     java.lang.Object ref = contentType_;
@@ -1672,6 +1771,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string content_type = 7;</code>
+   *
+   * @return The bytes for contentType.
    */
   public com.google.protobuf.ByteString getContentTypeBytes() {
     java.lang.Object ref = contentType_;
@@ -1696,6 +1797,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string content = 8;</code>
+   *
+   * @return The content.
    */
   public java.lang.String getContent() {
     java.lang.Object ref = content_;
@@ -1717,6 +1820,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string content = 8;</code>
+   *
+   * @return The bytes for content.
    */
   public com.google.protobuf.ByteString getContentBytes() {
     java.lang.Object ref = content_;
@@ -1741,6 +1846,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+   *
+   * @return The enum numeric value on the wire for signalState.
    */
   public int getSignalStateValue() {
     return signalState_;
@@ -1754,6 +1861,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+   *
+   * @return The signalState.
    */
   public com.google.irm.service.v1alpha2.api.Signal.State getSignalState() {
     @SuppressWarnings("deprecation")
@@ -2210,7 +2319,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
 
       if (signalArtifactsBuilder_ == null) {
         signalArtifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         signalArtifactsBuilder_.clear();
       }
@@ -2242,7 +2351,6 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
       com.google.irm.service.v1alpha2.api.Signal result =
           new com.google.irm.service.v1alpha2.api.Signal(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.name_ = name_;
       result.etag_ = etag_;
       result.incident_ = incident_;
@@ -2271,15 +2379,14 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
       result.content_ = content_;
       result.signalState_ = signalState_;
       if (signalArtifactsBuilder_ == null) {
-        if (((bitField0_ & 0x00000800) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           signalArtifacts_ = java.util.Collections.unmodifiableList(signalArtifacts_);
-          bitField0_ = (bitField0_ & ~0x00000800);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.signalArtifacts_ = signalArtifacts_;
       } else {
         result.signalArtifacts_ = signalArtifactsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -2372,7 +2479,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
         if (!other.signalArtifacts_.isEmpty()) {
           if (signalArtifacts_.isEmpty()) {
             signalArtifacts_ = other.signalArtifacts_;
-            bitField0_ = (bitField0_ & ~0x00000800);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureSignalArtifactsIsMutable();
             signalArtifacts_.addAll(other.signalArtifacts_);
@@ -2385,7 +2492,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
             signalArtifactsBuilder_.dispose();
             signalArtifactsBuilder_ = null;
             signalArtifacts_ = other.signalArtifacts_;
-            bitField0_ = (bitField0_ & ~0x00000800);
+            bitField0_ = (bitField0_ & ~0x00000001);
             signalArtifactsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getSignalArtifactsFieldBuilder()
@@ -2436,6 +2543,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -2457,6 +2566,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -2478,6 +2589,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -2497,6 +2611,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearName() {
 
@@ -2513,6 +2629,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2535,6 +2654,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return The etag.
      */
     public java.lang.String getEtag() {
       java.lang.Object ref = etag_;
@@ -2556,6 +2677,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return The bytes for etag.
      */
     public com.google.protobuf.ByteString getEtagBytes() {
       java.lang.Object ref = etag_;
@@ -2577,6 +2700,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @param value The etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtag(java.lang.String value) {
       if (value == null) {
@@ -2596,6 +2722,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearEtag() {
 
@@ -2612,6 +2740,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @param value The bytes for etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtagBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2634,6 +2765,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string incident = 3;</code>
+     *
+     * @return The incident.
      */
     public java.lang.String getIncident() {
       java.lang.Object ref = incident_;
@@ -2655,6 +2788,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string incident = 3;</code>
+     *
+     * @return The bytes for incident.
      */
     public com.google.protobuf.ByteString getIncidentBytes() {
       java.lang.Object ref = incident_;
@@ -2676,6 +2811,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string incident = 3;</code>
+     *
+     * @param value The incident to set.
+     * @return This builder for chaining.
      */
     public Builder setIncident(java.lang.String value) {
       if (value == null) {
@@ -2695,6 +2833,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string incident = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearIncident() {
 
@@ -2711,6 +2851,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string incident = 3;</code>
+     *
+     * @param value The bytes for incident to set.
+     * @return This builder for chaining.
      */
     public Builder setIncidentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2737,6 +2880,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp create_time = 4;</code>
+     *
+     * @return Whether the createTime field is set.
      */
     public boolean hasCreateTime() {
       return createTimeBuilder_ != null || createTime_ != null;
@@ -2749,6 +2894,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp create_time = 4;</code>
+     *
+     * @return The createTime.
      */
     public com.google.protobuf.Timestamp getCreateTime() {
       if (createTimeBuilder_ == null) {
@@ -2917,6 +3064,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp close_time = 10;</code>
+     *
+     * @return Whether the closeTime field is set.
      */
     public boolean hasCloseTime() {
       return closeTimeBuilder_ != null || closeTime_ != null;
@@ -2930,6 +3079,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp close_time = 10;</code>
+     *
+     * @return The closeTime.
      */
     public com.google.protobuf.Timestamp getCloseTime() {
       if (closeTimeBuilder_ == null) {
@@ -3101,6 +3252,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+     *
+     * @return Whether the detectTime field is set.
      */
     public boolean hasDetectTime() {
       return detectTimeBuilder_ != null || detectTime_ != null;
@@ -3114,6 +3267,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+     *
+     * @return The detectTime.
      */
     public com.google.protobuf.Timestamp getDetectTime() {
       if (detectTimeBuilder_ == null) {
@@ -3290,6 +3445,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+     *
+     * @return Whether the creator field is set.
      */
     public boolean hasCreator() {
       return creatorBuilder_ != null || creator_ != null;
@@ -3304,6 +3461,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+     *
+     * @return The creator.
      */
     public com.google.irm.service.v1alpha2.api.User getCreator() {
       if (creatorBuilder_ == null) {
@@ -3483,6 +3642,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 6;</code>
+     *
+     * @return The title.
      */
     public java.lang.String getTitle() {
       java.lang.Object ref = title_;
@@ -3504,6 +3665,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 6;</code>
+     *
+     * @return The bytes for title.
      */
     public com.google.protobuf.ByteString getTitleBytes() {
       java.lang.Object ref = title_;
@@ -3525,6 +3688,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 6;</code>
+     *
+     * @param value The title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitle(java.lang.String value) {
       if (value == null) {
@@ -3544,6 +3710,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 6;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearTitle() {
 
@@ -3560,6 +3728,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 6;</code>
+     *
+     * @param value The bytes for title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitleBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -3584,6 +3755,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content_type = 7;</code>
+     *
+     * @return The contentType.
      */
     public java.lang.String getContentType() {
       java.lang.Object ref = contentType_;
@@ -3607,6 +3780,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content_type = 7;</code>
+     *
+     * @return The bytes for contentType.
      */
     public com.google.protobuf.ByteString getContentTypeBytes() {
       java.lang.Object ref = contentType_;
@@ -3630,6 +3805,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content_type = 7;</code>
+     *
+     * @param value The contentType to set.
+     * @return This builder for chaining.
      */
     public Builder setContentType(java.lang.String value) {
       if (value == null) {
@@ -3651,6 +3829,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content_type = 7;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearContentType() {
 
@@ -3669,6 +3849,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content_type = 7;</code>
+     *
+     * @param value The bytes for contentType to set.
+     * @return This builder for chaining.
      */
     public Builder setContentTypeBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -3691,6 +3874,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content = 8;</code>
+     *
+     * @return The content.
      */
     public java.lang.String getContent() {
       java.lang.Object ref = content_;
@@ -3712,6 +3897,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content = 8;</code>
+     *
+     * @return The bytes for content.
      */
     public com.google.protobuf.ByteString getContentBytes() {
       java.lang.Object ref = content_;
@@ -3733,6 +3920,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content = 8;</code>
+     *
+     * @param value The content to set.
+     * @return This builder for chaining.
      */
     public Builder setContent(java.lang.String value) {
       if (value == null) {
@@ -3752,6 +3942,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content = 8;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearContent() {
 
@@ -3768,6 +3960,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string content = 8;</code>
+     *
+     * @param value The bytes for content to set.
+     * @return This builder for chaining.
      */
     public Builder setContentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -3790,6 +3985,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+     *
+     * @return The enum numeric value on the wire for signalState.
      */
     public int getSignalStateValue() {
       return signalState_;
@@ -3803,6 +4000,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+     *
+     * @param value The enum numeric value on the wire for signalState to set.
+     * @return This builder for chaining.
      */
     public Builder setSignalStateValue(int value) {
       signalState_ = value;
@@ -3818,6 +4018,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+     *
+     * @return The signalState.
      */
     public com.google.irm.service.v1alpha2.api.Signal.State getSignalState() {
       @SuppressWarnings("deprecation")
@@ -3836,6 +4038,9 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+     *
+     * @param value The signalState to set.
+     * @return This builder for chaining.
      */
     public Builder setSignalState(com.google.irm.service.v1alpha2.api.Signal.State value) {
       if (value == null) {
@@ -3855,6 +4060,8 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearSignalState() {
 
@@ -3867,11 +4074,11 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
         signalArtifacts_ = java.util.Collections.emptyList();
 
     private void ensureSignalArtifactsIsMutable() {
-      if (!((bitField0_ & 0x00000800) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         signalArtifacts_ =
             new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Signal.SignalArtifact>(
                 signalArtifacts_);
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00000001;
       }
     }
 
@@ -4116,7 +4323,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
     public Builder clearSignalArtifacts() {
       if (signalArtifactsBuilder_ == null) {
         signalArtifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         signalArtifactsBuilder_.clear();
@@ -4261,7 +4468,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
                 com.google.irm.service.v1alpha2.api.Signal.SignalArtifact.Builder,
                 com.google.irm.service.v1alpha2.api.Signal.SignalArtifactOrBuilder>(
                 signalArtifacts_,
-                ((bitField0_ & 0x00000800) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         signalArtifacts_ = null;

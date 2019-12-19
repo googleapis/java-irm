@@ -31,6 +31,8 @@ public interface UpdateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   *
+   * @return Whether the signal field is set.
    */
   boolean hasSignal();
   /**
@@ -41,6 +43,8 @@ public interface UpdateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   *
+   * @return The signal.
    */
   com.google.irm.service.v1alpha2.api.Signal getSignal();
   /**
@@ -62,6 +66,8 @@ public interface UpdateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return Whether the updateMask field is set.
    */
   boolean hasUpdateMask();
   /**
@@ -72,6 +78,8 @@ public interface UpdateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return The updateMask.
    */
   com.google.protobuf.FieldMask getUpdateMask();
   /**

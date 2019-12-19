@@ -45,6 +45,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new EscalateIncidentRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -101,10 +107,10 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             }
           case 26:
             {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 subscriptions_ =
                     new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Subscription>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000001;
               }
               subscriptions_.add(
                   input.readMessage(
@@ -114,9 +120,9 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             }
           case 34:
             {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 tags_ = new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Tag>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000002;
               }
               tags_.add(
                   input.readMessage(
@@ -125,11 +131,11 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             }
           case 42:
             {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 roles_ =
                     new java.util.ArrayList<
                         com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000004;
               }
               roles_.add(
                   input.readMessage(
@@ -139,10 +145,10 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             }
           case 50:
             {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 artifacts_ =
                     new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Artifact>();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000008;
               }
               artifacts_.add(
                   input.readMessage(
@@ -163,16 +169,16 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000004) != 0)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         subscriptions_ = java.util.Collections.unmodifiableList(subscriptions_);
       }
-      if (((mutable_bitField0_ & 0x00000008) != 0)) {
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
         tags_ = java.util.Collections.unmodifiableList(tags_);
       }
-      if (((mutable_bitField0_ & 0x00000010) != 0)) {
+      if (((mutable_bitField0_ & 0x00000004) != 0)) {
         roles_ = java.util.Collections.unmodifiableList(roles_);
       }
-      if (((mutable_bitField0_ & 0x00000020) != 0)) {
+      if (((mutable_bitField0_ & 0x00000008) != 0)) {
         artifacts_ = java.util.Collections.unmodifiableList(artifacts_);
       }
       this.unknownFields = unknownFields.build();
@@ -195,7 +201,6 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             com.google.irm.service.v1alpha2.api.EscalateIncidentRequest.Builder.class);
   }
 
-  private int bitField0_;
   public static final int INCIDENT_FIELD_NUMBER = 1;
   private com.google.irm.service.v1alpha2.api.Incident incident_;
   /**
@@ -206,6 +211,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return Whether the incident field is set.
    */
   public boolean hasIncident() {
     return incident_ != null;
@@ -218,6 +225,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return The incident.
    */
   public com.google.irm.service.v1alpha2.api.Incident getIncident() {
     return incident_ == null
@@ -247,6 +256,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return Whether the updateMask field is set.
    */
   public boolean hasUpdateMask() {
     return updateMask_ != null;
@@ -259,6 +270,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return The updateMask.
    */
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
@@ -832,25 +845,25 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
       }
       if (subscriptionsBuilder_ == null) {
         subscriptions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         subscriptionsBuilder_.clear();
       }
       if (tagsBuilder_ == null) {
         tags_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000002);
       } else {
         tagsBuilder_.clear();
       }
       if (rolesBuilder_ == null) {
         roles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000004);
       } else {
         rolesBuilder_.clear();
       }
       if (artifactsBuilder_ == null) {
         artifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000008);
       } else {
         artifactsBuilder_.clear();
       }
@@ -882,7 +895,6 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
       com.google.irm.service.v1alpha2.api.EscalateIncidentRequest result =
           new com.google.irm.service.v1alpha2.api.EscalateIncidentRequest(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       if (incidentBuilder_ == null) {
         result.incident_ = incident_;
       } else {
@@ -894,42 +906,41 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         result.updateMask_ = updateMaskBuilder_.build();
       }
       if (subscriptionsBuilder_ == null) {
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           subscriptions_ = java.util.Collections.unmodifiableList(subscriptions_);
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.subscriptions_ = subscriptions_;
       } else {
         result.subscriptions_ = subscriptionsBuilder_.build();
       }
       if (tagsBuilder_ == null) {
-        if (((bitField0_ & 0x00000008) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           tags_ = java.util.Collections.unmodifiableList(tags_);
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.tags_ = tags_;
       } else {
         result.tags_ = tagsBuilder_.build();
       }
       if (rolesBuilder_ == null) {
-        if (((bitField0_ & 0x00000010) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           roles_ = java.util.Collections.unmodifiableList(roles_);
-          bitField0_ = (bitField0_ & ~0x00000010);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.roles_ = roles_;
       } else {
         result.roles_ = rolesBuilder_.build();
       }
       if (artifactsBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00000008) != 0)) {
           artifacts_ = java.util.Collections.unmodifiableList(artifacts_);
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000008);
         }
         result.artifacts_ = artifacts_;
       } else {
         result.artifacts_ = artifactsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -990,7 +1001,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         if (!other.subscriptions_.isEmpty()) {
           if (subscriptions_.isEmpty()) {
             subscriptions_ = other.subscriptions_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureSubscriptionsIsMutable();
             subscriptions_.addAll(other.subscriptions_);
@@ -1003,7 +1014,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             subscriptionsBuilder_.dispose();
             subscriptionsBuilder_ = null;
             subscriptions_ = other.subscriptions_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
             subscriptionsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getSubscriptionsFieldBuilder()
@@ -1017,7 +1028,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         if (!other.tags_.isEmpty()) {
           if (tags_.isEmpty()) {
             tags_ = other.tags_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureTagsIsMutable();
             tags_.addAll(other.tags_);
@@ -1030,7 +1041,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             tagsBuilder_.dispose();
             tagsBuilder_ = null;
             tags_ = other.tags_;
-            bitField0_ = (bitField0_ & ~0x00000008);
+            bitField0_ = (bitField0_ & ~0x00000002);
             tagsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getTagsFieldBuilder()
@@ -1044,7 +1055,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         if (!other.roles_.isEmpty()) {
           if (roles_.isEmpty()) {
             roles_ = other.roles_;
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureRolesIsMutable();
             roles_.addAll(other.roles_);
@@ -1057,7 +1068,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             rolesBuilder_.dispose();
             rolesBuilder_ = null;
             roles_ = other.roles_;
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000004);
             rolesBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getRolesFieldBuilder()
@@ -1071,7 +1082,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         if (!other.artifacts_.isEmpty()) {
           if (artifacts_.isEmpty()) {
             artifacts_ = other.artifacts_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensureArtifactsIsMutable();
             artifacts_.addAll(other.artifacts_);
@@ -1084,7 +1095,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
             artifactsBuilder_.dispose();
             artifactsBuilder_ = null;
             artifacts_ = other.artifacts_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000008);
             artifactsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getArtifactsFieldBuilder()
@@ -1140,6 +1151,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return Whether the incident field is set.
      */
     public boolean hasIncident() {
       return incidentBuilder_ != null || incident_ != null;
@@ -1152,6 +1165,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return The incident.
      */
     public com.google.irm.service.v1alpha2.api.Incident getIncident() {
       if (incidentBuilder_ == null) {
@@ -1322,6 +1337,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+     *
+     * @return Whether the updateMask field is set.
      */
     public boolean hasUpdateMask() {
       return updateMaskBuilder_ != null || updateMask_ != null;
@@ -1334,6 +1351,8 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+     *
+     * @return The updateMask.
      */
     public com.google.protobuf.FieldMask getUpdateMask() {
       if (updateMaskBuilder_ == null) {
@@ -1491,11 +1510,11 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         java.util.Collections.emptyList();
 
     private void ensureSubscriptionsIsMutable() {
-      if (!((bitField0_ & 0x00000004) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         subscriptions_ =
             new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Subscription>(
                 subscriptions_);
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000001;
       }
     }
 
@@ -1724,7 +1743,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
     public Builder clearSubscriptions() {
       if (subscriptionsBuilder_ == null) {
         subscriptions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         subscriptionsBuilder_.clear();
@@ -1857,7 +1876,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
                 com.google.irm.service.v1alpha2.api.Subscription.Builder,
                 com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder>(
                 subscriptions_,
-                ((bitField0_ & 0x00000004) != 0),
+                ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
         subscriptions_ = null;
@@ -1869,9 +1888,9 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         java.util.Collections.emptyList();
 
     private void ensureTagsIsMutable() {
-      if (!((bitField0_ & 0x00000008) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         tags_ = new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Tag>(tags_);
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000002;
       }
     }
 
@@ -2086,7 +2105,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
     public Builder clearTags() {
       if (tagsBuilder_ == null) {
         tags_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
         tagsBuilder_.clear();
@@ -2207,7 +2226,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
                 com.google.irm.service.v1alpha2.api.Tag,
                 com.google.irm.service.v1alpha2.api.Tag.Builder,
                 com.google.irm.service.v1alpha2.api.TagOrBuilder>(
-                tags_, ((bitField0_ & 0x00000008) != 0), getParentForChildren(), isClean());
+                tags_, ((bitField0_ & 0x00000002) != 0), getParentForChildren(), isClean());
         tags_ = null;
       }
       return tagsBuilder_;
@@ -2217,11 +2236,11 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         java.util.Collections.emptyList();
 
     private void ensureRolesIsMutable() {
-      if (!((bitField0_ & 0x00000010) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         roles_ =
             new java.util.ArrayList<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>(
                 roles_);
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000004;
       }
     }
 
@@ -2454,7 +2473,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
     public Builder clearRoles() {
       if (rolesBuilder_ == null) {
         roles_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         rolesBuilder_.clear();
@@ -2590,7 +2609,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
                 com.google.irm.service.v1alpha2.api.IncidentRoleAssignment,
                 com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.Builder,
                 com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder>(
-                roles_, ((bitField0_ & 0x00000010) != 0), getParentForChildren(), isClean());
+                roles_, ((bitField0_ & 0x00000004) != 0), getParentForChildren(), isClean());
         roles_ = null;
       }
       return rolesBuilder_;
@@ -2600,10 +2619,10 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
         java.util.Collections.emptyList();
 
     private void ensureArtifactsIsMutable() {
-      if (!((bitField0_ & 0x00000020) != 0)) {
+      if (!((bitField0_ & 0x00000008) != 0)) {
         artifacts_ =
             new java.util.ArrayList<com.google.irm.service.v1alpha2.api.Artifact>(artifacts_);
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000008;
       }
     }
 
@@ -2819,7 +2838,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
     public Builder clearArtifacts() {
       if (artifactsBuilder_ == null) {
         artifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
       } else {
         artifactsBuilder_.clear();
@@ -2941,7 +2960,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
                 com.google.irm.service.v1alpha2.api.Artifact,
                 com.google.irm.service.v1alpha2.api.Artifact.Builder,
                 com.google.irm.service.v1alpha2.api.ArtifactOrBuilder>(
-                artifacts_, ((bitField0_ & 0x00000020) != 0), getParentForChildren(), isClean());
+                artifacts_, ((bitField0_ & 0x00000008) != 0), getParentForChildren(), isClean());
         artifacts_ = null;
       }
       return artifactsBuilder_;

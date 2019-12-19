@@ -31,6 +31,8 @@ public interface SendShiftHandoffResponseOrBuilder
    * </pre>
    *
    * <code>string content_type = 1;</code>
+   *
+   * @return The contentType.
    */
   java.lang.String getContentType();
   /**
@@ -41,6 +43,8 @@ public interface SendShiftHandoffResponseOrBuilder
    * </pre>
    *
    * <code>string content_type = 1;</code>
+   *
+   * @return The bytes for contentType.
    */
   com.google.protobuf.ByteString getContentTypeBytes();
 
@@ -54,6 +58,8 @@ public interface SendShiftHandoffResponseOrBuilder
    * </pre>
    *
    * <code>string content = 2;</code>
+   *
+   * @return The content.
    */
   java.lang.String getContent();
   /**
@@ -66,6 +72,8 @@ public interface SendShiftHandoffResponseOrBuilder
    * </pre>
    *
    * <code>string content = 2;</code>
+   *
+   * @return The bytes for content.
    */
   com.google.protobuf.ByteString getContentBytes();
 }

@@ -32,6 +32,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+   *
+   * @return The enum numeric value on the wire for type.
    */
   int getTypeValue();
   /**
@@ -43,6 +45,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+   *
+   * @return The type.
    */
   com.google.irm.service.v1alpha2.api.IncidentRole.Type getType();
 
@@ -55,6 +59,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The title.
    */
   java.lang.String getTitle();
   /**
@@ -66,6 +72,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The bytes for title.
    */
   com.google.protobuf.ByteString getTitleBytes();
 
@@ -77,6 +85,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>string description = 3;</code>
+   *
+   * @return The description.
    */
   java.lang.String getDescription();
   /**
@@ -87,6 +97,8 @@ public interface IncidentRoleOrBuilder
    * </pre>
    *
    * <code>string description = 3;</code>
+   *
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString getDescriptionBytes();
 }

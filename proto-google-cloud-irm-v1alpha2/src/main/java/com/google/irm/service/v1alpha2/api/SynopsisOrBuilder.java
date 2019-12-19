@@ -31,6 +31,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>string content_type = 1;</code>
+   *
+   * @return The contentType.
    */
   java.lang.String getContentType();
   /**
@@ -41,6 +43,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>string content_type = 1;</code>
+   *
+   * @return The bytes for contentType.
    */
   com.google.protobuf.ByteString getContentTypeBytes();
 
@@ -53,6 +57,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>string content = 2;</code>
+   *
+   * @return The content.
    */
   java.lang.String getContent();
   /**
@@ -64,6 +70,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>string content = 2;</code>
+   *
+   * @return The bytes for content.
    */
   com.google.protobuf.ByteString getContentBytes();
 
@@ -75,6 +83,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp update_time = 3;</code>
+   *
+   * @return Whether the updateTime field is set.
    */
   boolean hasUpdateTime();
   /**
@@ -85,6 +95,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp update_time = 3;</code>
+   *
+   * @return The updateTime.
    */
   com.google.protobuf.Timestamp getUpdateTime();
   /**
@@ -106,6 +118,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User author = 4;</code>
+   *
+   * @return Whether the author field is set.
    */
   boolean hasAuthor();
   /**
@@ -116,6 +130,8 @@ public interface SynopsisOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User author = 4;</code>
+   *
+   * @return The author.
    */
   com.google.irm.service.v1alpha2.api.User getAuthor();
   /**

@@ -45,6 +45,12 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new SearchIncidentsRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -57,7 +63,6 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -146,6 +151,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -167,6 +174,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -235,6 +244,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string query = 2;</code>
+   *
+   * @return The query.
    */
   public java.lang.String getQuery() {
     java.lang.Object ref = query_;
@@ -300,6 +311,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string query = 2;</code>
+   *
+   * @return The bytes for query.
    */
   public com.google.protobuf.ByteString getQueryBytes() {
     java.lang.Object ref = query_;
@@ -323,6 +336,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>int32 page_size = 3;</code>
+   *
+   * @return The pageSize.
    */
   public int getPageSize() {
     return pageSize_;
@@ -338,6 +353,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string page_token = 4;</code>
+   *
+   * @return The pageToken.
    */
   public java.lang.String getPageToken() {
     java.lang.Object ref = pageToken_;
@@ -358,6 +375,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string page_token = 4;</code>
+   *
+   * @return The bytes for pageToken.
    */
   public com.google.protobuf.ByteString getPageTokenBytes() {
     java.lang.Object ref = pageToken_;
@@ -384,6 +403,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string time_zone = 5;</code>
+   *
+   * @return The timeZone.
    */
   public java.lang.String getTimeZone() {
     java.lang.Object ref = timeZone_;
@@ -407,6 +428,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
    * </pre>
    *
    * <code>string time_zone = 5;</code>
+   *
+   * @return The bytes for timeZone.
    */
   public com.google.protobuf.ByteString getTimeZoneBytes() {
     java.lang.Object ref = timeZone_;
@@ -812,6 +835,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The parent.
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -833,6 +858,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The bytes for parent.
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -854,6 +881,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -873,6 +903,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearParent() {
 
@@ -889,6 +921,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The bytes for parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -955,6 +990,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string query = 2;</code>
+     *
+     * @return The query.
      */
     public java.lang.String getQuery() {
       java.lang.Object ref = query_;
@@ -1020,6 +1057,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string query = 2;</code>
+     *
+     * @return The bytes for query.
      */
     public com.google.protobuf.ByteString getQueryBytes() {
       java.lang.Object ref = query_;
@@ -1085,6 +1124,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string query = 2;</code>
+     *
+     * @param value The query to set.
+     * @return This builder for chaining.
      */
     public Builder setQuery(java.lang.String value) {
       if (value == null) {
@@ -1148,6 +1190,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string query = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearQuery() {
 
@@ -1208,6 +1252,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string query = 2;</code>
+     *
+     * @param value The bytes for query to set.
+     * @return This builder for chaining.
      */
     public Builder setQueryBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1229,6 +1276,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>int32 page_size = 3;</code>
+     *
+     * @return The pageSize.
      */
     public int getPageSize() {
       return pageSize_;
@@ -1241,6 +1290,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>int32 page_size = 3;</code>
+     *
+     * @param value The pageSize to set.
+     * @return This builder for chaining.
      */
     public Builder setPageSize(int value) {
 
@@ -1256,6 +1308,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>int32 page_size = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearPageSize() {
 
@@ -1273,6 +1327,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string page_token = 4;</code>
+     *
+     * @return The pageToken.
      */
     public java.lang.String getPageToken() {
       java.lang.Object ref = pageToken_;
@@ -1293,6 +1349,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string page_token = 4;</code>
+     *
+     * @return The bytes for pageToken.
      */
     public com.google.protobuf.ByteString getPageTokenBytes() {
       java.lang.Object ref = pageToken_;
@@ -1313,6 +1371,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string page_token = 4;</code>
+     *
+     * @param value The pageToken to set.
+     * @return This builder for chaining.
      */
     public Builder setPageToken(java.lang.String value) {
       if (value == null) {
@@ -1331,6 +1392,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string page_token = 4;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearPageToken() {
 
@@ -1346,6 +1409,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string page_token = 4;</code>
+     *
+     * @param value The bytes for pageToken to set.
+     * @return This builder for chaining.
      */
     public Builder setPageTokenBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1370,6 +1436,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string time_zone = 5;</code>
+     *
+     * @return The timeZone.
      */
     public java.lang.String getTimeZone() {
       java.lang.Object ref = timeZone_;
@@ -1393,6 +1461,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string time_zone = 5;</code>
+     *
+     * @return The bytes for timeZone.
      */
     public com.google.protobuf.ByteString getTimeZoneBytes() {
       java.lang.Object ref = timeZone_;
@@ -1416,6 +1486,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string time_zone = 5;</code>
+     *
+     * @param value The timeZone to set.
+     * @return This builder for chaining.
      */
     public Builder setTimeZone(java.lang.String value) {
       if (value == null) {
@@ -1437,6 +1510,8 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string time_zone = 5;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearTimeZone() {
 
@@ -1455,6 +1530,9 @@ public final class SearchIncidentsRequest extends com.google.protobuf.GeneratedM
      * </pre>
      *
      * <code>string time_zone = 5;</code>
+     *
+     * @param value The bytes for timeZone to set.
+     * @return This builder for chaining.
      */
     public Builder setTimeZoneBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

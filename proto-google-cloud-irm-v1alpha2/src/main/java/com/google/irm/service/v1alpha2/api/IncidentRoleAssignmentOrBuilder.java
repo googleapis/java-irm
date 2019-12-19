@@ -32,6 +32,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -56,6 +60,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The etag.
    */
   java.lang.String getEtag();
   /**
@@ -68,6 +74,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The bytes for etag.
    */
   com.google.protobuf.ByteString getEtagBytes();
 
@@ -79,6 +87,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole role = 3;</code>
+   *
+   * @return Whether the role field is set.
    */
   boolean hasRole();
   /**
@@ -89,6 +99,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole role = 3;</code>
+   *
+   * @return The role.
    */
   com.google.irm.service.v1alpha2.api.IncidentRole getRole();
   /**
@@ -112,6 +124,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User assignee = 4;</code>
+   *
+   * @return Whether the assignee field is set.
    */
   boolean hasAssignee();
   /**
@@ -124,6 +138,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User assignee = 4;</code>
+   *
+   * @return The assignee.
    */
   com.google.irm.service.v1alpha2.api.User getAssignee();
   /**
@@ -165,6 +181,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User proposed_assignee = 5;</code>
+   *
+   * @return Whether the proposedAssignee field is set.
    */
   boolean hasProposedAssignee();
   /**
@@ -193,6 +211,8 @@ public interface IncidentRoleAssignmentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User proposed_assignee = 5;</code>
+   *
+   * @return The proposedAssignee.
    */
   com.google.irm.service.v1alpha2.api.User getProposedAssignee();
   /**

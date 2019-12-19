@@ -41,6 +41,12 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
   private CommunicationChannel() {}
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new CommunicationChannel();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -53,7 +59,6 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -156,6 +161,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string address = 1;</code>
+     *
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
@@ -166,6 +173,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string address = 1;</code>
+     *
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString getAddressBytes();
   }
@@ -193,6 +202,12 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
     }
 
     @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new Email();
+    }
+
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
       return this.unknownFields;
     }
@@ -205,7 +220,6 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -267,6 +281,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string address = 1;</code>
+     *
+     * @return The address.
      */
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
@@ -287,6 +303,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string address = 1;</code>
+     *
+     * @return The bytes for address.
      */
     public com.google.protobuf.ByteString getAddressBytes() {
       java.lang.Object ref = address_;
@@ -636,6 +654,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string address = 1;</code>
+       *
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -656,6 +676,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string address = 1;</code>
+       *
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString getAddressBytes() {
         java.lang.Object ref = address_;
@@ -676,6 +698,9 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string address = 1;</code>
+       *
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(java.lang.String value) {
         if (value == null) {
@@ -694,6 +719,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string address = 1;</code>
+       *
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
 
@@ -709,6 +736,9 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string address = 1;</code>
+       *
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -789,6 +819,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     java.lang.String getName();
     /**
@@ -799,6 +831,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString getNameBytes();
   }
@@ -827,6 +861,12 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
     }
 
     @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new NotificationChannel();
+    }
+
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
       return this.unknownFields;
     }
@@ -839,7 +879,6 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -902,6 +941,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -922,6 +963,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -1289,6 +1332,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1309,6 +1354,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString getNameBytes() {
         java.lang.Object ref = name_;
@@ -1329,6 +1376,9 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(java.lang.String value) {
         if (value == null) {
@@ -1347,6 +1397,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return This builder for chaining.
        */
       public Builder clearName() {
 
@@ -1362,6 +1414,9 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -1434,7 +1489,10 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
   private int endpointCase_ = 0;
   private java.lang.Object endpoint_;
 
-  public enum EndpointCase implements com.google.protobuf.Internal.EnumLite {
+  public enum EndpointCase
+      implements
+          com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     EMAIL(1),
     NOTIFICATION_CHANNEL(2),
     ENDPOINT_NOT_SET(0);
@@ -1443,7 +1501,11 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
     private EndpointCase(int value) {
       this.value = value;
     }
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static EndpointCase valueOf(int value) {
       return forNumber(value);
@@ -1480,6 +1542,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+   *
+   * @return Whether the email field is set.
    */
   public boolean hasEmail() {
     return endpointCase_ == 1;
@@ -1492,6 +1556,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+   *
+   * @return The email.
    */
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.Email getEmail() {
     if (endpointCase_ == 1) {
@@ -1527,6 +1593,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    * <code>
    * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
    * </code>
+   *
+   * @return Whether the notificationChannel field is set.
    */
   public boolean hasNotificationChannel() {
     return endpointCase_ == 2;
@@ -1541,6 +1609,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    * <code>
    * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
    * </code>
+   *
+   * @return The notificationChannel.
    */
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannel
       getNotificationChannel() {
@@ -1980,6 +2050,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+     *
+     * @return Whether the email field is set.
      */
     public boolean hasEmail() {
       return endpointCase_ == 1;
@@ -1992,6 +2064,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+     *
+     * @return The email.
      */
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.Email getEmail() {
       if (emailBuilder_ == null) {
@@ -2190,6 +2264,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * <code>
      * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
      * </code>
+     *
+     * @return Whether the notificationChannel field is set.
      */
     public boolean hasNotificationChannel() {
       return endpointCase_ == 2;
@@ -2204,6 +2280,8 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * <code>
      * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
      * </code>
+     *
+     * @return The notificationChannel.
      */
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannel
         getNotificationChannel() {

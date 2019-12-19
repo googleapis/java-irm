@@ -32,6 +32,8 @@ public interface CreateSubscriptionRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   java.lang.String getParent();
   /**
@@ -43,6 +45,8 @@ public interface CreateSubscriptionRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   com.google.protobuf.ByteString getParentBytes();
 
@@ -54,6 +58,8 @@ public interface CreateSubscriptionRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+   *
+   * @return Whether the subscription field is set.
    */
   boolean hasSubscription();
   /**
@@ -64,6 +70,8 @@ public interface CreateSubscriptionRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+   *
+   * @return The subscription.
    */
   com.google.irm.service.v1alpha2.api.Subscription getSubscription();
   /**
