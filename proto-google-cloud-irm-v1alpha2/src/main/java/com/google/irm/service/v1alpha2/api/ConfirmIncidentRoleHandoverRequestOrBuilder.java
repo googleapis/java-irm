@@ -31,6 +31,8 @@ public interface ConfirmIncidentRoleHandoverRequestOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -41,6 +43,8 @@ public interface ConfirmIncidentRoleHandoverRequestOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -53,6 +57,8 @@ public interface ConfirmIncidentRoleHandoverRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   *
+   * @return Whether the newAssignee field is set.
    */
   boolean hasNewAssignee();
   /**
@@ -64,6 +70,8 @@ public interface ConfirmIncidentRoleHandoverRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   *
+   * @return The newAssignee.
    */
   com.google.irm.service.v1alpha2.api.User getNewAssignee();
   /**

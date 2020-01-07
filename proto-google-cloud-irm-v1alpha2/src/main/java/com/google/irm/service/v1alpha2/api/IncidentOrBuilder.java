@@ -32,6 +32,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -54,6 +58,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The title.
    */
   java.lang.String getTitle();
   /**
@@ -64,6 +70,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The bytes for title.
    */
   com.google.protobuf.ByteString getTitleBytes();
 
@@ -75,6 +83,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.EscalationLevel escalation_level = 3;</code>
+   *
+   * @return The enum numeric value on the wire for escalationLevel.
    */
   int getEscalationLevelValue();
   /**
@@ -85,6 +95,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.EscalationLevel escalation_level = 3;</code>
+   *
+   * @return The escalationLevel.
    */
   com.google.irm.service.v1alpha2.api.Incident.EscalationLevel getEscalationLevel();
 
@@ -97,6 +109,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string etag = 4;</code>
+   *
+   * @return The etag.
    */
   java.lang.String getEtag();
   /**
@@ -108,6 +122,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string etag = 4;</code>
+   *
+   * @return The bytes for etag.
    */
   com.google.protobuf.ByteString getEtagBytes();
 
@@ -119,6 +135,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.Severity severity = 5;</code>
+   *
+   * @return The enum numeric value on the wire for severity.
    */
   int getSeverityValue();
   /**
@@ -129,6 +147,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.Severity severity = 5;</code>
+   *
+   * @return The severity.
    */
   com.google.irm.service.v1alpha2.api.Incident.Severity getSeverity();
 
@@ -140,6 +160,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.Stage stage = 6;</code>
+   *
+   * @return The enum numeric value on the wire for stage.
    */
   int getStageValue();
   /**
@@ -150,6 +172,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.Stage stage = 6;</code>
+   *
+   * @return The stage.
    */
   com.google.irm.service.v1alpha2.api.Incident.Stage getStage();
 
@@ -166,6 +190,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string duplicate_incident = 9;</code>
+   *
+   * @return The duplicateIncident.
    */
   java.lang.String getDuplicateIncident();
   /**
@@ -181,6 +207,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>string duplicate_incident = 9;</code>
+   *
+   * @return The bytes for duplicateIncident.
    */
   com.google.protobuf.ByteString getDuplicateIncidentBytes();
 
@@ -194,6 +222,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp start_time = 7;</code>
+   *
+   * @return Whether the startTime field is set.
    */
   boolean hasStartTime();
   /**
@@ -206,6 +236,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp start_time = 7;</code>
+   *
+   * @return The startTime.
    */
   com.google.protobuf.Timestamp getStartTime();
   /**
@@ -229,6 +261,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Synopsis synopsis = 8;</code>
+   *
+   * @return Whether the synopsis field is set.
    */
   boolean hasSynopsis();
   /**
@@ -239,6 +273,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Synopsis synopsis = 8;</code>
+   *
+   * @return The synopsis.
    */
   com.google.irm.service.v1alpha2.api.Synopsis getSynopsis();
   /**
@@ -261,6 +297,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.CommunicationVenue communication_venue = 10;</code>
+   *
+   * @return Whether the communicationVenue field is set.
    */
   boolean hasCommunicationVenue();
   /**
@@ -272,6 +310,8 @@ public interface IncidentOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.CommunicationVenue communication_venue = 10;</code>
+   *
+   * @return The communicationVenue.
    */
   com.google.irm.service.v1alpha2.api.Incident.CommunicationVenue getCommunicationVenue();
   /**

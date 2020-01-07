@@ -44,6 +44,12 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new IncidentRole();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -56,7 +62,6 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -316,12 +321,20 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
       return value;
     }
 
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static Type valueOf(int value) {
       return forNumber(value);
     }
 
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
     public static Type forNumber(int value) {
       switch (value) {
         case 0:
@@ -400,6 +413,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+   *
+   * @return The enum numeric value on the wire for type.
    */
   public int getTypeValue() {
     return type_;
@@ -413,6 +428,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+   *
+   * @return The type.
    */
   public com.google.irm.service.v1alpha2.api.IncidentRole.Type getType() {
     @SuppressWarnings("deprecation")
@@ -434,6 +451,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The title.
    */
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
@@ -455,6 +474,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string title = 2;</code>
+   *
+   * @return The bytes for title.
    */
   public com.google.protobuf.ByteString getTitleBytes() {
     java.lang.Object ref = title_;
@@ -478,6 +499,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string description = 3;</code>
+   *
+   * @return The description.
    */
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
@@ -498,6 +521,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string description = 3;</code>
+   *
+   * @return The bytes for description.
    */
   public com.google.protobuf.ByteString getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -871,6 +896,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+     *
+     * @return The enum numeric value on the wire for type.
      */
     public int getTypeValue() {
       return type_;
@@ -884,6 +911,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+     *
+     * @param value The enum numeric value on the wire for type to set.
+     * @return This builder for chaining.
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -899,6 +929,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+     *
+     * @return The type.
      */
     public com.google.irm.service.v1alpha2.api.IncidentRole.Type getType() {
       @SuppressWarnings("deprecation")
@@ -917,6 +949,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+     *
+     * @param value The type to set.
+     * @return This builder for chaining.
      */
     public Builder setType(com.google.irm.service.v1alpha2.api.IncidentRole.Type value) {
       if (value == null) {
@@ -936,6 +971,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.IncidentRole.Type type = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearType() {
 
@@ -954,6 +991,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 2;</code>
+     *
+     * @return The title.
      */
     public java.lang.String getTitle() {
       java.lang.Object ref = title_;
@@ -975,6 +1014,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 2;</code>
+     *
+     * @return The bytes for title.
      */
     public com.google.protobuf.ByteString getTitleBytes() {
       java.lang.Object ref = title_;
@@ -996,6 +1037,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 2;</code>
+     *
+     * @param value The title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitle(java.lang.String value) {
       if (value == null) {
@@ -1015,6 +1059,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearTitle() {
 
@@ -1031,6 +1077,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string title = 2;</code>
+     *
+     * @param value The bytes for title to set.
+     * @return This builder for chaining.
      */
     public Builder setTitleBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1052,6 +1101,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string description = 3;</code>
+     *
+     * @return The description.
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -1072,6 +1123,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string description = 3;</code>
+     *
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString getDescriptionBytes() {
       java.lang.Object ref = description_;
@@ -1092,6 +1145,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string description = 3;</code>
+     *
+     * @param value The description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescription(java.lang.String value) {
       if (value == null) {
@@ -1110,6 +1166,8 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string description = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearDescription() {
 
@@ -1125,6 +1183,9 @@ public final class IncidentRole extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string description = 3;</code>
+     *
+     * @param value The bytes for description to set.
+     * @return This builder for chaining.
      */
     public Builder setDescriptionBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

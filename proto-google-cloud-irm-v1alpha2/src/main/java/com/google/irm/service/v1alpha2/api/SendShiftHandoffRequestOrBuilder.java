@@ -32,6 +32,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   java.lang.String getParent();
   /**
@@ -43,6 +45,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   com.google.protobuf.ByteString getParentBytes();
 
@@ -55,6 +59,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @return A list containing the recipients.
    */
   java.util.List<java.lang.String> getRecipientsList();
   /**
@@ -66,6 +72,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @return The count of recipients.
    */
   int getRecipientsCount();
   /**
@@ -77,6 +85,9 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The recipients at the given index.
    */
   java.lang.String getRecipients(int index);
   /**
@@ -88,6 +99,9 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The bytes of the recipients at the given index.
    */
   com.google.protobuf.ByteString getRecipientsBytes(int index);
 
@@ -99,6 +113,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @return A list containing the cc.
    */
   java.util.List<java.lang.String> getCcList();
   /**
@@ -109,6 +125,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @return The count of cc.
    */
   int getCcCount();
   /**
@@ -119,6 +137,9 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The cc at the given index.
    */
   java.lang.String getCc(int index);
   /**
@@ -129,6 +150,9 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The bytes of the cc at the given index.
    */
   com.google.protobuf.ByteString getCcBytes(int index);
 
@@ -140,6 +164,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string subject = 4;</code>
+   *
+   * @return The subject.
    */
   java.lang.String getSubject();
   /**
@@ -150,6 +176,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string subject = 4;</code>
+   *
+   * @return The bytes for subject.
    */
   com.google.protobuf.ByteString getSubjectBytes();
 
@@ -161,6 +189,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string notes_content_type = 5;</code>
+   *
+   * @return The notesContentType.
    */
   java.lang.String getNotesContentType();
   /**
@@ -171,6 +201,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string notes_content_type = 5;</code>
+   *
+   * @return The bytes for notesContentType.
    */
   com.google.protobuf.ByteString getNotesContentTypeBytes();
 
@@ -182,6 +214,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string notes_content = 6;</code>
+   *
+   * @return The notesContent.
    */
   java.lang.String getNotesContent();
   /**
@@ -192,6 +226,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>string notes_content = 6;</code>
+   *
+   * @return The bytes for notesContent.
    */
   com.google.protobuf.ByteString getNotesContentBytes();
 
@@ -264,6 +300,8 @@ public interface SendShiftHandoffRequestOrBuilder
    * </pre>
    *
    * <code>bool preview_only = 8;</code>
+   *
+   * @return The previewOnly.
    */
   boolean getPreviewOnly();
 }

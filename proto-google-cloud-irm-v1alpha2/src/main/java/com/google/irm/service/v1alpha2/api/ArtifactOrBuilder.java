@@ -32,6 +32,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -54,6 +58,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string display_name = 2;</code>
+   *
+   * @return The displayName.
    */
   java.lang.String getDisplayName();
   /**
@@ -64,6 +70,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string display_name = 2;</code>
+   *
+   * @return The bytes for displayName.
    */
   com.google.protobuf.ByteString getDisplayNameBytes();
 
@@ -77,6 +85,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string etag = 3;</code>
+   *
+   * @return The etag.
    */
   java.lang.String getEtag();
   /**
@@ -89,6 +99,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string etag = 3;</code>
+   *
+   * @return The bytes for etag.
    */
   com.google.protobuf.ByteString getEtagBytes();
 
@@ -100,6 +112,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string url = 4;</code>
+   *
+   * @return The url.
    */
   java.lang.String getUrl();
   /**
@@ -110,6 +124,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>string url = 4;</code>
+   *
+   * @return The bytes for url.
    */
   com.google.protobuf.ByteString getUrlBytes();
 
@@ -121,6 +137,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+   *
+   * @return The enum numeric value on the wire for type.
    */
   int getTypeValue();
   /**
@@ -131,6 +149,8 @@ public interface ArtifactOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+   *
+   * @return The type.
    */
   com.google.irm.service.v1alpha2.api.Artifact.Type getType();
 }

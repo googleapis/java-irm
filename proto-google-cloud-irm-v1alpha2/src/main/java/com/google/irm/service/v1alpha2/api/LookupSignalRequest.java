@@ -40,6 +40,12 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
   private LookupSignalRequest() {}
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new LookupSignalRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -52,7 +58,6 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -114,7 +119,10 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
   private int alternateIdCase_ = 0;
   private java.lang.Object alternateId_;
 
-  public enum AlternateIdCase implements com.google.protobuf.Internal.EnumLite {
+  public enum AlternateIdCase
+      implements
+          com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     CSCC_FINDING(2),
     STACKDRIVER_NOTIFICATION_ID(3),
     ALTERNATEID_NOT_SET(0);
@@ -123,7 +131,11 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
     private AlternateIdCase(int value) {
       this.value = value;
     }
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static AlternateIdCase valueOf(int value) {
       return forNumber(value);
@@ -161,6 +173,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    * </pre>
    *
    * <code>string cscc_finding = 2;</code>
+   *
+   * @return The csccFinding.
    */
   public java.lang.String getCsccFinding() {
     java.lang.Object ref = "";
@@ -187,6 +201,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    * </pre>
    *
    * <code>string cscc_finding = 2;</code>
+   *
+   * @return The bytes for csccFinding.
    */
   public com.google.protobuf.ByteString getCsccFindingBytes() {
     java.lang.Object ref = "";
@@ -214,6 +230,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    * </pre>
    *
    * <code>string stackdriver_notification_id = 3;</code>
+   *
+   * @return The stackdriverNotificationId.
    */
   public java.lang.String getStackdriverNotificationId() {
     java.lang.Object ref = "";
@@ -239,6 +257,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    * </pre>
    *
    * <code>string stackdriver_notification_id = 3;</code>
+   *
+   * @return The bytes for stackdriverNotificationId.
    */
   public com.google.protobuf.ByteString getStackdriverNotificationIdBytes() {
     java.lang.Object ref = "";
@@ -648,6 +668,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string cscc_finding = 2;</code>
+     *
+     * @return The csccFinding.
      */
     public java.lang.String getCsccFinding() {
       java.lang.Object ref = "";
@@ -674,6 +696,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string cscc_finding = 2;</code>
+     *
+     * @return The bytes for csccFinding.
      */
     public com.google.protobuf.ByteString getCsccFindingBytes() {
       java.lang.Object ref = "";
@@ -700,6 +724,9 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string cscc_finding = 2;</code>
+     *
+     * @param value The csccFinding to set.
+     * @return This builder for chaining.
      */
     public Builder setCsccFinding(java.lang.String value) {
       if (value == null) {
@@ -719,6 +746,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string cscc_finding = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearCsccFinding() {
       if (alternateIdCase_ == 2) {
@@ -737,6 +766,9 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string cscc_finding = 2;</code>
+     *
+     * @param value The bytes for csccFinding to set.
+     * @return This builder for chaining.
      */
     public Builder setCsccFindingBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -757,6 +789,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string stackdriver_notification_id = 3;</code>
+     *
+     * @return The stackdriverNotificationId.
      */
     public java.lang.String getStackdriverNotificationId() {
       java.lang.Object ref = "";
@@ -782,6 +816,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string stackdriver_notification_id = 3;</code>
+     *
+     * @return The bytes for stackdriverNotificationId.
      */
     public com.google.protobuf.ByteString getStackdriverNotificationIdBytes() {
       java.lang.Object ref = "";
@@ -807,6 +843,9 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string stackdriver_notification_id = 3;</code>
+     *
+     * @param value The stackdriverNotificationId to set.
+     * @return This builder for chaining.
      */
     public Builder setStackdriverNotificationId(java.lang.String value) {
       if (value == null) {
@@ -825,6 +864,8 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string stackdriver_notification_id = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearStackdriverNotificationId() {
       if (alternateIdCase_ == 3) {
@@ -842,6 +883,9 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      * </pre>
      *
      * <code>string stackdriver_notification_id = 3;</code>
+     *
+     * @param value The bytes for stackdriverNotificationId to set.
+     * @return This builder for chaining.
      */
     public Builder setStackdriverNotificationIdBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

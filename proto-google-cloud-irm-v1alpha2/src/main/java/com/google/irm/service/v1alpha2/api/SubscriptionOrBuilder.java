@@ -32,6 +32,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -56,6 +60,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The etag.
    */
   java.lang.String getEtag();
   /**
@@ -68,6 +74,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The bytes for etag.
    */
   com.google.protobuf.ByteString getEtagBytes();
 
@@ -79,6 +87,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+   *
+   * @return Whether the subscriptionChannel field is set.
    */
   boolean hasSubscriptionChannel();
   /**
@@ -89,6 +99,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+   *
+   * @return The subscriptionChannel.
    */
   com.google.irm.service.v1alpha2.api.CommunicationChannel getSubscriptionChannel();
   /**
@@ -111,6 +123,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @return A list containing the eventTypes.
    */
   java.util.List<com.google.irm.service.v1alpha2.api.Subscription.EventType> getEventTypesList();
   /**
@@ -121,6 +135,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @return The count of eventTypes.
    */
   int getEventTypesCount();
   /**
@@ -131,6 +147,9 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The eventTypes at the given index.
    */
   com.google.irm.service.v1alpha2.api.Subscription.EventType getEventTypes(int index);
   /**
@@ -141,6 +160,8 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @return A list containing the enum numeric values on the wire for eventTypes.
    */
   java.util.List<java.lang.Integer> getEventTypesValueList();
   /**
@@ -151,6 +172,9 @@ public interface SubscriptionOrBuilder
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of eventTypes at the given index.
    */
   int getEventTypesValue(int index);
 }

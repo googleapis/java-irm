@@ -32,6 +32,8 @@ public interface LookupSignalRequestOrBuilder
    * </pre>
    *
    * <code>string cscc_finding = 2;</code>
+   *
+   * @return The csccFinding.
    */
   java.lang.String getCsccFinding();
   /**
@@ -43,6 +45,8 @@ public interface LookupSignalRequestOrBuilder
    * </pre>
    *
    * <code>string cscc_finding = 2;</code>
+   *
+   * @return The bytes for csccFinding.
    */
   com.google.protobuf.ByteString getCsccFindingBytes();
 
@@ -54,6 +58,8 @@ public interface LookupSignalRequestOrBuilder
    * </pre>
    *
    * <code>string stackdriver_notification_id = 3;</code>
+   *
+   * @return The stackdriverNotificationId.
    */
   java.lang.String getStackdriverNotificationId();
   /**
@@ -64,6 +70,8 @@ public interface LookupSignalRequestOrBuilder
    * </pre>
    *
    * <code>string stackdriver_notification_id = 3;</code>
+   *
+   * @return The bytes for stackdriverNotificationId.
    */
   com.google.protobuf.ByteString getStackdriverNotificationIdBytes();
 

@@ -46,6 +46,12 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new Artifact();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -58,7 +64,6 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -220,12 +225,20 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
       return value;
     }
 
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static Type valueOf(int value) {
       return forNumber(value);
     }
 
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
     public static Type forNumber(int value) {
       switch (value) {
         case 0:
@@ -294,6 +307,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -315,6 +330,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -338,6 +355,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string display_name = 2;</code>
+   *
+   * @return The displayName.
    */
   public java.lang.String getDisplayName() {
     java.lang.Object ref = displayName_;
@@ -358,6 +377,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string display_name = 2;</code>
+   *
+   * @return The bytes for displayName.
    */
   public com.google.protobuf.ByteString getDisplayNameBytes() {
     java.lang.Object ref = displayName_;
@@ -383,6 +404,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 3;</code>
+   *
+   * @return The etag.
    */
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
@@ -405,6 +428,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 3;</code>
+   *
+   * @return The bytes for etag.
    */
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
@@ -428,6 +453,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string url = 4;</code>
+   *
+   * @return The url.
    */
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
@@ -448,6 +475,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string url = 4;</code>
+   *
+   * @return The bytes for url.
    */
   public com.google.protobuf.ByteString getUrlBytes() {
     java.lang.Object ref = url_;
@@ -471,6 +500,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+   *
+   * @return The enum numeric value on the wire for type.
    */
   public int getTypeValue() {
     return type_;
@@ -483,6 +514,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+   *
+   * @return The type.
    */
   public com.google.irm.service.v1alpha2.api.Artifact.Type getType() {
     @SuppressWarnings("deprecation")
@@ -880,6 +913,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -901,6 +936,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -922,6 +959,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -941,6 +981,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearName() {
 
@@ -957,6 +999,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -978,6 +1023,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string display_name = 2;</code>
+     *
+     * @return The displayName.
      */
     public java.lang.String getDisplayName() {
       java.lang.Object ref = displayName_;
@@ -998,6 +1045,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string display_name = 2;</code>
+     *
+     * @return The bytes for displayName.
      */
     public com.google.protobuf.ByteString getDisplayNameBytes() {
       java.lang.Object ref = displayName_;
@@ -1018,6 +1067,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string display_name = 2;</code>
+     *
+     * @param value The displayName to set.
+     * @return This builder for chaining.
      */
     public Builder setDisplayName(java.lang.String value) {
       if (value == null) {
@@ -1036,6 +1088,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string display_name = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearDisplayName() {
 
@@ -1051,6 +1105,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string display_name = 2;</code>
+     *
+     * @param value The bytes for displayName to set.
+     * @return This builder for chaining.
      */
     public Builder setDisplayNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1074,6 +1131,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 3;</code>
+     *
+     * @return The etag.
      */
     public java.lang.String getEtag() {
       java.lang.Object ref = etag_;
@@ -1096,6 +1155,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 3;</code>
+     *
+     * @return The bytes for etag.
      */
     public com.google.protobuf.ByteString getEtagBytes() {
       java.lang.Object ref = etag_;
@@ -1118,6 +1179,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 3;</code>
+     *
+     * @param value The etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtag(java.lang.String value) {
       if (value == null) {
@@ -1138,6 +1202,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearEtag() {
 
@@ -1155,6 +1221,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 3;</code>
+     *
+     * @param value The bytes for etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtagBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1176,6 +1245,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string url = 4;</code>
+     *
+     * @return The url.
      */
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
@@ -1196,6 +1267,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string url = 4;</code>
+     *
+     * @return The bytes for url.
      */
     public com.google.protobuf.ByteString getUrlBytes() {
       java.lang.Object ref = url_;
@@ -1216,6 +1289,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string url = 4;</code>
+     *
+     * @param value The url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrl(java.lang.String value) {
       if (value == null) {
@@ -1234,6 +1310,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string url = 4;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearUrl() {
 
@@ -1249,6 +1327,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string url = 4;</code>
+     *
+     * @param value The bytes for url to set.
+     * @return This builder for chaining.
      */
     public Builder setUrlBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1270,6 +1351,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+     *
+     * @return The enum numeric value on the wire for type.
      */
     public int getTypeValue() {
       return type_;
@@ -1282,6 +1365,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+     *
+     * @param value The enum numeric value on the wire for type to set.
+     * @return This builder for chaining.
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -1296,6 +1382,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+     *
+     * @return The type.
      */
     public com.google.irm.service.v1alpha2.api.Artifact.Type getType() {
       @SuppressWarnings("deprecation")
@@ -1313,6 +1401,9 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+     *
+     * @param value The type to set.
+     * @return This builder for chaining.
      */
     public Builder setType(com.google.irm.service.v1alpha2.api.Artifact.Type value) {
       if (value == null) {
@@ -1331,6 +1422,8 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Artifact.Type type = 5;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearType() {
 
