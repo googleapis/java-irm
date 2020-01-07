@@ -31,6 +31,8 @@ public interface UpdateArtifactRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   *
+   * @return Whether the artifact field is set.
    */
   boolean hasArtifact();
   /**
@@ -41,6 +43,8 @@ public interface UpdateArtifactRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   *
+   * @return The artifact.
    */
   com.google.irm.service.v1alpha2.api.Artifact getArtifact();
   /**
@@ -62,6 +66,8 @@ public interface UpdateArtifactRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return Whether the updateMask field is set.
    */
   boolean hasUpdateMask();
   /**
@@ -72,6 +78,8 @@ public interface UpdateArtifactRequestOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
+   *
+   * @return The updateMask.
    */
   com.google.protobuf.FieldMask getUpdateMask();
   /**

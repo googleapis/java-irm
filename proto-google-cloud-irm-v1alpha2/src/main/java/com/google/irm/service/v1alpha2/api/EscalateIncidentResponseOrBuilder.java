@@ -31,6 +31,8 @@ public interface EscalateIncidentResponseOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return Whether the incident field is set.
    */
   boolean hasIncident();
   /**
@@ -41,6 +43,8 @@ public interface EscalateIncidentResponseOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return The incident.
    */
   com.google.irm.service.v1alpha2.api.Incident getIncident();
   /**

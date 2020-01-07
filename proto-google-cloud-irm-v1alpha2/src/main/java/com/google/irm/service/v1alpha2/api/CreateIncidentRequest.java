@@ -42,6 +42,12 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new CreateIncidentRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -54,7 +60,6 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -132,6 +137,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return Whether the incident field is set.
    */
   public boolean hasIncident() {
     return incident_ != null;
@@ -144,6 +151,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   *
+   * @return The incident.
    */
   public com.google.irm.service.v1alpha2.api.Incident getIncident() {
     return incident_ == null
@@ -176,6 +185,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    * </pre>
    *
    * <code>string parent = 2;</code>
+   *
+   * @return The parent.
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -199,6 +210,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    * </pre>
    *
    * <code>string parent = 2;</code>
+   *
+   * @return The bytes for parent.
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -573,6 +586,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return Whether the incident field is set.
      */
     public boolean hasIncident() {
       return incidentBuilder_ != null || incident_ != null;
@@ -585,6 +600,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return The incident.
      */
     public com.google.irm.service.v1alpha2.api.Incident getIncident() {
       if (incidentBuilder_ == null) {
@@ -753,6 +770,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>string parent = 2;</code>
+     *
+     * @return The parent.
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -776,6 +795,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>string parent = 2;</code>
+     *
+     * @return The bytes for parent.
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -799,6 +820,9 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>string parent = 2;</code>
+     *
+     * @param value The parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -820,6 +844,8 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>string parent = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearParent() {
 
@@ -838,6 +864,9 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
      * </pre>
      *
      * <code>string parent = 2;</code>
+     *
+     * @param value The bytes for parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

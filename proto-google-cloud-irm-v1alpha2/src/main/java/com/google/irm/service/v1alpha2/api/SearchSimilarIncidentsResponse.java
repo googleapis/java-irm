@@ -44,6 +44,12 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new SearchSimilarIncidentsResponse();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -141,6 +147,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return Whether the incident field is set.
      */
     boolean hasIncident();
     /**
@@ -152,6 +160,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return The incident.
      */
     com.google.irm.service.v1alpha2.api.Incident getIncident();
     /**
@@ -189,6 +199,12 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
     private Result() {}
 
     @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new Result();
+    }
+
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
       return this.unknownFields;
     }
@@ -201,7 +217,6 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -274,6 +289,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return Whether the incident field is set.
      */
     public boolean hasIncident() {
       return incident_ != null;
@@ -287,6 +304,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     *
+     * @return The incident.
      */
     public com.google.irm.service.v1alpha2.api.Incident getIncident() {
       return incident_ == null
@@ -677,6 +696,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
        * </pre>
        *
        * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+       *
+       * @return Whether the incident field is set.
        */
       public boolean hasIncident() {
         return incidentBuilder_ != null || incident_ != null;
@@ -690,6 +711,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
        * </pre>
        *
        * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+       *
+       * @return The incident.
        */
       public com.google.irm.service.v1alpha2.api.Incident getIncident() {
         if (incidentBuilder_ == null) {
@@ -909,7 +932,6 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
     }
   }
 
-  private int bitField0_;
   public static final int RESULTS_FIELD_NUMBER = 1;
   private java.util.List<com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.Result>
       results_;
@@ -995,6 +1017,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * </pre>
    *
    * <code>string next_page_token = 2;</code>
+   *
+   * @return The nextPageToken.
    */
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
@@ -1015,6 +1039,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * </pre>
    *
    * <code>string next_page_token = 2;</code>
+   *
+   * @return The bytes for nextPageToken.
    */
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
@@ -1286,7 +1312,6 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
       com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse result =
           new com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       if (resultsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           results_ = java.util.Collections.unmodifiableList(results_);
@@ -1297,7 +1322,6 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
         result.results_ = resultsBuilder_.build();
       }
       result.nextPageToken_ = nextPageToken_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -1822,6 +1846,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>string next_page_token = 2;</code>
+     *
+     * @return The nextPageToken.
      */
     public java.lang.String getNextPageToken() {
       java.lang.Object ref = nextPageToken_;
@@ -1842,6 +1868,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>string next_page_token = 2;</code>
+     *
+     * @return The bytes for nextPageToken.
      */
     public com.google.protobuf.ByteString getNextPageTokenBytes() {
       java.lang.Object ref = nextPageToken_;
@@ -1862,6 +1890,9 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>string next_page_token = 2;</code>
+     *
+     * @param value The nextPageToken to set.
+     * @return This builder for chaining.
      */
     public Builder setNextPageToken(java.lang.String value) {
       if (value == null) {
@@ -1880,6 +1911,8 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>string next_page_token = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearNextPageToken() {
 
@@ -1895,6 +1928,9 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      * </pre>
      *
      * <code>string next_page_token = 2;</code>
+     *
+     * @param value The bytes for nextPageToken to set.
+     * @return This builder for chaining.
      */
     public Builder setNextPageTokenBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

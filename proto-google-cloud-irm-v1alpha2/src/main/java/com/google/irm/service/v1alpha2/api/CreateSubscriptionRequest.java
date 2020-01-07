@@ -42,6 +42,12 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new CreateSubscriptionRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -54,7 +60,6 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -133,6 +138,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -154,6 +161,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -177,6 +186,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+   *
+   * @return Whether the subscription field is set.
    */
   public boolean hasSubscription() {
     return subscription_ != null;
@@ -189,6 +200,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+   *
+   * @return The subscription.
    */
   public com.google.irm.service.v1alpha2.api.Subscription getSubscription() {
     return subscription_ == null
@@ -568,6 +581,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The parent.
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -589,6 +604,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The bytes for parent.
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -610,6 +627,9 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -629,6 +649,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearParent() {
 
@@ -645,6 +667,9 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The bytes for parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -671,6 +696,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+     *
+     * @return Whether the subscription field is set.
      */
     public boolean hasSubscription() {
       return subscriptionBuilder_ != null || subscription_ != null;
@@ -683,6 +710,8 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 2;</code>
+     *
+     * @return The subscription.
      */
     public com.google.irm.service.v1alpha2.api.Subscription getSubscription() {
       if (subscriptionBuilder_ == null) {

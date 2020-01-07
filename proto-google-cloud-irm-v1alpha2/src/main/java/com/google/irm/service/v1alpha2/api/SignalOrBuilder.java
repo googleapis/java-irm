@@ -32,6 +32,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   java.lang.String getName();
   /**
@@ -43,6 +45,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString getNameBytes();
 
@@ -55,6 +59,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The etag.
    */
   java.lang.String getEtag();
   /**
@@ -66,6 +72,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The bytes for etag.
    */
   com.google.protobuf.ByteString getEtagBytes();
 
@@ -78,6 +86,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string incident = 3;</code>
+   *
+   * @return The incident.
    */
   java.lang.String getIncident();
   /**
@@ -89,6 +99,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string incident = 3;</code>
+   *
+   * @return The bytes for incident.
    */
   com.google.protobuf.ByteString getIncidentBytes();
 
@@ -100,6 +112,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 4;</code>
+   *
+   * @return Whether the createTime field is set.
    */
   boolean hasCreateTime();
   /**
@@ -110,6 +124,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp create_time = 4;</code>
+   *
+   * @return The createTime.
    */
   com.google.protobuf.Timestamp getCreateTime();
   /**
@@ -132,6 +148,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp close_time = 10;</code>
+   *
+   * @return Whether the closeTime field is set.
    */
   boolean hasCloseTime();
   /**
@@ -143,6 +161,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp close_time = 10;</code>
+   *
+   * @return The closeTime.
    */
   com.google.protobuf.Timestamp getCloseTime();
   /**
@@ -166,6 +186,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+   *
+   * @return Whether the detectTime field is set.
    */
   boolean hasDetectTime();
   /**
@@ -177,6 +199,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.protobuf.Timestamp detect_time = 15;</code>
+   *
+   * @return The detectTime.
    */
   com.google.protobuf.Timestamp getDetectTime();
   /**
@@ -201,6 +225,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+   *
+   * @return Whether the creator field is set.
    */
   boolean hasCreator();
   /**
@@ -213,6 +239,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
+   *
+   * @return The creator.
    */
   com.google.irm.service.v1alpha2.api.User getCreator();
   /**
@@ -237,6 +265,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string title = 6;</code>
+   *
+   * @return The title.
    */
   java.lang.String getTitle();
   /**
@@ -248,6 +278,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string title = 6;</code>
+   *
+   * @return The bytes for title.
    */
   com.google.protobuf.ByteString getTitleBytes();
 
@@ -262,6 +294,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string content_type = 7;</code>
+   *
+   * @return The contentType.
    */
   java.lang.String getContentType();
   /**
@@ -275,6 +309,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string content_type = 7;</code>
+   *
+   * @return The bytes for contentType.
    */
   com.google.protobuf.ByteString getContentTypeBytes();
 
@@ -287,6 +323,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string content = 8;</code>
+   *
+   * @return The content.
    */
   java.lang.String getContent();
   /**
@@ -298,6 +336,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>string content = 8;</code>
+   *
+   * @return The bytes for content.
    */
   com.google.protobuf.ByteString getContentBytes();
 
@@ -310,6 +350,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+   *
+   * @return The enum numeric value on the wire for signalState.
    */
   int getSignalStateValue();
   /**
@@ -321,6 +363,8 @@ public interface SignalOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal.State signal_state = 9;</code>
+   *
+   * @return The signalState.
    */
   com.google.irm.service.v1alpha2.api.Signal.State getSignalState();
 

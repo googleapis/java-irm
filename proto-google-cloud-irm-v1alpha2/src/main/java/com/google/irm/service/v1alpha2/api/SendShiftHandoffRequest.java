@@ -48,6 +48,12 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new SendShiftHandoffRequest();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -81,9 +87,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
           case 18:
             {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 recipients_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               recipients_.add(s);
               break;
@@ -91,9 +97,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
           case 26:
             {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 cc_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000002;
               }
               cc_.add(s);
               break;
@@ -121,11 +127,11 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
             }
           case 58:
             {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 incidents_ =
                     new java.util.ArrayList<
                         com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident>();
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00000004;
               }
               incidents_.add(
                   input.readMessage(
@@ -152,13 +158,13 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) != 0)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         recipients_ = recipients_.getUnmodifiableView();
       }
-      if (((mutable_bitField0_ & 0x00000004) != 0)) {
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
         cc_ = cc_.getUnmodifiableView();
       }
-      if (((mutable_bitField0_ & 0x00000040) != 0)) {
+      if (((mutable_bitField0_ & 0x00000004) != 0)) {
         incidents_ = java.util.Collections.unmodifiableList(incidents_);
       }
       this.unknownFields = unknownFields.build();
@@ -195,6 +201,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     java.lang.String getName();
     /**
@@ -206,6 +214,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString getNameBytes();
   }
@@ -235,6 +245,12 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
     }
 
     @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+      return new Incident();
+    }
+
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
       return this.unknownFields;
     }
@@ -247,7 +263,6 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -310,6 +325,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -331,6 +348,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -688,6 +707,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -709,6 +730,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString getNameBytes() {
         java.lang.Object ref = name_;
@@ -730,6 +753,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(java.lang.String value) {
         if (value == null) {
@@ -749,6 +775,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @return This builder for chaining.
        */
       public Builder clearName() {
 
@@ -765,6 +793,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
        * </pre>
        *
        * <code>string name = 1;</code>
+       *
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(com.google.protobuf.ByteString value) {
         if (value == null) {
@@ -832,7 +863,6 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
     }
   }
 
-  private int bitField0_;
   public static final int PARENT_FIELD_NUMBER = 1;
   private volatile java.lang.Object parent_;
   /**
@@ -844,6 +874,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -865,6 +897,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -889,6 +923,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @return A list containing the recipients.
    */
   public com.google.protobuf.ProtocolStringList getRecipientsList() {
     return recipients_;
@@ -902,6 +938,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @return The count of recipients.
    */
   public int getRecipientsCount() {
     return recipients_.size();
@@ -915,6 +953,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The recipients at the given index.
    */
   public java.lang.String getRecipients(int index) {
     return recipients_.get(index);
@@ -928,6 +969,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string recipients = 2;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The bytes of the recipients at the given index.
    */
   public com.google.protobuf.ByteString getRecipientsBytes(int index) {
     return recipients_.getByteString(index);
@@ -943,6 +987,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @return A list containing the cc.
    */
   public com.google.protobuf.ProtocolStringList getCcList() {
     return cc_;
@@ -955,6 +1001,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @return The count of cc.
    */
   public int getCcCount() {
     return cc_.size();
@@ -967,6 +1015,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The cc at the given index.
    */
   public java.lang.String getCc(int index) {
     return cc_.get(index);
@@ -979,6 +1030,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>repeated string cc = 3;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The bytes of the cc at the given index.
    */
   public com.google.protobuf.ByteString getCcBytes(int index) {
     return cc_.getByteString(index);
@@ -994,6 +1048,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string subject = 4;</code>
+   *
+   * @return The subject.
    */
   public java.lang.String getSubject() {
     java.lang.Object ref = subject_;
@@ -1014,6 +1070,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string subject = 4;</code>
+   *
+   * @return The bytes for subject.
    */
   public com.google.protobuf.ByteString getSubjectBytes() {
     java.lang.Object ref = subject_;
@@ -1037,6 +1095,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string notes_content_type = 5;</code>
+   *
+   * @return The notesContentType.
    */
   public java.lang.String getNotesContentType() {
     java.lang.Object ref = notesContentType_;
@@ -1057,6 +1117,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string notes_content_type = 5;</code>
+   *
+   * @return The bytes for notesContentType.
    */
   public com.google.protobuf.ByteString getNotesContentTypeBytes() {
     java.lang.Object ref = notesContentType_;
@@ -1080,6 +1142,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string notes_content = 6;</code>
+   *
+   * @return The notesContent.
    */
   public java.lang.String getNotesContent() {
     java.lang.Object ref = notesContent_;
@@ -1100,6 +1164,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>string notes_content = 6;</code>
+   *
+   * @return The bytes for notesContent.
    */
   public com.google.protobuf.ByteString getNotesContentBytes() {
     java.lang.Object ref = notesContent_;
@@ -1198,6 +1264,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * </pre>
    *
    * <code>bool preview_only = 8;</code>
+   *
+   * @return The previewOnly.
    */
   public boolean getPreviewOnly() {
     return previewOnly_;
@@ -1492,9 +1560,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
       parent_ = "";
 
       recipients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       cc_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000004);
+      bitField0_ = (bitField0_ & ~0x00000002);
       subject_ = "";
 
       notesContentType_ = "";
@@ -1503,7 +1571,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
 
       if (incidentsBuilder_ == null) {
         incidents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000004);
       } else {
         incidentsBuilder_.clear();
       }
@@ -1537,32 +1605,30 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
       com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest result =
           new com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.parent_ = parent_;
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         recipients_ = recipients_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.recipients_ = recipients_;
-      if (((bitField0_ & 0x00000004) != 0)) {
+      if (((bitField0_ & 0x00000002) != 0)) {
         cc_ = cc_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
       }
       result.cc_ = cc_;
       result.subject_ = subject_;
       result.notesContentType_ = notesContentType_;
       result.notesContent_ = notesContent_;
       if (incidentsBuilder_ == null) {
-        if (((bitField0_ & 0x00000040) != 0)) {
+        if (((bitField0_ & 0x00000004) != 0)) {
           incidents_ = java.util.Collections.unmodifiableList(incidents_);
-          bitField0_ = (bitField0_ & ~0x00000040);
+          bitField0_ = (bitField0_ & ~0x00000004);
         }
         result.incidents_ = incidents_;
       } else {
         result.incidents_ = incidentsBuilder_.build();
       }
       result.previewOnly_ = previewOnly_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -1620,7 +1686,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
       if (!other.recipients_.isEmpty()) {
         if (recipients_.isEmpty()) {
           recipients_ = other.recipients_;
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           ensureRecipientsIsMutable();
           recipients_.addAll(other.recipients_);
@@ -1630,7 +1696,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
       if (!other.cc_.isEmpty()) {
         if (cc_.isEmpty()) {
           cc_ = other.cc_;
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           ensureCcIsMutable();
           cc_.addAll(other.cc_);
@@ -1653,7 +1719,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
         if (!other.incidents_.isEmpty()) {
           if (incidents_.isEmpty()) {
             incidents_ = other.incidents_;
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureIncidentsIsMutable();
             incidents_.addAll(other.incidents_);
@@ -1666,7 +1732,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
             incidentsBuilder_.dispose();
             incidentsBuilder_ = null;
             incidents_ = other.incidents_;
-            bitField0_ = (bitField0_ & ~0x00000040);
+            bitField0_ = (bitField0_ & ~0x00000004);
             incidentsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders
                     ? getIncidentsFieldBuilder()
@@ -1721,6 +1787,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The parent.
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -1742,6 +1810,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return The bytes for parent.
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -1763,6 +1833,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -1782,6 +1855,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearParent() {
 
@@ -1798,6 +1873,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string parent = 1;</code>
+     *
+     * @param value The bytes for parent to set.
+     * @return This builder for chaining.
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1814,9 +1892,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
         com.google.protobuf.LazyStringArrayList.EMPTY;
 
     private void ensureRecipientsIsMutable() {
-      if (!((bitField0_ & 0x00000002) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         recipients_ = new com.google.protobuf.LazyStringArrayList(recipients_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
       }
     }
     /**
@@ -1828,6 +1906,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @return A list containing the recipients.
      */
     public com.google.protobuf.ProtocolStringList getRecipientsList() {
       return recipients_.getUnmodifiableView();
@@ -1841,6 +1921,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @return The count of recipients.
      */
     public int getRecipientsCount() {
       return recipients_.size();
@@ -1854,6 +1936,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The recipients at the given index.
      */
     public java.lang.String getRecipients(int index) {
       return recipients_.get(index);
@@ -1867,6 +1952,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The bytes of the recipients at the given index.
      */
     public com.google.protobuf.ByteString getRecipientsBytes(int index) {
       return recipients_.getByteString(index);
@@ -1880,6 +1968,10 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param index The index to set the value at.
+     * @param value The recipients to set.
+     * @return This builder for chaining.
      */
     public Builder setRecipients(int index, java.lang.String value) {
       if (value == null) {
@@ -1899,6 +1991,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param value The recipients to add.
+     * @return This builder for chaining.
      */
     public Builder addRecipients(java.lang.String value) {
       if (value == null) {
@@ -1918,6 +2013,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param values The recipients to add.
+     * @return This builder for chaining.
      */
     public Builder addAllRecipients(java.lang.Iterable<java.lang.String> values) {
       ensureRecipientsIsMutable();
@@ -1934,10 +2032,12 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearRecipients() {
       recipients_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -1950,6 +2050,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string recipients = 2;</code>
+     *
+     * @param value The bytes of the recipients to add.
+     * @return This builder for chaining.
      */
     public Builder addRecipientsBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1965,9 +2068,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
     private com.google.protobuf.LazyStringList cc_ = com.google.protobuf.LazyStringArrayList.EMPTY;
 
     private void ensureCcIsMutable() {
-      if (!((bitField0_ & 0x00000004) != 0)) {
+      if (!((bitField0_ & 0x00000002) != 0)) {
         cc_ = new com.google.protobuf.LazyStringArrayList(cc_);
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000002;
       }
     }
     /**
@@ -1978,6 +2081,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @return A list containing the cc.
      */
     public com.google.protobuf.ProtocolStringList getCcList() {
       return cc_.getUnmodifiableView();
@@ -1990,6 +2095,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @return The count of cc.
      */
     public int getCcCount() {
       return cc_.size();
@@ -2002,6 +2109,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The cc at the given index.
      */
     public java.lang.String getCc(int index) {
       return cc_.get(index);
@@ -2014,6 +2124,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The bytes of the cc at the given index.
      */
     public com.google.protobuf.ByteString getCcBytes(int index) {
       return cc_.getByteString(index);
@@ -2026,6 +2139,10 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param index The index to set the value at.
+     * @param value The cc to set.
+     * @return This builder for chaining.
      */
     public Builder setCc(int index, java.lang.String value) {
       if (value == null) {
@@ -2044,6 +2161,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param value The cc to add.
+     * @return This builder for chaining.
      */
     public Builder addCc(java.lang.String value) {
       if (value == null) {
@@ -2062,6 +2182,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param values The cc to add.
+     * @return This builder for chaining.
      */
     public Builder addAllCc(java.lang.Iterable<java.lang.String> values) {
       ensureCcIsMutable();
@@ -2077,10 +2200,12 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearCc() {
       cc_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000004);
+      bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
@@ -2092,6 +2217,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>repeated string cc = 3;</code>
+     *
+     * @param value The bytes of the cc to add.
+     * @return This builder for chaining.
      */
     public Builder addCcBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2113,6 +2241,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string subject = 4;</code>
+     *
+     * @return The subject.
      */
     public java.lang.String getSubject() {
       java.lang.Object ref = subject_;
@@ -2133,6 +2263,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string subject = 4;</code>
+     *
+     * @return The bytes for subject.
      */
     public com.google.protobuf.ByteString getSubjectBytes() {
       java.lang.Object ref = subject_;
@@ -2153,6 +2285,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string subject = 4;</code>
+     *
+     * @param value The subject to set.
+     * @return This builder for chaining.
      */
     public Builder setSubject(java.lang.String value) {
       if (value == null) {
@@ -2171,6 +2306,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string subject = 4;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearSubject() {
 
@@ -2186,6 +2323,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string subject = 4;</code>
+     *
+     * @param value The bytes for subject to set.
+     * @return This builder for chaining.
      */
     public Builder setSubjectBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2207,6 +2347,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content_type = 5;</code>
+     *
+     * @return The notesContentType.
      */
     public java.lang.String getNotesContentType() {
       java.lang.Object ref = notesContentType_;
@@ -2227,6 +2369,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content_type = 5;</code>
+     *
+     * @return The bytes for notesContentType.
      */
     public com.google.protobuf.ByteString getNotesContentTypeBytes() {
       java.lang.Object ref = notesContentType_;
@@ -2247,6 +2391,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content_type = 5;</code>
+     *
+     * @param value The notesContentType to set.
+     * @return This builder for chaining.
      */
     public Builder setNotesContentType(java.lang.String value) {
       if (value == null) {
@@ -2265,6 +2412,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content_type = 5;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearNotesContentType() {
 
@@ -2280,6 +2429,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content_type = 5;</code>
+     *
+     * @param value The bytes for notesContentType to set.
+     * @return This builder for chaining.
      */
     public Builder setNotesContentTypeBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2301,6 +2453,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content = 6;</code>
+     *
+     * @return The notesContent.
      */
     public java.lang.String getNotesContent() {
       java.lang.Object ref = notesContent_;
@@ -2321,6 +2475,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content = 6;</code>
+     *
+     * @return The bytes for notesContent.
      */
     public com.google.protobuf.ByteString getNotesContentBytes() {
       java.lang.Object ref = notesContent_;
@@ -2341,6 +2497,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content = 6;</code>
+     *
+     * @param value The notesContent to set.
+     * @return This builder for chaining.
      */
     public Builder setNotesContent(java.lang.String value) {
       if (value == null) {
@@ -2359,6 +2518,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content = 6;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearNotesContent() {
 
@@ -2374,6 +2535,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>string notes_content = 6;</code>
+     *
+     * @param value The bytes for notesContent to set.
+     * @return This builder for chaining.
      */
     public Builder setNotesContentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -2390,11 +2554,11 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
         incidents_ = java.util.Collections.emptyList();
 
     private void ensureIncidentsIsMutable() {
-      if (!((bitField0_ & 0x00000040) != 0)) {
+      if (!((bitField0_ & 0x00000004) != 0)) {
         incidents_ =
             new java.util.ArrayList<
                 com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident>(incidents_);
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000004;
       }
     }
 
@@ -2633,7 +2797,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
     public Builder clearIncidents() {
       if (incidentsBuilder_ == null) {
         incidents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
       } else {
         incidentsBuilder_.clear();
@@ -2773,7 +2937,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
                 com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident,
                 com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident.Builder,
                 com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.IncidentOrBuilder>(
-                incidents_, ((bitField0_ & 0x00000040) != 0), getParentForChildren(), isClean());
+                incidents_, ((bitField0_ & 0x00000004) != 0), getParentForChildren(), isClean());
         incidents_ = null;
       }
       return incidentsBuilder_;
@@ -2789,6 +2953,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>bool preview_only = 8;</code>
+     *
+     * @return The previewOnly.
      */
     public boolean getPreviewOnly() {
       return previewOnly_;
@@ -2802,6 +2968,9 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>bool preview_only = 8;</code>
+     *
+     * @param value The previewOnly to set.
+     * @return This builder for chaining.
      */
     public Builder setPreviewOnly(boolean value) {
 
@@ -2818,6 +2987,8 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      * </pre>
      *
      * <code>bool preview_only = 8;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearPreviewOnly() {
 

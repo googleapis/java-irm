@@ -45,6 +45,12 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new Subscription();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -102,9 +108,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
           case 32:
             {
               int rawValue = input.readEnum();
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 eventTypes_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000001;
               }
               eventTypes_.add(rawValue);
               break;
@@ -115,9 +121,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
               int oldLimit = input.pushLimit(length);
               while (input.getBytesUntilLimit() > 0) {
                 int rawValue = input.readEnum();
-                if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                   eventTypes_ = new java.util.ArrayList<java.lang.Integer>();
-                  mutable_bitField0_ |= 0x00000008;
+                  mutable_bitField0_ |= 0x00000001;
                 }
                 eventTypes_.add(rawValue);
               }
@@ -138,7 +144,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
     } catch (java.io.IOException e) {
       throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000008) != 0)) {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
         eventTypes_ = java.util.Collections.unmodifiableList(eventTypes_);
       }
       this.unknownFields = unknownFields.build();
@@ -323,12 +329,20 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
       return value;
     }
 
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static EventType valueOf(int value) {
       return forNumber(value);
     }
 
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
     public static EventType forNumber(int value) {
       switch (value) {
         case 0:
@@ -394,7 +408,6 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
     // @@protoc_insertion_point(enum_scope:google.cloud.irm.v1alpha2.Subscription.EventType)
   }
 
-  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
@@ -406,6 +419,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The name.
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -427,6 +442,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string name = 1;</code>
+   *
+   * @return The bytes for name.
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -452,6 +469,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The etag.
    */
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
@@ -474,6 +493,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string etag = 2;</code>
+   *
+   * @return The bytes for etag.
    */
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
@@ -497,6 +518,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+   *
+   * @return Whether the subscriptionChannel field is set.
    */
   public boolean hasSubscriptionChannel() {
     return subscriptionChannel_ != null;
@@ -509,6 +532,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+   *
+   * @return The subscriptionChannel.
    */
   public com.google.irm.service.v1alpha2.api.CommunicationChannel getSubscriptionChannel() {
     return subscriptionChannel_ == null
@@ -554,6 +579,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @return A list containing the eventTypes.
    */
   public java.util.List<com.google.irm.service.v1alpha2.api.Subscription.EventType>
       getEventTypesList() {
@@ -569,6 +596,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @param value The eventTypes to add.
    */
   public int getEventTypesCount() {
     return eventTypes_.size();
@@ -581,6 +610,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @param index The index of the element to return.
+   * @return The eventTypes at the given index.
    */
   public com.google.irm.service.v1alpha2.api.Subscription.EventType getEventTypes(int index) {
     return eventTypes_converter_.convert(eventTypes_.get(index));
@@ -593,6 +625,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @return A list containing the enum numeric values on the wire for eventTypes.
    */
   public java.util.List<java.lang.Integer> getEventTypesValueList() {
     return eventTypes_;
@@ -605,6 +639,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+   *
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of eventTypes at the given index.
    */
   public int getEventTypesValue(int index) {
     return eventTypes_.get(index);
@@ -876,7 +913,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
         subscriptionChannelBuilder_ = null;
       }
       eventTypes_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000008);
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -905,7 +942,6 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
       com.google.irm.service.v1alpha2.api.Subscription result =
           new com.google.irm.service.v1alpha2.api.Subscription(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.name_ = name_;
       result.etag_ = etag_;
       if (subscriptionChannelBuilder_ == null) {
@@ -913,12 +949,11 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
       } else {
         result.subscriptionChannel_ = subscriptionChannelBuilder_.build();
       }
-      if (((bitField0_ & 0x00000008) != 0)) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         eventTypes_ = java.util.Collections.unmodifiableList(eventTypes_);
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.eventTypes_ = eventTypes_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -983,7 +1018,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
       if (!other.eventTypes_.isEmpty()) {
         if (eventTypes_.isEmpty()) {
           eventTypes_ = other.eventTypes_;
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           ensureEventTypesIsMutable();
           eventTypes_.addAll(other.eventTypes_);
@@ -1031,6 +1066,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1052,6 +1089,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -1073,6 +1112,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -1092,6 +1134,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearName() {
 
@@ -1108,6 +1152,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string name = 1;</code>
+     *
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1131,6 +1178,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return The etag.
      */
     public java.lang.String getEtag() {
       java.lang.Object ref = etag_;
@@ -1153,6 +1202,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return The bytes for etag.
      */
     public com.google.protobuf.ByteString getEtagBytes() {
       java.lang.Object ref = etag_;
@@ -1175,6 +1226,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @param value The etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtag(java.lang.String value) {
       if (value == null) {
@@ -1195,6 +1249,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearEtag() {
 
@@ -1212,6 +1268,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string etag = 2;</code>
+     *
+     * @param value The bytes for etag to set.
+     * @return This builder for chaining.
      */
     public Builder setEtagBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -1238,6 +1297,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+     *
+     * @return Whether the subscriptionChannel field is set.
      */
     public boolean hasSubscriptionChannel() {
       return subscriptionChannelBuilder_ != null || subscriptionChannel_ != null;
@@ -1250,6 +1311,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
+     *
+     * @return The subscriptionChannel.
      */
     public com.google.irm.service.v1alpha2.api.CommunicationChannel getSubscriptionChannel() {
       if (subscriptionChannelBuilder_ == null) {
@@ -1414,9 +1477,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
     private java.util.List<java.lang.Integer> eventTypes_ = java.util.Collections.emptyList();
 
     private void ensureEventTypesIsMutable() {
-      if (!((bitField0_ & 0x00000008) != 0)) {
+      if (!((bitField0_ & 0x00000001) != 0)) {
         eventTypes_ = new java.util.ArrayList<java.lang.Integer>(eventTypes_);
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000001;
       }
     }
     /**
@@ -1427,6 +1490,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @return A list containing the eventTypes.
      */
     public java.util.List<com.google.irm.service.v1alpha2.api.Subscription.EventType>
         getEventTypesList() {
@@ -1442,6 +1507,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @return The count of eventTypes.
      */
     public int getEventTypesCount() {
       return eventTypes_.size();
@@ -1454,6 +1521,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param index The index of the element to return.
+     * @return The eventTypes at the given index.
      */
     public com.google.irm.service.v1alpha2.api.Subscription.EventType getEventTypes(int index) {
       return eventTypes_converter_.convert(eventTypes_.get(index));
@@ -1466,6 +1536,10 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param index The index to set the value at.
+     * @param value The eventTypes to set.
+     * @return This builder for chaining.
      */
     public Builder setEventTypes(
         int index, com.google.irm.service.v1alpha2.api.Subscription.EventType value) {
@@ -1485,6 +1559,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param value The eventTypes to add.
+     * @return This builder for chaining.
      */
     public Builder addEventTypes(com.google.irm.service.v1alpha2.api.Subscription.EventType value) {
       if (value == null) {
@@ -1503,6 +1580,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param values The eventTypes to add.
+     * @return This builder for chaining.
      */
     public Builder addAllEventTypes(
         java.lang.Iterable<? extends com.google.irm.service.v1alpha2.api.Subscription.EventType>
@@ -1522,10 +1602,12 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearEventTypes() {
       eventTypes_ = java.util.Collections.emptyList();
-      bitField0_ = (bitField0_ & ~0x00000008);
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
@@ -1537,6 +1619,8 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @return A list containing the enum numeric values on the wire for eventTypes.
      */
     public java.util.List<java.lang.Integer> getEventTypesValueList() {
       return java.util.Collections.unmodifiableList(eventTypes_);
@@ -1549,6 +1633,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of eventTypes at the given index.
      */
     public int getEventTypesValue(int index) {
       return eventTypes_.get(index);
@@ -1561,6 +1648,10 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of eventTypes at the given index.
+     * @return This builder for chaining.
      */
     public Builder setEventTypesValue(int index, int value) {
       ensureEventTypesIsMutable();
@@ -1576,6 +1667,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param value The enum numeric value on the wire for eventTypes to add.
+     * @return This builder for chaining.
      */
     public Builder addEventTypesValue(int value) {
       ensureEventTypesIsMutable();
@@ -1591,6 +1685,9 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
+     *
+     * @param values The enum numeric values on the wire for eventTypes to add.
+     * @return This builder for chaining.
      */
     public Builder addAllEventTypesValue(java.lang.Iterable<java.lang.Integer> values) {
       ensureEventTypesIsMutable();

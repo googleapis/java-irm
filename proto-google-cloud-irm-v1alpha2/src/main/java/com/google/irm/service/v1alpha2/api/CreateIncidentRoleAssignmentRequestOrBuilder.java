@@ -32,6 +32,8 @@ public interface CreateIncidentRoleAssignmentRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   java.lang.String getParent();
   /**
@@ -43,6 +45,8 @@ public interface CreateIncidentRoleAssignmentRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   com.google.protobuf.ByteString getParentBytes();
 
@@ -54,6 +58,8 @@ public interface CreateIncidentRoleAssignmentRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+   *
+   * @return Whether the incidentRoleAssignment field is set.
    */
   boolean hasIncidentRoleAssignment();
   /**
@@ -64,6 +70,8 @@ public interface CreateIncidentRoleAssignmentRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+   *
+   * @return The incidentRoleAssignment.
    */
   com.google.irm.service.v1alpha2.api.IncidentRoleAssignment getIncidentRoleAssignment();
   /**

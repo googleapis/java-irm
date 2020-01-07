@@ -40,6 +40,12 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
   private User() {}
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    return new User();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
     return this.unknownFields;
   }
@@ -52,7 +58,6 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -114,7 +119,10 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
   private int userCase_ = 0;
   private java.lang.Object user_;
 
-  public enum UserCase implements com.google.protobuf.Internal.EnumLite {
+  public enum UserCase
+      implements
+          com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     USER_ID(1),
     EMAIL(2),
     USER_NOT_SET(0);
@@ -123,7 +131,11 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
     private UserCase(int value) {
       this.value = value;
     }
-    /** @deprecated Use {@link #forNumber(int)} instead. */
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
     @java.lang.Deprecated
     public static UserCase valueOf(int value) {
       return forNumber(value);
@@ -162,6 +174,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string user_id = 1;</code>
+   *
+   * @return The userId.
    */
   public java.lang.String getUserId() {
     java.lang.Object ref = "";
@@ -189,6 +203,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string user_id = 1;</code>
+   *
+   * @return The bytes for userId.
    */
   public com.google.protobuf.ByteString getUserIdBytes() {
     java.lang.Object ref = "";
@@ -219,6 +235,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string email = 2;</code>
+   *
+   * @return The email.
    */
   public java.lang.String getEmail() {
     java.lang.Object ref = "";
@@ -247,6 +265,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
    * </pre>
    *
    * <code>string email = 2;</code>
+   *
+   * @return The bytes for email.
    */
   public com.google.protobuf.ByteString getEmailBytes() {
     java.lang.Object ref = "";
@@ -652,6 +672,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
+     * @return The userId.
      */
     public java.lang.String getUserId() {
       java.lang.Object ref = "";
@@ -679,6 +701,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
+     * @return The bytes for userId.
      */
     public com.google.protobuf.ByteString getUserIdBytes() {
       java.lang.Object ref = "";
@@ -706,6 +730,9 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
+     * @param value The userId to set.
+     * @return This builder for chaining.
      */
     public Builder setUserId(java.lang.String value) {
       if (value == null) {
@@ -726,6 +753,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearUserId() {
       if (userCase_ == 1) {
@@ -745,6 +774,9 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string user_id = 1;</code>
+     *
+     * @param value The bytes for userId to set.
+     * @return This builder for chaining.
      */
     public Builder setUserIdBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -768,6 +800,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
+     * @return The email.
      */
     public java.lang.String getEmail() {
       java.lang.Object ref = "";
@@ -796,6 +830,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
+     * @return The bytes for email.
      */
     public com.google.protobuf.ByteString getEmailBytes() {
       java.lang.Object ref = "";
@@ -824,6 +860,9 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
+     * @param value The email to set.
+     * @return This builder for chaining.
      */
     public Builder setEmail(java.lang.String value) {
       if (value == null) {
@@ -845,6 +884,8 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
+     * @return This builder for chaining.
      */
     public Builder clearEmail() {
       if (userCase_ == 2) {
@@ -865,6 +906,9 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      * </pre>
      *
      * <code>string email = 2;</code>
+     *
+     * @param value The bytes for email to set.
+     * @return This builder for chaining.
      */
     public Builder setEmailBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

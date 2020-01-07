@@ -33,6 +33,8 @@ public interface UserOrBuilder
    * </pre>
    *
    * <code>string user_id = 1;</code>
+   *
+   * @return The userId.
    */
   java.lang.String getUserId();
   /**
@@ -45,6 +47,8 @@ public interface UserOrBuilder
    * </pre>
    *
    * <code>string user_id = 1;</code>
+   *
+   * @return The bytes for userId.
    */
   com.google.protobuf.ByteString getUserIdBytes();
 
@@ -59,6 +63,8 @@ public interface UserOrBuilder
    * </pre>
    *
    * <code>string email = 2;</code>
+   *
+   * @return The email.
    */
   java.lang.String getEmail();
   /**
@@ -72,6 +78,8 @@ public interface UserOrBuilder
    * </pre>
    *
    * <code>string email = 2;</code>
+   *
+   * @return The bytes for email.
    */
   com.google.protobuf.ByteString getEmailBytes();
 

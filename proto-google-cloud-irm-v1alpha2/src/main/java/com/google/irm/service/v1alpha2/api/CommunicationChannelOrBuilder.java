@@ -31,6 +31,8 @@ public interface CommunicationChannelOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+   *
+   * @return Whether the email field is set.
    */
   boolean hasEmail();
   /**
@@ -41,6 +43,8 @@ public interface CommunicationChannelOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
+   *
+   * @return The email.
    */
   com.google.irm.service.v1alpha2.api.CommunicationChannel.Email getEmail();
   /**
@@ -64,6 +68,8 @@ public interface CommunicationChannelOrBuilder
    * <code>
    * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
    * </code>
+   *
+   * @return Whether the notificationChannel field is set.
    */
   boolean hasNotificationChannel();
   /**
@@ -76,6 +82,8 @@ public interface CommunicationChannelOrBuilder
    * <code>
    * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
    * </code>
+   *
+   * @return The notificationChannel.
    */
   com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannel
       getNotificationChannel();

@@ -32,6 +32,8 @@ public interface CreateSignalRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The parent.
    */
   java.lang.String getParent();
   /**
@@ -43,6 +45,8 @@ public interface CreateSignalRequestOrBuilder
    * </pre>
    *
    * <code>string parent = 1;</code>
+   *
+   * @return The bytes for parent.
    */
   com.google.protobuf.ByteString getParentBytes();
 
@@ -54,6 +58,8 @@ public interface CreateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   *
+   * @return Whether the signal field is set.
    */
   boolean hasSignal();
   /**
@@ -64,6 +70,8 @@ public interface CreateSignalRequestOrBuilder
    * </pre>
    *
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   *
+   * @return The signal.
    */
   com.google.irm.service.v1alpha2.api.Signal getSignal();
   /**
