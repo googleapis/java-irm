@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.1](https://www.github.com/googleapis/java-irm/compare/v0.1.0...v0.1.1) (2020-01-07)
+
+
+### Documentation
+
+* **regen:** updated javadoc from protoc update ([#18](https://www.github.com/googleapis/java-irm/issues/18)) ([cf8a30d](https://www.github.com/googleapis/java-irm/commit/cf8a30d50de816287c7d0cc1f7f8d366699f6e4d))
+
 ## 0.1.0 (2020-01-06)
 
 
