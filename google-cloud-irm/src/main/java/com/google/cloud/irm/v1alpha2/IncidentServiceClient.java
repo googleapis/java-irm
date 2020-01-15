@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Google LLC
+ * Copyright 2020 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -234,7 +234,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident createIncident(Incident incident, ProjectName parent) {
-
     CreateIncidentRequest request =
         CreateIncidentRequest.newBuilder()
             .setIncident(incident)
@@ -263,7 +262,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident createIncident(Incident incident, String parent) {
-
     CreateIncidentRequest request =
         CreateIncidentRequest.newBuilder().setIncident(incident).setParent(parent).build();
     return createIncident(request);
@@ -336,7 +334,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident getIncident(IncidentName name) {
-
     GetIncidentRequest request =
         GetIncidentRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getIncident(request);
@@ -360,7 +357,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident getIncident(String name) {
-
     GetIncidentRequest request = GetIncidentRequest.newBuilder().setName(name).build();
     return getIncident(request);
   }
@@ -652,7 +648,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident updateIncident(Incident incident, FieldMask updateMask) {
-
     UpdateIncidentRequest request =
         UpdateIncidentRequest.newBuilder().setIncident(incident).setUpdateMask(updateMask).build();
     return updateIncident(request);
@@ -840,7 +835,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Annotation createAnnotation(IncidentName parent, Annotation annotation) {
-
     CreateAnnotationRequest request =
         CreateAnnotationRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -870,7 +864,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Annotation createAnnotation(String parent, Annotation annotation) {
-
     CreateAnnotationRequest request =
         CreateAnnotationRequest.newBuilder().setParent(parent).setAnnotation(annotation).build();
     return createAnnotation(request);
@@ -1085,7 +1078,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Tag createTag(IncidentName parent, Tag tag) {
-
     CreateTagRequest request =
         CreateTagRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -1114,7 +1106,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Tag createTag(String parent, Tag tag) {
-
     CreateTagRequest request = CreateTagRequest.newBuilder().setParent(parent).setTag(tag).build();
     return createTag(request);
   }
@@ -1185,7 +1176,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteTag(TagName name) {
-
     DeleteTagRequest request =
         DeleteTagRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteTag(request);
@@ -1208,7 +1198,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteTag(String name) {
-
     DeleteTagRequest request = DeleteTagRequest.newBuilder().setName(name).build();
     deleteTag(request);
   }
@@ -1407,7 +1396,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal createSignal(ProjectName parent, Signal signal) {
-
     CreateSignalRequest request =
         CreateSignalRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -1436,7 +1424,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal createSignal(String parent, Signal signal) {
-
     CreateSignalRequest request =
         CreateSignalRequest.newBuilder().setParent(parent).setSignal(signal).build();
     return createSignal(request);
@@ -1724,7 +1711,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal getSignal(SignalName name) {
-
     GetSignalRequest request =
         GetSignalRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getSignal(request);
@@ -1748,7 +1734,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal getSignal(String name) {
-
     GetSignalRequest request = GetSignalRequest.newBuilder().setName(name).build();
     return getSignal(request);
   }
@@ -1856,7 +1841,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal updateSignal(Signal signal, FieldMask updateMask) {
-
     UpdateSignalRequest request =
         UpdateSignalRequest.newBuilder().setSignal(signal).setUpdateMask(updateMask).build();
     return updateSignal(request);
@@ -1973,7 +1957,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Artifact createArtifact(IncidentName parent, Artifact artifact) {
-
     CreateArtifactRequest request =
         CreateArtifactRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -2002,7 +1985,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Artifact createArtifact(String parent, Artifact artifact) {
-
     CreateArtifactRequest request =
         CreateArtifactRequest.newBuilder().setParent(parent).setArtifact(artifact).build();
     return createArtifact(request);
@@ -2208,7 +2190,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Artifact updateArtifact(Artifact artifact, FieldMask updateMask) {
-
     UpdateArtifactRequest request =
         UpdateArtifactRequest.newBuilder().setArtifact(artifact).setUpdateMask(updateMask).build();
     return updateArtifact(request);
@@ -2276,7 +2257,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteArtifact(ArtifactName name) {
-
     DeleteArtifactRequest request =
         DeleteArtifactRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteArtifact(request);
@@ -2299,7 +2279,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteArtifact(String name) {
-
     DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder().setName(name).build();
     deleteArtifact(request);
   }
@@ -2424,7 +2403,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Subscription createSubscription(IncidentName parent, Subscription subscription) {
-
     CreateSubscriptionRequest request =
         CreateSubscriptionRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -2454,7 +2432,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Subscription createSubscription(String parent, Subscription subscription) {
-
     CreateSubscriptionRequest request =
         CreateSubscriptionRequest.newBuilder()
             .setParent(parent)
@@ -2533,7 +2510,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Subscription updateSubscription(Subscription subscription, FieldMask updateMask) {
-
     UpdateSubscriptionRequest request =
         UpdateSubscriptionRequest.newBuilder()
             .setSubscription(subscription)
@@ -2738,7 +2714,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteSubscription(SubscriptionName name) {
-
     DeleteSubscriptionRequest request =
         DeleteSubscriptionRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -2763,7 +2738,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteSubscription(String name) {
-
     DeleteSubscriptionRequest request =
         DeleteSubscriptionRequest.newBuilder().setName(name).build();
     deleteSubscription(request);
@@ -2838,7 +2812,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment createIncidentRoleAssignment(
       IncidentName parent, IncidentRoleAssignment incidentRoleAssignment) {
-
     CreateIncidentRoleAssignmentRequest request =
         CreateIncidentRoleAssignmentRequest.newBuilder()
             .setParent(parent == null ? null : parent.toString())
@@ -2871,7 +2844,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment createIncidentRoleAssignment(
       String parent, IncidentRoleAssignment incidentRoleAssignment) {
-
     CreateIncidentRoleAssignmentRequest request =
         CreateIncidentRoleAssignmentRequest.newBuilder()
             .setParent(parent)
@@ -2954,7 +2926,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteIncidentRoleAssignment(RoleAssignmentName name) {
-
     DeleteIncidentRoleAssignmentRequest request =
         DeleteIncidentRoleAssignmentRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -2979,7 +2950,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteIncidentRoleAssignment(String name) {
-
     DeleteIncidentRoleAssignmentRequest request =
         DeleteIncidentRoleAssignmentRequest.newBuilder().setName(name).build();
     deleteIncidentRoleAssignment(request);
@@ -3190,7 +3160,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment requestIncidentRoleHandover(
       RoleAssignmentName name, User newAssignee) {
-
     RequestIncidentRoleHandoverRequest request =
         RequestIncidentRoleHandoverRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -3219,7 +3188,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment requestIncidentRoleHandover(String name, User newAssignee) {
-
     RequestIncidentRoleHandoverRequest request =
         RequestIncidentRoleHandoverRequest.newBuilder()
             .setName(name)
@@ -3304,7 +3272,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment confirmIncidentRoleHandover(
       RoleAssignmentName name, User newAssignee) {
-
     ConfirmIncidentRoleHandoverRequest request =
         ConfirmIncidentRoleHandoverRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -3335,7 +3302,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment confirmIncidentRoleHandover(String name, User newAssignee) {
-
     ConfirmIncidentRoleHandoverRequest request =
         ConfirmIncidentRoleHandoverRequest.newBuilder()
             .setName(name)
@@ -3422,7 +3388,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment forceIncidentRoleHandover(
       RoleAssignmentName name, User newAssignee) {
-
     ForceIncidentRoleHandoverRequest request =
         ForceIncidentRoleHandoverRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -3453,7 +3418,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment forceIncidentRoleHandover(String name, User newAssignee) {
-
     ForceIncidentRoleHandoverRequest request =
         ForceIncidentRoleHandoverRequest.newBuilder()
             .setName(name)
@@ -3539,7 +3503,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final IncidentRoleAssignment cancelIncidentRoleHandover(
       RoleAssignmentName name, User newAssignee) {
-
     CancelIncidentRoleHandoverRequest request =
         CancelIncidentRoleHandoverRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -3569,7 +3532,6 @@ public class IncidentServiceClient implements BackgroundResource {
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment cancelIncidentRoleHandover(String name, User newAssignee) {
-
     CancelIncidentRoleHandoverRequest request =
         CancelIncidentRoleHandoverRequest.newBuilder()
             .setName(name)
