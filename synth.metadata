@@ -1,19 +1,19 @@
 {
-  "updateTime": "2020-01-16T08:48:58.079914Z",
+  "updateTime": "2020-01-18T08:51:12.496505Z",
   "sources": [
     {
       "generator": {
         "name": "artman",
-        "version": "0.44.0",
-        "dockerImage": "googleapis/artman@sha256:10a6d0342b8d62544810ac5ad86c3b21049ec0696608ac60175da8e513234344"
+        "version": "0.44.1",
+        "dockerImage": "googleapis/artman@sha256:5599b61e56a372d21b671969ee915fbca0f6c3a0daaeb898d01f8f685f1bbc8b"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "0735b4b096872960568d1f366bfa75b7b0e1f1a3",
-        "internalRef": "289939042"
+        "sha": "7f0dab8177cf371ae019a082e2512de7ac102888",
+        "internalRef": "290326986"
       }
     },
     {
@@ -38,31 +38,190 @@
   ],
   "newFiles": [
     {
-      "path": "pom.xml"
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/support_request.md"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md"
+    },
+    {
+      "path": ".github/release-please.yml"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": ".kokoro/build.bat"
+    },
+    {
+      "path": ".kokoro/build.sh"
+    },
+    {
+      "path": ".kokoro/coerce_logs.sh"
+    },
+    {
+      "path": ".kokoro/common.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/common.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/dependencies.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/integration.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/java11.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/java7.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/java8-osx.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/java8-win.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/java8.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/lint.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/propose_release.cfg"
+    },
+    {
+      "path": ".kokoro/continuous/propose_release.sh"
+    },
+    {
+      "path": ".kokoro/continuous/samples.cfg"
+    },
+    {
+      "path": ".kokoro/dependencies.sh"
+    },
+    {
+      "path": ".kokoro/linkage-monitor.sh"
+    },
+    {
+      "path": ".kokoro/nightly/common.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/dependencies.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/integration.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/java11.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/java7.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/java8-osx.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/java8-win.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/java8.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/lint.cfg"
+    },
+    {
+      "path": ".kokoro/nightly/samples.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/clirr.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/common.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/dependencies.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/integration.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/java11.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/java7.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/java8-osx.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/java8-win.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/java8.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/linkage-monitor.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/lint.cfg"
+    },
+    {
+      "path": ".kokoro/presubmit/samples.cfg"
+    },
+    {
+      "path": ".kokoro/release/bump_snapshot.cfg"
+    },
+    {
+      "path": ".kokoro/release/bump_snapshot.sh"
+    },
+    {
+      "path": ".kokoro/release/common.cfg"
+    },
+    {
+      "path": ".kokoro/release/common.sh"
+    },
+    {
+      "path": ".kokoro/release/drop.cfg"
+    },
+    {
+      "path": ".kokoro/release/drop.sh"
+    },
+    {
+      "path": ".kokoro/release/promote.cfg"
+    },
+    {
+      "path": ".kokoro/release/promote.sh"
+    },
+    {
+      "path": ".kokoro/release/publish_javadoc.cfg"
+    },
+    {
+      "path": ".kokoro/release/publish_javadoc.sh"
+    },
+    {
+      "path": ".kokoro/release/snapshot.cfg"
+    },
+    {
+      "path": ".kokoro/release/snapshot.sh"
+    },
+    {
+      "path": ".kokoro/release/stage.cfg"
+    },
+    {
+      "path": ".kokoro/release/stage.sh"
+    },
+    {
+      "path": ".kokoro/trampoline.sh"
     },
     {
       "path": ".repo-metadata.json"
-    },
-    {
-      "path": "java.header"
-    },
-    {
-      "path": "CONTRIBUTING.md"
-    },
-    {
-      "path": "synth.metadata"
-    },
-    {
-      "path": "renovate.json"
-    },
-    {
-      "path": "versions.txt"
-    },
-    {
-      "path": "synth.py"
-    },
-    {
-      "path": "license-checks.xml"
     },
     {
       "path": "CHANGELOG.md"
@@ -71,40 +230,31 @@
       "path": "CODE_OF_CONDUCT.md"
     },
     {
+      "path": "CONTRIBUTING.md"
+    },
+    {
       "path": "LICENSE"
-    },
-    {
-      "path": "codecov.yaml"
-    },
-    {
-      "path": ".gitignore"
     },
     {
       "path": "README.md"
     },
     {
+      "path": "codecov.yaml"
+    },
+    {
+      "path": "google-cloud-irm-bom/pom.xml"
+    },
+    {
       "path": "google-cloud-irm/pom.xml"
-    },
-    {
-      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/IncidentServiceClientTest.java"
-    },
-    {
-      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/MockIncidentServiceImpl.java"
-    },
-    {
-      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/MockIncidentService.java"
-    },
-    {
-      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/IncidentServiceSettings.java"
     },
     {
       "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/IncidentServiceClient.java"
     },
     {
-      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/package-info.java"
+      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/IncidentServiceSettings.java"
     },
     {
-      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/stub/IncidentServiceStubSettings.java"
+      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/package-info.java"
     },
     {
       "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/stub/GrpcIncidentServiceCallableFactory.java"
@@ -116,532 +266,202 @@
       "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/stub/IncidentServiceStub.java"
     },
     {
+      "path": "google-cloud-irm/src/main/java/com/google/cloud/irm/v1alpha2/stub/IncidentServiceStubSettings.java"
+    },
+    {
+      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/IncidentServiceClientTest.java"
+    },
+    {
+      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/MockIncidentService.java"
+    },
+    {
+      "path": "google-cloud-irm/src/test/java/com/google/cloud/irm/v1alpha2/MockIncidentServiceImpl.java"
+    },
+    {
       "path": "grpc-google-cloud-irm-v1alpha2/pom.xml"
     },
     {
       "path": "grpc-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentServiceGrpc.java"
     },
     {
-      "path": "google-cloud-irm-bom/pom.xml"
+      "path": "java.header"
     },
     {
-      "path": ".github/release-please.yml"
+      "path": "license-checks.xml"
     },
     {
-      "path": ".github/PULL_REQUEST_TEMPLATE.md"
-    },
-    {
-      "path": ".github/ISSUE_TEMPLATE/feature_request.md"
-    },
-    {
-      "path": ".github/ISSUE_TEMPLATE/support_request.md"
-    },
-    {
-      "path": ".github/ISSUE_TEMPLATE/bug_report.md"
-    },
-    {
-      "path": ".kokoro/build.sh"
-    },
-    {
-      "path": ".kokoro/common.cfg"
-    },
-    {
-      "path": ".kokoro/build.bat"
-    },
-    {
-      "path": ".kokoro/linkage-monitor.sh"
-    },
-    {
-      "path": ".kokoro/coerce_logs.sh"
-    },
-    {
-      "path": ".kokoro/dependencies.sh"
-    },
-    {
-      "path": ".kokoro/trampoline.sh"
-    },
-    {
-      "path": ".kokoro/continuous/samples.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/integration.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java11.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/propose_release.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/common.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/propose_release.sh"
-    },
-    {
-      "path": ".kokoro/continuous/java7.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/lint.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/dependencies.cfg"
-    },
-    {
-      "path": ".kokoro/continuous/java8-win.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/samples.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/integration.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java11.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/common.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java7.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/lint.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/dependencies.cfg"
-    },
-    {
-      "path": ".kokoro/nightly/java8-win.cfg"
-    },
-    {
-      "path": ".kokoro/release/publish_javadoc.cfg"
-    },
-    {
-      "path": ".kokoro/release/common.sh"
-    },
-    {
-      "path": ".kokoro/release/promote.sh"
-    },
-    {
-      "path": ".kokoro/release/common.cfg"
-    },
-    {
-      "path": ".kokoro/release/publish_javadoc.sh"
-    },
-    {
-      "path": ".kokoro/release/drop.sh"
-    },
-    {
-      "path": ".kokoro/release/stage.sh"
-    },
-    {
-      "path": ".kokoro/release/promote.cfg"
-    },
-    {
-      "path": ".kokoro/release/snapshot.cfg"
-    },
-    {
-      "path": ".kokoro/release/bump_snapshot.cfg"
-    },
-    {
-      "path": ".kokoro/release/drop.cfg"
-    },
-    {
-      "path": ".kokoro/release/bump_snapshot.sh"
-    },
-    {
-      "path": ".kokoro/release/stage.cfg"
-    },
-    {
-      "path": ".kokoro/release/snapshot.sh"
-    },
-    {
-      "path": ".kokoro/presubmit/samples.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/integration.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java11.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/linkage-monitor.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/common.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java7.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/lint.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8-osx.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/dependencies.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/clirr.cfg"
-    },
-    {
-      "path": ".kokoro/presubmit/java8-win.cfg"
+      "path": "pom.xml"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/pom.xml"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateArtifactRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSignalRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateIncidentRoleAssignmentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleAssignment.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/AnnotationOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/LookupSignalRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateAnnotationRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteTagRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateArtifactRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetSignalRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetIncidentRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RequestIncidentRoleHandoverRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateTagRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleAssignmentOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ForceIncidentRoleHandoverRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RequestIncidentRoleHandoverRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetIncidentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetSignalRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteIncidentRoleAssignmentRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SynopsisOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSignalRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/TagName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteArtifactRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSubscriptionRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteTagRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SubscriptionName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Tag.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Synopsis.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ConfirmIncidentRoleHandoverRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Signal.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateIncidentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ArtifactOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSignalRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateArtifactRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteArtifactRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ConfirmIncidentRoleHandoverRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SubscriptionOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Subscription.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CommunicationChannelOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CancelIncidentRoleHandoverRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSubscriptionRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSubscriptionRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Incident.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/User.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Annotation.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/AnnotationName.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateArtifactRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SignalOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateAnnotationRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentsService.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ProjectName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Annotation.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RoleAssignmentName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CancelIncidentRoleHandoverRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSubscriptionRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UserOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffResponseOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/LookupSignalRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Incidents.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SignalName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CommunicationChannel.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteSubscriptionRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsResponse.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSignalRequest.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/AnnotationOrBuilder.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Artifact.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteSubscriptionRequestOrBuilder.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ArtifactName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ArtifactOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CancelIncidentRoleHandoverRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CancelIncidentRoleHandoverRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CommunicationChannel.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CommunicationChannelOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ConfirmIncidentRoleHandoverRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ConfirmIncidentRoleHandoverRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateAnnotationRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateAnnotationRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateArtifactRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateArtifactRequestOrBuilder.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateIncidentRequest.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsResponseOrBuilder.java"
-    },
-    {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateIncidentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/TagOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ForceIncidentRoleHandoverRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteIncidentRoleAssignmentRequestOrBuilder.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsRequest.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ArtifactName.java"
-    },
-    {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRole.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateIncidentRoleAssignmentRequest.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsRequestOrBuilder.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateIncidentRoleAssignmentRequestOrBuilder.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateIncidentRequest.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSignalRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSignalRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSubscriptionRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateSubscriptionRequestOrBuilder.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateTagRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/CreateTagRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteArtifactRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteArtifactRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteIncidentRoleAssignmentRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteIncidentRoleAssignmentRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteSubscriptionRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteSubscriptionRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteTagRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/DeleteTagRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/EscalateIncidentResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ForceIncidentRoleHandoverRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ForceIncidentRoleHandoverRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetIncidentRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetIncidentRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetSignalRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/GetSignalRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Incident.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRole.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleAssignment.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleAssignmentOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentRoleOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Incidents.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/IncidentsService.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsResponse.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListAnnotationsResponseOrBuilder.java"
@@ -650,16 +470,196 @@
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsRequest.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffResponse.java"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListArtifactsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListIncidentRoleAssignmentsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListSubscriptionsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ListTagsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/LookupSignalRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/LookupSignalRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/ProjectName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RequestIncidentRoleHandoverRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RequestIncidentRoleHandoverRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/RoleAssignmentName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsResponse.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchIncidentsResponseOrBuilder.java"
     },
     {
-      "path": "proto-google-cloud-irm-v1alpha2/src/main/proto/google/cloud/irm/v1alpha2/incidents_service.proto"
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSignalsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SearchSimilarIncidentsResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffResponse.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SendShiftHandoffResponseOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Signal.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SignalName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SignalOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Subscription.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SubscriptionName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SubscriptionOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Synopsis.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/SynopsisOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/Tag.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/TagName.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/TagOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateArtifactRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateArtifactRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateIncidentRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateIncidentRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSignalRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSignalRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSubscriptionRequest.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UpdateSubscriptionRequestOrBuilder.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/User.java"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/java/com/google/irm/service/v1alpha2/api/UserOrBuilder.java"
     },
     {
       "path": "proto-google-cloud-irm-v1alpha2/src/main/proto/google/cloud/irm/v1alpha2/incidents.proto"
+    },
+    {
+      "path": "proto-google-cloud-irm-v1alpha2/src/main/proto/google/cloud/irm/v1alpha2/incidents_service.proto"
+    },
+    {
+      "path": "renovate.json"
+    },
+    {
+      "path": "synth.metadata"
+    },
+    {
+      "path": "synth.py"
+    },
+    {
+      "path": "versions.txt"
     }
   ]
 }
