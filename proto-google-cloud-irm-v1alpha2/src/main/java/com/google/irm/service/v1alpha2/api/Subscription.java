@@ -597,7 +597,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription.EventType event_types = 4;</code>
    *
-   * @param value The eventTypes to add.
+   * @return The count of eventTypes.
    */
   public int getEventTypesCount() {
     return eventTypes_.size();
