@@ -1,5 +1,17 @@
 # Changelog
 
+### [0.1.2](https://www.github.com/googleapis/java-irm/compare/v0.1.1...v0.1.2) (2020-01-23)
+
+
+### Documentation
+
+* **regen:** fix javadoc return annotation ([#33](https://www.github.com/googleapis/java-irm/issues/33)) ([72b2cb1](https://www.github.com/googleapis/java-irm/commit/72b2cb1df34d54b7d64fe6091002739b926d5406))
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([bff1a81](https://www.github.com/googleapis/java-irm/commit/bff1a81bd813d7bdfcc8cf5660b0d199233ff70d))
+
 ### [0.1.1](https://www.github.com/googleapis/java-irm/compare/v0.1.0...v0.1.1) (2020-01-07)
 
 
