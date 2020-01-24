@@ -27,10 +27,12 @@ public interface UpdateArtifactRequestOrBuilder
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the artifact field is set.
    */
@@ -39,10 +41,12 @@ public interface UpdateArtifactRequestOrBuilder
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The artifact.
    */
@@ -51,10 +55,12 @@ public interface UpdateArtifactRequestOrBuilder
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactOrBuilder();
 

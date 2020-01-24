@@ -27,11 +27,13 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the Stackdriver project that the handoff is being sent
-   * from. for example, `projects/{project_id}`
+   * Required. The resource name of the Stackdriver project that the handoff is being sent
+   * from. for example, `projects/{project_id_or_number}`
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -40,11 +42,13 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the Stackdriver project that the handoff is being sent
-   * from. for example, `projects/{project_id}`
+   * Required. The resource name of the Stackdriver project that the handoff is being sent
+   * from. for example, `projects/{project_id_or_number}`
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -54,11 +58,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses of the recipients of the handoff, for example,
+   * Required. Email addresses of the recipients of the handoff, for example,
    * "user&#64;example.com". Must contain at least one entry.
    * </pre>
    *
-   * <code>repeated string recipients = 2;</code>
+   * <code>repeated string recipients = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return A list containing the recipients.
    */
@@ -67,11 +71,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses of the recipients of the handoff, for example,
+   * Required. Email addresses of the recipients of the handoff, for example,
    * "user&#64;example.com". Must contain at least one entry.
    * </pre>
    *
-   * <code>repeated string recipients = 2;</code>
+   * <code>repeated string recipients = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The count of recipients.
    */
@@ -80,11 +84,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses of the recipients of the handoff, for example,
+   * Required. Email addresses of the recipients of the handoff, for example,
    * "user&#64;example.com". Must contain at least one entry.
    * </pre>
    *
-   * <code>repeated string recipients = 2;</code>
+   * <code>repeated string recipients = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @param index The index of the element to return.
    * @return The recipients at the given index.
@@ -94,11 +98,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses of the recipients of the handoff, for example,
+   * Required. Email addresses of the recipients of the handoff, for example,
    * "user&#64;example.com". Must contain at least one entry.
    * </pre>
    *
-   * <code>repeated string recipients = 2;</code>
+   * <code>repeated string recipients = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @param index The index of the value to return.
    * @return The bytes of the recipients at the given index.
@@ -109,10 +113,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses that should be CC'd on the handoff. Optional.
+   * Optional. Email addresses that should be CC'd on the handoff.
    * </pre>
    *
-   * <code>repeated string cc = 3;</code>
+   * <code>repeated string cc = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return A list containing the cc.
    */
@@ -121,10 +125,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses that should be CC'd on the handoff. Optional.
+   * Optional. Email addresses that should be CC'd on the handoff.
    * </pre>
    *
-   * <code>repeated string cc = 3;</code>
+   * <code>repeated string cc = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return The count of cc.
    */
@@ -133,10 +137,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses that should be CC'd on the handoff. Optional.
+   * Optional. Email addresses that should be CC'd on the handoff.
    * </pre>
    *
-   * <code>repeated string cc = 3;</code>
+   * <code>repeated string cc = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @param index The index of the element to return.
    * @return The cc at the given index.
@@ -146,10 +150,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Email addresses that should be CC'd on the handoff. Optional.
+   * Optional. Email addresses that should be CC'd on the handoff.
    * </pre>
    *
-   * <code>repeated string cc = 3;</code>
+   * <code>repeated string cc = 3 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @param index The index of the value to return.
    * @return The bytes of the cc at the given index.
@@ -160,10 +164,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The subject of the email. Required.
+   * Required. The subject of the email.
    * </pre>
    *
-   * <code>string subject = 4;</code>
+   * <code>string subject = 4 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The subject.
    */
@@ -172,10 +176,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The subject of the email. Required.
+   * Required. The subject of the email.
    * </pre>
    *
-   * <code>string subject = 4;</code>
+   * <code>string subject = 4 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for subject.
    */
@@ -210,10 +214,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Additional notes to be included in the handoff. Optional.
+   * Optional. Additional notes to be included in the handoff.
    * </pre>
    *
-   * <code>string notes_content = 6;</code>
+   * <code>string notes_content = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return The notesContent.
    */
@@ -222,10 +226,10 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * Additional notes to be included in the handoff. Optional.
+   * Optional. Additional notes to be included in the handoff.
    * </pre>
    *
-   * <code>string notes_content = 6;</code>
+   * <code>string notes_content = 6 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return The bytes for notesContent.
    */
@@ -235,10 +239,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The set of incidents that should be included in the handoff. Optional.
+   * Optional. The set of incidents that should be included in the handoff.
    * </pre>
    *
-   * <code>repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7;
+   * <code>
+   * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
   java.util.List<com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident>
@@ -247,10 +252,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The set of incidents that should be included in the handoff. Optional.
+   * Optional. The set of incidents that should be included in the handoff.
    * </pre>
    *
-   * <code>repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7;
+   * <code>
+   * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
   com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident getIncidents(int index);
@@ -258,10 +264,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The set of incidents that should be included in the handoff. Optional.
+   * Optional. The set of incidents that should be included in the handoff.
    * </pre>
    *
-   * <code>repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7;
+   * <code>
+   * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
   int getIncidentsCount();
@@ -269,10 +276,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The set of incidents that should be included in the handoff. Optional.
+   * Optional. The set of incidents that should be included in the handoff.
    * </pre>
    *
-   * <code>repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7;
+   * <code>
+   * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
   java.util.List<
@@ -282,10 +290,11 @@ public interface SendShiftHandoffRequestOrBuilder
    *
    *
    * <pre>
-   * The set of incidents that should be included in the handoff. Optional.
+   * Optional. The set of incidents that should be included in the handoff.
    * </pre>
    *
-   * <code>repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7;
+   * <code>
+   * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
   com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.IncidentOrBuilder

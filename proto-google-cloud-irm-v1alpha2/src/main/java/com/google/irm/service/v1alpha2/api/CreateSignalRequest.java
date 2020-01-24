@@ -133,11 +133,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which requested
+   * Required. The resource name of the hosting Stackdriver project which requested
    * signal belongs to.
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -156,11 +158,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which requested
+   * Required. The resource name of the hosting Stackdriver project which requested
    * signal belongs to.
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -182,10 +186,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the signal field is set.
    */
@@ -196,10 +201,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The signal.
    */
@@ -212,10 +218,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
     return getSignal();
@@ -573,11 +580,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The resource name of the hosting Stackdriver project which requested
+     * Required. The resource name of the hosting Stackdriver project which requested
      * signal belongs to.
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The parent.
      */
@@ -596,11 +605,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The resource name of the hosting Stackdriver project which requested
+     * Required. The resource name of the hosting Stackdriver project which requested
      * signal belongs to.
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for parent.
      */
@@ -619,11 +630,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The resource name of the hosting Stackdriver project which requested
+     * Required. The resource name of the hosting Stackdriver project which requested
      * signal belongs to.
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The parent to set.
      * @return This builder for chaining.
@@ -641,11 +654,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The resource name of the hosting Stackdriver project which requested
+     * Required. The resource name of the hosting Stackdriver project which requested
      * signal belongs to.
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -659,11 +674,13 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The resource name of the hosting Stackdriver project which requested
+     * Required. The resource name of the hosting Stackdriver project which requested
      * signal belongs to.
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for parent to set.
      * @return This builder for chaining.
@@ -689,10 +706,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the signal field is set.
      */
@@ -703,10 +721,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The signal.
      */
@@ -723,10 +742,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSignal(com.google.irm.service.v1alpha2.api.Signal value) {
       if (signalBuilder_ == null) {
@@ -745,10 +765,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSignal(com.google.irm.service.v1alpha2.api.Signal.Builder builderForValue) {
       if (signalBuilder_ == null) {
@@ -764,10 +785,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeSignal(com.google.irm.service.v1alpha2.api.Signal value) {
       if (signalBuilder_ == null) {
@@ -790,10 +812,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearSignal() {
       if (signalBuilder_ == null) {
@@ -810,10 +833,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Signal.Builder getSignalBuilder() {
 
@@ -824,10 +848,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
       if (signalBuilder_ != null) {
@@ -842,10 +867,11 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to create.
+     * Required. The signal to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Signal,

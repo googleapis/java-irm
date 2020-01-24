@@ -133,11 +133,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -156,11 +158,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -182,10 +186,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Only annotation.content is an input argument.
+   * Required. Only annotation.content is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the annotation field is set.
    */
@@ -196,10 +202,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Only annotation.content is an input argument.
+   * Required. Only annotation.content is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The annotation.
    */
@@ -212,10 +220,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * Only annotation.content is an input argument.
+   * Required. Only annotation.content is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.AnnotationOrBuilder getAnnotationOrBuilder() {
     return getAnnotation();
@@ -573,11 +583,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The parent.
      */
@@ -596,11 +608,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for parent.
      */
@@ -619,11 +633,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The parent to set.
      * @return This builder for chaining.
@@ -641,11 +657,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -659,11 +677,13 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for parent to set.
      * @return This builder for chaining.
@@ -689,10 +709,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the annotation field is set.
      */
@@ -703,10 +725,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The annotation.
      */
@@ -723,10 +747,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setAnnotation(com.google.irm.service.v1alpha2.api.Annotation value) {
       if (annotationBuilder_ == null) {
@@ -745,10 +771,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setAnnotation(
         com.google.irm.service.v1alpha2.api.Annotation.Builder builderForValue) {
@@ -765,10 +793,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeAnnotation(com.google.irm.service.v1alpha2.api.Annotation value) {
       if (annotationBuilder_ == null) {
@@ -791,10 +821,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearAnnotation() {
       if (annotationBuilder_ == null) {
@@ -811,10 +843,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Annotation.Builder getAnnotationBuilder() {
 
@@ -825,10 +859,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.AnnotationOrBuilder getAnnotationOrBuilder() {
       if (annotationBuilder_ != null) {
@@ -843,10 +879,12 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * Only annotation.content is an input argument.
+     * Required. Only annotation.content is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Annotation annotation = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Annotation,

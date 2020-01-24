@@ -28,7 +28,7 @@ public interface IncidentRoleAssignmentOrBuilder
    *
    * <pre>
    * Output only. Resource name such as
-   * "projects/{project_id}/incidents/{incident_id}/role_assignments/{role_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/role_assignments/{role_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -41,7 +41,7 @@ public interface IncidentRoleAssignmentOrBuilder
    *
    * <pre>
    * Output only. Resource name such as
-   * "projects/{project_id}/incidents/{incident_id}/role_assignments/{role_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/role_assignments/{role_id}".
    * </pre>
    *
    * <code>string name = 1;</code>

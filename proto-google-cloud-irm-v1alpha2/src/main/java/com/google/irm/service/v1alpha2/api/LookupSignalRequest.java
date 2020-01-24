@@ -168,7 +168,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Full resource name of the CSCC finding id this signal refers to (e.g.
+   * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
    * "organizations/abc/sources/123/findings/xyz")
    * </pre>
    *
@@ -196,7 +196,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Full resource name of the CSCC finding id this signal refers to (e.g.
+   * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
    * "organizations/abc/sources/123/findings/xyz")
    * </pre>
    *
@@ -663,7 +663,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Full resource name of the CSCC finding id this signal refers to (e.g.
+     * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
      * "organizations/abc/sources/123/findings/xyz")
      * </pre>
      *
@@ -691,7 +691,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Full resource name of the CSCC finding id this signal refers to (e.g.
+     * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
      * "organizations/abc/sources/123/findings/xyz")
      * </pre>
      *
@@ -719,7 +719,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Full resource name of the CSCC finding id this signal refers to (e.g.
+     * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
      * "organizations/abc/sources/123/findings/xyz")
      * </pre>
      *
@@ -741,7 +741,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Full resource name of the CSCC finding id this signal refers to (e.g.
+     * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
      * "organizations/abc/sources/123/findings/xyz")
      * </pre>
      *
@@ -761,7 +761,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Full resource name of the CSCC finding id this signal refers to (e.g.
+     * Required. Full resource name of the CSCC finding id this signal refers to (e.g.
      * "organizations/abc/sources/123/findings/xyz")
      * </pre>
      *

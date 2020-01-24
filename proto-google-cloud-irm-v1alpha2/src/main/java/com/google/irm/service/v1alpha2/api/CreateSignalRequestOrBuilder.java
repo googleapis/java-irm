@@ -27,11 +27,13 @@ public interface CreateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which requested
+   * Required. The resource name of the hosting Stackdriver project which requested
    * signal belongs to.
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -40,11 +42,13 @@ public interface CreateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which requested
+   * Required. The resource name of the hosting Stackdriver project which requested
    * signal belongs to.
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -54,10 +58,11 @@ public interface CreateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the signal field is set.
    */
@@ -66,10 +71,11 @@ public interface CreateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The signal.
    */
@@ -78,10 +84,11 @@ public interface CreateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to create.
+   * Required. The signal to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder();
 }

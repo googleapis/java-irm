@@ -105,13 +105,13 @@ import javax.annotation.Generated;
  * <p>The builder of this class is recursive, so contained classes are themselves builders. When
  * build() is called, the tree of builders is called to create the complete settings object.
  *
- * <p>For example, to set the total timeout of createIncident to 30 seconds:
+ * <p>For example, to set the total timeout of deleteArtifact to 30 seconds:
  *
  * <pre>
  * <code>
  * IncidentServiceSettings.Builder incidentServiceSettingsBuilder =
  *     IncidentServiceSettings.newBuilder();
- * incidentServiceSettingsBuilder.createIncidentSettings().getRetrySettings().toBuilder()
+ * incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
  *     .setTotalTimeout(Duration.ofSeconds(30));
  * IncidentServiceSettings incidentServiceSettings = incidentServiceSettingsBuilder.build();
  * </code>
@@ -120,6 +120,29 @@ import javax.annotation.Generated;
 @Generated("by gapic-generator")
 @BetaApi
 public class IncidentServiceSettings extends ClientSettings<IncidentServiceSettings> {
+  /** Returns the object with the settings used for calls to deleteArtifact. */
+  public UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
+    return ((IncidentServiceStubSettings) getStubSettings()).deleteArtifactSettings();
+  }
+
+  /** Returns the object with the settings used for calls to requestIncidentRoleHandover. */
+  public UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverSettings() {
+    return ((IncidentServiceStubSettings) getStubSettings()).requestIncidentRoleHandoverSettings();
+  }
+
+  /** Returns the object with the settings used for calls to confirmIncidentRoleHandover. */
+  public UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverSettings() {
+    return ((IncidentServiceStubSettings) getStubSettings()).confirmIncidentRoleHandoverSettings();
+  }
+
+  /** Returns the object with the settings used for calls to forceIncidentRoleHandover. */
+  public UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverSettings() {
+    return ((IncidentServiceStubSettings) getStubSettings()).forceIncidentRoleHandoverSettings();
+  }
+
   /** Returns the object with the settings used for calls to createIncident. */
   public UnaryCallSettings<CreateIncidentRequest, Incident> createIncidentSettings() {
     return ((IncidentServiceStubSettings) getStubSettings()).createIncidentSettings();
@@ -190,14 +213,14 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
     return ((IncidentServiceStubSettings) getStubSettings()).searchSignalsSettings();
   }
 
-  /** Returns the object with the settings used for calls to getSignal. */
-  public UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings() {
-    return ((IncidentServiceStubSettings) getStubSettings()).getSignalSettings();
-  }
-
   /** Returns the object with the settings used for calls to lookupSignal. */
   public UnaryCallSettings<LookupSignalRequest, Signal> lookupSignalSettings() {
     return ((IncidentServiceStubSettings) getStubSettings()).lookupSignalSettings();
+  }
+
+  /** Returns the object with the settings used for calls to getSignal. */
+  public UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings() {
+    return ((IncidentServiceStubSettings) getStubSettings()).getSignalSettings();
   }
 
   /** Returns the object with the settings used for calls to updateSignal. */
@@ -225,11 +248,6 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
   /** Returns the object with the settings used for calls to updateArtifact. */
   public UnaryCallSettings<UpdateArtifactRequest, Artifact> updateArtifactSettings() {
     return ((IncidentServiceStubSettings) getStubSettings()).updateArtifactSettings();
-  }
-
-  /** Returns the object with the settings used for calls to deleteArtifact. */
-  public UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
-    return ((IncidentServiceStubSettings) getStubSettings()).deleteArtifactSettings();
   }
 
   /** Returns the object with the settings used for calls to sendShiftHandoff. */
@@ -279,24 +297,6 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
           ListIncidentRoleAssignmentsPagedResponse>
       listIncidentRoleAssignmentsSettings() {
     return ((IncidentServiceStubSettings) getStubSettings()).listIncidentRoleAssignmentsSettings();
-  }
-
-  /** Returns the object with the settings used for calls to requestIncidentRoleHandover. */
-  public UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverSettings() {
-    return ((IncidentServiceStubSettings) getStubSettings()).requestIncidentRoleHandoverSettings();
-  }
-
-  /** Returns the object with the settings used for calls to confirmIncidentRoleHandover. */
-  public UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverSettings() {
-    return ((IncidentServiceStubSettings) getStubSettings()).confirmIncidentRoleHandoverSettings();
-  }
-
-  /** Returns the object with the settings used for calls to forceIncidentRoleHandover. */
-  public UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverSettings() {
-    return ((IncidentServiceStubSettings) getStubSettings()).forceIncidentRoleHandoverSettings();
   }
 
   /** Returns the object with the settings used for calls to cancelIncidentRoleHandover. */
@@ -402,6 +402,29 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
       return this;
     }
 
+    /** Returns the builder for the settings used for calls to deleteArtifact. */
+    public UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
+      return getStubSettingsBuilder().deleteArtifactSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to requestIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        requestIncidentRoleHandoverSettings() {
+      return getStubSettingsBuilder().requestIncidentRoleHandoverSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to confirmIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        confirmIncidentRoleHandoverSettings() {
+      return getStubSettingsBuilder().confirmIncidentRoleHandoverSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to forceIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        forceIncidentRoleHandoverSettings() {
+      return getStubSettingsBuilder().forceIncidentRoleHandoverSettings();
+    }
+
     /** Returns the builder for the settings used for calls to createIncident. */
     public UnaryCallSettings.Builder<CreateIncidentRequest, Incident> createIncidentSettings() {
       return getStubSettingsBuilder().createIncidentSettings();
@@ -474,14 +497,14 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
       return getStubSettingsBuilder().searchSignalsSettings();
     }
 
-    /** Returns the builder for the settings used for calls to getSignal. */
-    public UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings() {
-      return getStubSettingsBuilder().getSignalSettings();
-    }
-
     /** Returns the builder for the settings used for calls to lookupSignal. */
     public UnaryCallSettings.Builder<LookupSignalRequest, Signal> lookupSignalSettings() {
       return getStubSettingsBuilder().lookupSignalSettings();
+    }
+
+    /** Returns the builder for the settings used for calls to getSignal. */
+    public UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings() {
+      return getStubSettingsBuilder().getSignalSettings();
     }
 
     /** Returns the builder for the settings used for calls to updateSignal. */
@@ -510,11 +533,6 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
     /** Returns the builder for the settings used for calls to updateArtifact. */
     public UnaryCallSettings.Builder<UpdateArtifactRequest, Artifact> updateArtifactSettings() {
       return getStubSettingsBuilder().updateArtifactSettings();
-    }
-
-    /** Returns the builder for the settings used for calls to deleteArtifact. */
-    public UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
-      return getStubSettingsBuilder().deleteArtifactSettings();
     }
 
     /** Returns the builder for the settings used for calls to sendShiftHandoff. */
@@ -567,24 +585,6 @@ public class IncidentServiceSettings extends ClientSettings<IncidentServiceSetti
             ListIncidentRoleAssignmentsPagedResponse>
         listIncidentRoleAssignmentsSettings() {
       return getStubSettingsBuilder().listIncidentRoleAssignmentsSettings();
-    }
-
-    /** Returns the builder for the settings used for calls to requestIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        requestIncidentRoleHandoverSettings() {
-      return getStubSettingsBuilder().requestIncidentRoleHandoverSettings();
-    }
-
-    /** Returns the builder for the settings used for calls to confirmIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        confirmIncidentRoleHandoverSettings() {
-      return getStubSettingsBuilder().confirmIncidentRoleHandoverSettings();
-    }
-
-    /** Returns the builder for the settings used for calls to forceIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        forceIncidentRoleHandoverSettings() {
-      return getStubSettingsBuilder().forceIncidentRoleHandoverSettings();
     }
 
     /** Returns the builder for the settings used for calls to cancelIncidentRoleHandover. */

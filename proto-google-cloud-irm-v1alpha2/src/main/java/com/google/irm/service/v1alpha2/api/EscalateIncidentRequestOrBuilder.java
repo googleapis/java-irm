@@ -27,10 +27,12 @@ public interface EscalateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the incident field is set.
    */
@@ -39,10 +41,12 @@ public interface EscalateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The incident.
    */
@@ -51,10 +55,12 @@ public interface EscalateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder();
 

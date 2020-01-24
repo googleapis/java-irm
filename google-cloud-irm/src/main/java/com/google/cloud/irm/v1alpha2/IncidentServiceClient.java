@@ -52,6 +52,7 @@ import com.google.irm.service.v1alpha2.api.GetSignalRequest;
 import com.google.irm.service.v1alpha2.api.Incident;
 import com.google.irm.service.v1alpha2.api.IncidentName;
 import com.google.irm.service.v1alpha2.api.IncidentRoleAssignment;
+import com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentName;
 import com.google.irm.service.v1alpha2.api.ListAnnotationsRequest;
 import com.google.irm.service.v1alpha2.api.ListAnnotationsResponse;
 import com.google.irm.service.v1alpha2.api.ListArtifactsRequest;
@@ -65,7 +66,6 @@ import com.google.irm.service.v1alpha2.api.ListTagsResponse;
 import com.google.irm.service.v1alpha2.api.LookupSignalRequest;
 import com.google.irm.service.v1alpha2.api.ProjectName;
 import com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest;
-import com.google.irm.service.v1alpha2.api.RoleAssignmentName;
 import com.google.irm.service.v1alpha2.api.SearchIncidentsRequest;
 import com.google.irm.service.v1alpha2.api.SearchIncidentsResponse;
 import com.google.irm.service.v1alpha2.api.SearchSignalsRequest;
@@ -102,9 +102,8 @@ import javax.annotation.Generated;
  * <pre>
  * <code>
  * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
- *   Incident incident = Incident.newBuilder().build();
- *   ProjectName parent = ProjectName.of("[PROJECT]");
- *   Incident response = incidentServiceClient.createIncident(incident, parent);
+ *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+ *   incidentServiceClient.deleteArtifact(name);
  * }
  * </code>
  * </pre>
@@ -216,6 +215,410 @@ public class IncidentServiceClient implements BackgroundResource {
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
+   * Deletes an existing artifact.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+   *   incidentServiceClient.deleteArtifact(name);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the artifact.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final void deleteArtifact(ArtifactName name) {
+    DeleteArtifactRequest request =
+        DeleteArtifactRequest.newBuilder().setName(name == null ? null : name.toString()).build();
+    deleteArtifact(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Deletes an existing artifact.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+   *   incidentServiceClient.deleteArtifact(name.toString());
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the artifact.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final void deleteArtifact(String name) {
+    DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder().setName(name).build();
+    deleteArtifact(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Deletes an existing artifact.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+   *   DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .build();
+   *   incidentServiceClient.deleteArtifact(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final void deleteArtifact(DeleteArtifactRequest request) {
+    deleteArtifactCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Deletes an existing artifact.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+   *   DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .build();
+   *   ApiFuture&lt;Void&gt; future = incidentServiceClient.deleteArtifactCallable().futureCall(request);
+   *   // Do something
+   *   future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
+    return stub.deleteArtifactCallable();
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Starts a role handover. The proposed assignee will receive an email notifying them of the
+   * assignment. This will fail if a role handover is already pending. Handover to an oncall ladder
+   * is not permitted. Use CreateIncidentRoleAssignment instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   String name = "";
+   *   User newAssignee = User.newBuilder().build();
+   *   IncidentRoleAssignment response = incidentServiceClient.requestIncidentRoleHandover(name, newAssignee);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. The proposed assignee.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment requestIncidentRoleHandover(String name, User newAssignee) {
+    RequestIncidentRoleHandoverRequest request =
+        RequestIncidentRoleHandoverRequest.newBuilder()
+            .setName(name)
+            .setNewAssignee(newAssignee)
+            .build();
+    return requestIncidentRoleHandover(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Starts a role handover. The proposed assignee will receive an email notifying them of the
+   * assignment. This will fail if a role handover is already pending. Handover to an oncall ladder
+   * is not permitted. Use CreateIncidentRoleAssignment instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   String name = "";
+   *   User newAssignee = User.newBuilder().build();
+   *   RequestIncidentRoleHandoverRequest request = RequestIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name)
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   IncidentRoleAssignment response = incidentServiceClient.requestIncidentRoleHandover(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment requestIncidentRoleHandover(
+      RequestIncidentRoleHandoverRequest request) {
+    return requestIncidentRoleHandoverCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Starts a role handover. The proposed assignee will receive an email notifying them of the
+   * assignment. This will fail if a role handover is already pending. Handover to an oncall ladder
+   * is not permitted. Use CreateIncidentRoleAssignment instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   String name = "";
+   *   User newAssignee = User.newBuilder().build();
+   *   RequestIncidentRoleHandoverRequest request = RequestIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name)
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.requestIncidentRoleHandoverCallable().futureCall(request);
+   *   // Do something
+   *   IncidentRoleAssignment response = future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverCallable() {
+    return stub.requestIncidentRoleHandoverCallable();
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(name, newAssignee);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. The proposed assignee, who will now be the assignee. This should
+   *     be the current user; otherwise ForceRoleHandover should be called.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment confirmIncidentRoleHandover(
+      IncidentRoleAssignmentName name, User newAssignee) {
+    ConfirmIncidentRoleHandoverRequest request =
+        ConfirmIncidentRoleHandoverRequest.newBuilder()
+            .setName(name == null ? null : name.toString())
+            .setNewAssignee(newAssignee)
+            .build();
+    return confirmIncidentRoleHandover(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(name.toString(), newAssignee);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. The proposed assignee, who will now be the assignee. This should
+   *     be the current user; otherwise ForceRoleHandover should be called.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment confirmIncidentRoleHandover(String name, User newAssignee) {
+    ConfirmIncidentRoleHandoverRequest request =
+        ConfirmIncidentRoleHandoverRequest.newBuilder()
+            .setName(name)
+            .setNewAssignee(newAssignee)
+            .build();
+    return confirmIncidentRoleHandover(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   ConfirmIncidentRoleHandoverRequest request = ConfirmIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment confirmIncidentRoleHandover(
+      ConfirmIncidentRoleHandoverRequest request) {
+    return confirmIncidentRoleHandoverCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   ConfirmIncidentRoleHandoverRequest request = ConfirmIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.confirmIncidentRoleHandoverCallable().futureCall(request);
+   *   // Do something
+   *   IncidentRoleAssignment response = future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverCallable() {
+    return stub.confirmIncidentRoleHandoverCallable();
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(name, newAssignee);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. The proposed assignee, who will now be the assignee. This should
+   *     not be the current user; otherwise ConfirmRoleHandover should be called.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment forceIncidentRoleHandover(
+      IncidentRoleAssignmentName name, User newAssignee) {
+    ForceIncidentRoleHandoverRequest request =
+        ForceIncidentRoleHandoverRequest.newBuilder()
+            .setName(name == null ? null : name.toString())
+            .setNewAssignee(newAssignee)
+            .build();
+    return forceIncidentRoleHandover(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(name.toString(), newAssignee);
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. The proposed assignee, who will now be the assignee. This should
+   *     not be the current user; otherwise ConfirmRoleHandover should be called.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment forceIncidentRoleHandover(String name, User newAssignee) {
+    ForceIncidentRoleHandoverRequest request =
+        ForceIncidentRoleHandoverRequest.newBuilder()
+            .setName(name)
+            .setNewAssignee(newAssignee)
+            .build();
+    return forceIncidentRoleHandover(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   ForceIncidentRoleHandoverRequest request = ForceIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final IncidentRoleAssignment forceIncidentRoleHandover(
+      ForceIncidentRoleHandoverRequest request) {
+    return forceIncidentRoleHandoverCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
+   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
+   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
+   *   User newAssignee = User.newBuilder().build();
+   *   ForceIncidentRoleHandoverRequest request = ForceIncidentRoleHandoverRequest.newBuilder()
+   *     .setName(name.toString())
+   *     .setNewAssignee(newAssignee)
+   *     .build();
+   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.forceIncidentRoleHandoverCallable().futureCall(request);
+   *   // Do something
+   *   IncidentRoleAssignment response = future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverCallable() {
+    return stub.forceIncidentRoleHandoverCallable();
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
    * Creates a new incident.
    *
    * <p>Sample code:
@@ -228,9 +631,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param incident The incident to create.
-   * @param parent The resource name of the hosting Stackdriver project which the incident belongs
-   *     to. The name is of the form `projects/{project_id_or_number}` .
+   * @param incident Required. The incident to create.
+   * @param parent Required. The resource name of the hosting Stackdriver project which the incident
+   *     belongs to. The name is of the form `projects/{project_id_or_number}` .
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident createIncident(Incident incident, ProjectName parent) {
@@ -256,9 +659,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param incident The incident to create.
-   * @param parent The resource name of the hosting Stackdriver project which the incident belongs
-   *     to. The name is of the form `projects/{project_id_or_number}` .
+   * @param incident Required. The incident to create.
+   * @param parent Required. The resource name of the hosting Stackdriver project which the incident
+   *     belongs to. The name is of the form `projects/{project_id_or_number}` .
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident createIncident(Incident incident, String parent) {
@@ -329,8 +732,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param name Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident getIncident(IncidentName name) {
@@ -352,8 +755,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param name Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Incident getIncident(String name) {
@@ -424,8 +827,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested incidents
-   *     belong to.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     incidents belong to.
    * @param query An expression that defines which incidents to return.
    *     <p>Search atoms can be used to match certain specific fields. Otherwise, plain text will
    *     match text fields in the incident.
@@ -493,8 +896,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested incidents
-   *     belong to.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     incidents belong to.
    * @param query An expression that defines which incidents to return.
    *     <p>Search atoms can be used to match certain specific fields. Otherwise, plain text will
    *     match text fields in the incident.
@@ -643,7 +1046,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param incident The incident to update with the new values.
+   * @param incident Required. The incident to update with the new values.
    * @param updateMask List of fields that should be updated.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -708,15 +1111,44 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   String formattedName = IncidentName.format("[PROJECT]", "[INCIDENT]");
-   *   for (SearchSimilarIncidentsResponse.Result element : incidentServiceClient.searchSimilarIncidents(formattedName).iterateAll()) {
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
+   *   for (SearchSimilarIncidentsResponse.Result element : incidentServiceClient.searchSimilarIncidents(name).iterateAll()) {
    *     // doThingsWith(element);
    *   }
    * }
    * </code></pre>
    *
-   * @param name Resource name of the incident or signal, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param name Required. Resource name of the incident or signal, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final SearchSimilarIncidentsPagedResponse searchSimilarIncidents(IncidentName name) {
+    SearchSimilarIncidentsRequest request =
+        SearchSimilarIncidentsRequest.newBuilder()
+            .setName(name == null ? null : name.toString())
+            .build();
+    return searchSimilarIncidents(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Returns a list of incidents that are "similar" to the specified incident or signal. This
+   * functionality is provided on a best-effort basis and the definition of "similar" is subject to
+   * change.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
+   *   for (SearchSimilarIncidentsResponse.Result element : incidentServiceClient.searchSimilarIncidents(name.toString()).iterateAll()) {
+   *     // doThingsWith(element);
+   *   }
+   * }
+   * </code></pre>
+   *
+   * @param name Required. Resource name of the incident or signal, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final SearchSimilarIncidentsPagedResponse searchSimilarIncidents(String name) {
@@ -735,9 +1167,9 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   String formattedName = IncidentName.format("[PROJECT]", "[INCIDENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   SearchSimilarIncidentsRequest request = SearchSimilarIncidentsRequest.newBuilder()
-   *     .setName(formattedName)
+   *     .setName(name.toString())
    *     .build();
    *   for (SearchSimilarIncidentsResponse.Result element : incidentServiceClient.searchSimilarIncidents(request).iterateAll()) {
    *     // doThingsWith(element);
@@ -763,9 +1195,9 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   String formattedName = IncidentName.format("[PROJECT]", "[INCIDENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   SearchSimilarIncidentsRequest request = SearchSimilarIncidentsRequest.newBuilder()
-   *     .setName(formattedName)
+   *     .setName(name.toString())
    *     .build();
    *   ApiFuture&lt;SearchSimilarIncidentsPagedResponse&gt; future = incidentServiceClient.searchSimilarIncidentsPagedCallable().futureCall(request);
    *   // Do something
@@ -790,9 +1222,9 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   String formattedName = IncidentName.format("[PROJECT]", "[INCIDENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   SearchSimilarIncidentsRequest request = SearchSimilarIncidentsRequest.newBuilder()
-   *     .setName(formattedName)
+   *     .setName(name.toString())
    *     .build();
    *   while (true) {
    *     SearchSimilarIncidentsResponse response = incidentServiceClient.searchSimilarIncidentsCallable().call(request);
@@ -829,9 +1261,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param annotation Only annotation.content is an input argument.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param annotation Required. Only annotation.content is an input argument.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Annotation createAnnotation(IncidentName parent, Annotation annotation) {
@@ -858,9 +1290,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param annotation Only annotation.content is an input argument.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param annotation Required. Only annotation.content is an input argument.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Annotation createAnnotation(String parent, Annotation annotation) {
@@ -936,8 +1368,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListAnnotationsPagedResponse listAnnotations(IncidentName parent) {
@@ -964,8 +1396,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListAnnotationsPagedResponse listAnnotations(String parent) {
@@ -1072,9 +1504,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param tag Tag to create. Only tag.display_name is an input argument.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param tag Required. Tag to create. Only tag.display_name is an input argument.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Tag createTag(IncidentName parent, Tag tag) {
@@ -1100,9 +1532,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param tag Tag to create. Only tag.display_name is an input argument.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param tag Required. Tag to create. Only tag.display_name is an input argument.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Tag createTag(String parent, Tag tag) {
@@ -1172,7 +1604,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the tag.
+   * @param name Required. Resource name of the tag.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteTag(TagName name) {
@@ -1194,7 +1626,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the tag.
+   * @param name Required. Resource name of the tag.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteTag(String name) {
@@ -1262,8 +1694,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListTagsPagedResponse listTags(IncidentName parent) {
@@ -1287,8 +1719,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListTagsPagedResponse listTags(String parent) {
@@ -1390,9 +1822,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested signal
-   *     belongs to.
-   * @param signal The signal to create.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     signal belongs to.
+   * @param signal Required. The signal to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal createSignal(ProjectName parent, Signal signal) {
@@ -1418,9 +1850,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested signal
-   *     belongs to.
-   * @param signal The signal to create.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     signal belongs to.
+   * @param signal Required. The signal to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal createSignal(String parent, Signal signal) {
@@ -1481,7 +1913,9 @@ public class IncidentServiceClient implements BackgroundResource {
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
    * Lists signals that are part of an incident. Signals are returned in reverse chronological
-   * order.
+   * order. Note that search should not be relied on for critical functionality. It has lower
+   * availability guarantees and might fail to return valid results. Returned results might include
+   * stale or extraneous entries.
    *
    * <p>Sample code:
    *
@@ -1495,8 +1929,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested incidents
-   *     belong to.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     incidents belong to.
    * @param query An expression that defines which signals to return.
    *     <p>Search atoms can be used to match certain specific fields. Otherwise, plain text will
    *     match text fields in the signal.
@@ -1548,7 +1982,9 @@ public class IncidentServiceClient implements BackgroundResource {
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
    * Lists signals that are part of an incident. Signals are returned in reverse chronological
-   * order.
+   * order. Note that search should not be relied on for critical functionality. It has lower
+   * availability guarantees and might fail to return valid results. Returned results might include
+   * stale or extraneous entries.
    *
    * <p>Sample code:
    *
@@ -1562,8 +1998,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent The resource name of the hosting Stackdriver project which requested incidents
-   *     belong to.
+   * @param parent Required. The resource name of the hosting Stackdriver project which requested
+   *     incidents belong to.
    * @param query An expression that defines which signals to return.
    *     <p>Search atoms can be used to match certain specific fields. Otherwise, plain text will
    *     match text fields in the signal.
@@ -1612,7 +2048,9 @@ public class IncidentServiceClient implements BackgroundResource {
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
    * Lists signals that are part of an incident. Signals are returned in reverse chronological
-   * order.
+   * order. Note that search should not be relied on for critical functionality. It has lower
+   * availability guarantees and might fail to return valid results. Returned results might include
+   * stale or extraneous entries.
    *
    * <p>Sample code:
    *
@@ -1638,7 +2076,9 @@ public class IncidentServiceClient implements BackgroundResource {
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
    * Lists signals that are part of an incident. Signals are returned in reverse chronological
-   * order.
+   * order. Note that search should not be relied on for critical functionality. It has lower
+   * availability guarantees and might fail to return valid results. Returned results might include
+   * stale or extraneous entries.
    *
    * <p>Sample code:
    *
@@ -1664,7 +2104,9 @@ public class IncidentServiceClient implements BackgroundResource {
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
    * Lists signals that are part of an incident. Signals are returned in reverse chronological
-   * order.
+   * order. Note that search should not be relied on for critical functionality. It has lower
+   * availability guarantees and might fail to return valid results. Returned results might include
+   * stale or extraneous entries.
    *
    * <p>Sample code:
    *
@@ -1695,6 +2137,45 @@ public class IncidentServiceClient implements BackgroundResource {
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
+   * Finds a signal by other unique IDs.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
+   *   Signal response = incidentServiceClient.lookupSignal(request);
+   * }
+   * </code></pre>
+   *
+   * @param request The request object containing all of the parameters for the API call.
+   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
+   */
+  public final Signal lookupSignal(LookupSignalRequest request) {
+    return lookupSignalCallable().call(request);
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
+   * Finds a signal by other unique IDs.
+   *
+   * <p>Sample code:
+   *
+   * <pre><code>
+   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
+   *   LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
+   *   ApiFuture&lt;Signal&gt; future = incidentServiceClient.lookupSignalCallable().futureCall(request);
+   *   // Do something
+   *   Signal response = future.get();
+   * }
+   * </code></pre>
+   */
+  public final UnaryCallable<LookupSignalRequest, Signal> lookupSignalCallable() {
+    return stub.lookupSignalCallable();
+  }
+
+  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  /**
    * Returns a signal by name.
    *
    * <p>Sample code:
@@ -1706,8 +2187,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the Signal resource, for example,
-   *     "projects/{project_id}/signals/{signal_id}".
+   * @param name Required. Resource name of the Signal resource, for example,
+   *     "projects/{project_id_or_number}/signals/{signal_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal getSignal(SignalName name) {
@@ -1729,8 +2210,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the Signal resource, for example,
-   *     "projects/{project_id}/signals/{signal_id}".
+   * @param name Required. Resource name of the Signal resource, for example,
+   *     "projects/{project_id_or_number}/signals/{signal_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Signal getSignal(String name) {
@@ -1785,45 +2266,6 @@ public class IncidentServiceClient implements BackgroundResource {
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
-   * Finds a signal by other unique IDs.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
-   *   Signal response = incidentServiceClient.lookupSignal(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final Signal lookupSignal(LookupSignalRequest request) {
-    return lookupSignalCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Finds a signal by other unique IDs.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
-   *   ApiFuture&lt;Signal&gt; future = incidentServiceClient.lookupSignalCallable().futureCall(request);
-   *   // Do something
-   *   Signal response = future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<LookupSignalRequest, Signal> lookupSignalCallable() {
-    return stub.lookupSignalCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
    * Updates an existing signal (for example, to assign/unassign it to an incident).
    *
    * <p>Sample code:
@@ -1836,7 +2278,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param signal The signal to update with the new values.
+   * @param signal Required. The signal to update with the new values.
    * @param updateMask List of fields that should be updated.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -1951,9 +2393,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param artifact The artifact to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param artifact Required. The artifact to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Artifact createArtifact(IncidentName parent, Artifact artifact) {
@@ -1979,9 +2421,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param artifact The artifact to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param artifact Required. The artifact to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Artifact createArtifact(String parent, Artifact artifact) {
@@ -2054,8 +2496,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListArtifactsPagedResponse listArtifacts(IncidentName parent) {
@@ -2081,8 +2523,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListArtifactsPagedResponse listArtifacts(String parent) {
@@ -2185,7 +2627,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param artifact The artifact to update with the new values.
+   * @param artifact Required. The artifact to update with the new values.
    * @param updateMask List of fields that should be updated.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2238,94 +2680,6 @@ public class IncidentServiceClient implements BackgroundResource {
    */
   public final UnaryCallable<UpdateArtifactRequest, Artifact> updateArtifactCallable() {
     return stub.updateArtifactCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Deletes an existing artifact.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
-   *   incidentServiceClient.deleteArtifact(name);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the artifact.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final void deleteArtifact(ArtifactName name) {
-    DeleteArtifactRequest request =
-        DeleteArtifactRequest.newBuilder().setName(name == null ? null : name.toString()).build();
-    deleteArtifact(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Deletes an existing artifact.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
-   *   incidentServiceClient.deleteArtifact(name.toString());
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the artifact.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final void deleteArtifact(String name) {
-    DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder().setName(name).build();
-    deleteArtifact(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Deletes an existing artifact.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
-   *   DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   incidentServiceClient.deleteArtifact(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final void deleteArtifact(DeleteArtifactRequest request) {
-    deleteArtifactCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Deletes an existing artifact.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
-   *   DeleteArtifactRequest request = DeleteArtifactRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;Void&gt; future = incidentServiceClient.deleteArtifactCallable().futureCall(request);
-   *   // Do something
-   *   future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
-    return stub.deleteArtifactCallable();
   }
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
@@ -2397,9 +2751,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param subscription The subscription to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param subscription Required. The subscription to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Subscription createSubscription(IncidentName parent, Subscription subscription) {
@@ -2426,9 +2780,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param subscription The subscription to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param subscription Required. The subscription to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final Subscription createSubscription(String parent, Subscription subscription) {
@@ -2505,7 +2859,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param subscription The subscription to update, with new values.
+   * @param subscription Required. The subscription to update, with new values.
    * @param updateMask List of fields that should be updated.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2578,8 +2932,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListSubscriptionsPagedResponse listSubscriptions(IncidentName parent) {
@@ -2605,8 +2959,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListSubscriptionsPagedResponse listSubscriptions(String parent) {
@@ -2710,7 +3064,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the subscription.
+   * @param name Required. Resource name of the subscription.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteSubscription(SubscriptionName name) {
@@ -2734,7 +3088,7 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param name Resource name of the subscription.
+   * @param name Required. Resource name of the subscription.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteSubscription(String name) {
@@ -2805,9 +3159,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param incidentRoleAssignment Role assignment to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param incidentRoleAssignment Required. Role assignment to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment createIncidentRoleAssignment(
@@ -2837,9 +3191,9 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
-   * @param incidentRoleAssignment Role assignment to create.
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
+   * @param incidentRoleAssignment Required. Role assignment to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment createIncidentRoleAssignment(
@@ -2917,15 +3271,15 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   incidentServiceClient.deleteIncidentRoleAssignment(name);
    * }
    * </code></pre>
    *
-   * @param name Resource name of the role assignment.
+   * @param name Required. Resource name of the role assignment.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
-  public final void deleteIncidentRoleAssignment(RoleAssignmentName name) {
+  public final void deleteIncidentRoleAssignment(IncidentName name) {
     DeleteIncidentRoleAssignmentRequest request =
         DeleteIncidentRoleAssignmentRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -2941,12 +3295,12 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   incidentServiceClient.deleteIncidentRoleAssignment(name.toString());
    * }
    * </code></pre>
    *
-   * @param name Resource name of the role assignment.
+   * @param name Required. Resource name of the role assignment.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final void deleteIncidentRoleAssignment(String name) {
@@ -2963,7 +3317,7 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   DeleteIncidentRoleAssignmentRequest request = DeleteIncidentRoleAssignmentRequest.newBuilder()
    *     .setName(name.toString())
    *     .build();
@@ -2986,7 +3340,7 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentName name = IncidentName.of("[PROJECT]", "[INCIDENT]");
    *   DeleteIncidentRoleAssignmentRequest request = DeleteIncidentRoleAssignmentRequest.newBuilder()
    *     .setName(name.toString())
    *     .build();
@@ -3016,8 +3370,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListIncidentRoleAssignmentsPagedResponse listIncidentRoleAssignments(
@@ -3044,8 +3398,8 @@ public class IncidentServiceClient implements BackgroundResource {
    * }
    * </code></pre>
    *
-   * @param parent Resource name of the incident, for example,
-   *     "projects/{project_id}/incidents/{incident_id}".
+   * @param parent Required. Resource name of the incident, for example,
+   *     "projects/{project_id_or_number}/incidents/{incident_id}".
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final ListIncidentRoleAssignmentsPagedResponse listIncidentRoleAssignments(String parent) {
@@ -3141,348 +3495,6 @@ public class IncidentServiceClient implements BackgroundResource {
 
   // AUTO-GENERATED DOCUMENTATION AND METHOD
   /**
-   * Starts a role handover. The proposed assignee will receive an email notifying them of the
-   * assignment. This will fail if a role handover is already pending.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.requestIncidentRoleHandover(name, newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment requestIncidentRoleHandover(
-      RoleAssignmentName name, User newAssignee) {
-    RequestIncidentRoleHandoverRequest request =
-        RequestIncidentRoleHandoverRequest.newBuilder()
-            .setName(name == null ? null : name.toString())
-            .setNewAssignee(newAssignee)
-            .build();
-    return requestIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Starts a role handover. The proposed assignee will receive an email notifying them of the
-   * assignment. This will fail if a role handover is already pending.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.requestIncidentRoleHandover(name.toString(), newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment requestIncidentRoleHandover(String name, User newAssignee) {
-    RequestIncidentRoleHandoverRequest request =
-        RequestIncidentRoleHandoverRequest.newBuilder()
-            .setName(name)
-            .setNewAssignee(newAssignee)
-            .build();
-    return requestIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Starts a role handover. The proposed assignee will receive an email notifying them of the
-   * assignment. This will fail if a role handover is already pending.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   RequestIncidentRoleHandoverRequest request = RequestIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   IncidentRoleAssignment response = incidentServiceClient.requestIncidentRoleHandover(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment requestIncidentRoleHandover(
-      RequestIncidentRoleHandoverRequest request) {
-    return requestIncidentRoleHandoverCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Starts a role handover. The proposed assignee will receive an email notifying them of the
-   * assignment. This will fail if a role handover is already pending.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   RequestIncidentRoleHandoverRequest request = RequestIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.requestIncidentRoleHandoverCallable().futureCall(request);
-   *   // Do something
-   *   IncidentRoleAssignment response = future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverCallable() {
-    return stub.requestIncidentRoleHandoverCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(name, newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee, who will now be the assignee. This should be the
-   *     current user; otherwise ForceRoleHandover should be called.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment confirmIncidentRoleHandover(
-      RoleAssignmentName name, User newAssignee) {
-    ConfirmIncidentRoleHandoverRequest request =
-        ConfirmIncidentRoleHandoverRequest.newBuilder()
-            .setName(name == null ? null : name.toString())
-            .setNewAssignee(newAssignee)
-            .build();
-    return confirmIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(name.toString(), newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee, who will now be the assignee. This should be the
-   *     current user; otherwise ForceRoleHandover should be called.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment confirmIncidentRoleHandover(String name, User newAssignee) {
-    ConfirmIncidentRoleHandoverRequest request =
-        ConfirmIncidentRoleHandoverRequest.newBuilder()
-            .setName(name)
-            .setNewAssignee(newAssignee)
-            .build();
-    return confirmIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   ConfirmIncidentRoleHandoverRequest request = ConfirmIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   IncidentRoleAssignment response = incidentServiceClient.confirmIncidentRoleHandover(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment confirmIncidentRoleHandover(
-      ConfirmIncidentRoleHandoverRequest request) {
-    return confirmIncidentRoleHandoverCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Confirms a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is not the new_assignee, ForceIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   ConfirmIncidentRoleHandoverRequest request = ConfirmIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.confirmIncidentRoleHandoverCallable().futureCall(request);
-   *   // Do something
-   *   IncidentRoleAssignment response = future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverCallable() {
-    return stub.confirmIncidentRoleHandoverCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(name, newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee, who will now be the assignee. This should not be the
-   *     current user; otherwise ConfirmRoleHandover should be called.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment forceIncidentRoleHandover(
-      RoleAssignmentName name, User newAssignee) {
-    ForceIncidentRoleHandoverRequest request =
-        ForceIncidentRoleHandoverRequest.newBuilder()
-            .setName(name == null ? null : name.toString())
-            .setNewAssignee(newAssignee)
-            .build();
-    return forceIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(name.toString(), newAssignee);
-   * }
-   * </code></pre>
-   *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee The proposed assignee, who will now be the assignee. This should not be the
-   *     current user; otherwise ConfirmRoleHandover should be called.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment forceIncidentRoleHandover(String name, User newAssignee) {
-    ForceIncidentRoleHandoverRequest request =
-        ForceIncidentRoleHandoverRequest.newBuilder()
-            .setName(name)
-            .setNewAssignee(newAssignee)
-            .build();
-    return forceIncidentRoleHandover(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   ForceIncidentRoleHandoverRequest request = ForceIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   IncidentRoleAssignment response = incidentServiceClient.forceIncidentRoleHandover(request);
-   * }
-   * </code></pre>
-   *
-   * @param request The request object containing all of the parameters for the API call.
-   * @throws com.google.api.gax.rpc.ApiException if the remote call fails
-   */
-  public final IncidentRoleAssignment forceIncidentRoleHandover(
-      ForceIncidentRoleHandoverRequest request) {
-    return forceIncidentRoleHandoverCallable().call(request);
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
-   * Forces a role handover. This will fail if the 'proposed_assignee' field of the
-   * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request. If the caller
-   * is the new_assignee, ConfirmIncidentRoleHandover should be used instead.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
-   *   User newAssignee = User.newBuilder().build();
-   *   ForceIncidentRoleHandoverRequest request = ForceIncidentRoleHandoverRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setNewAssignee(newAssignee)
-   *     .build();
-   *   ApiFuture&lt;IncidentRoleAssignment&gt; future = incidentServiceClient.forceIncidentRoleHandoverCallable().futureCall(request);
-   *   // Do something
-   *   IncidentRoleAssignment response = future.get();
-   * }
-   * </code></pre>
-   */
-  public final UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverCallable() {
-    return stub.forceIncidentRoleHandoverCallable();
-  }
-
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
-  /**
    * Cancels a role handover. This will fail if the 'proposed_assignee' field of the
    * IncidentRoleAssignment is not equal to the 'new_assignee' field of the request.
    *
@@ -3490,19 +3502,19 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
    *   User newAssignee = User.newBuilder().build();
    *   IncidentRoleAssignment response = incidentServiceClient.cancelIncidentRoleHandover(name, newAssignee);
    * }
    * </code></pre>
    *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee Person who was proposed as the next assignee (i.e.
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. Person who was proposed as the next assignee (i.e.
    *     IncidentRoleAssignment.proposed_assignee) and whose proposal is being cancelled.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final IncidentRoleAssignment cancelIncidentRoleHandover(
-      RoleAssignmentName name, User newAssignee) {
+      IncidentRoleAssignmentName name, User newAssignee) {
     CancelIncidentRoleHandoverRequest request =
         CancelIncidentRoleHandoverRequest.newBuilder()
             .setName(name == null ? null : name.toString())
@@ -3520,14 +3532,14 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
    *   User newAssignee = User.newBuilder().build();
    *   IncidentRoleAssignment response = incidentServiceClient.cancelIncidentRoleHandover(name.toString(), newAssignee);
    * }
    * </code></pre>
    *
-   * @param name Resource name of the role assignment.
-   * @param newAssignee Person who was proposed as the next assignee (i.e.
+   * @param name Required. Resource name of the role assignment.
+   * @param newAssignee Required. Person who was proposed as the next assignee (i.e.
    *     IncidentRoleAssignment.proposed_assignee) and whose proposal is being cancelled.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -3549,7 +3561,7 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
    *   User newAssignee = User.newBuilder().build();
    *   CancelIncidentRoleHandoverRequest request = CancelIncidentRoleHandoverRequest.newBuilder()
    *     .setName(name.toString())
@@ -3576,7 +3588,7 @@ public class IncidentServiceClient implements BackgroundResource {
    *
    * <pre><code>
    * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
-   *   RoleAssignmentName name = RoleAssignmentName.of("[PROJECT]", "[INCIDENT]", "[ROLE_ASSIGNMENT]");
+   *   IncidentRoleAssignmentName name = IncidentRoleAssignmentName.of("[PROJECT_ID_OR_NUMBER]", "[INCIDENT_ID]", "[ROLE_ID]");
    *   User newAssignee = User.newBuilder().build();
    *   CancelIncidentRoleHandoverRequest request = CancelIncidentRoleHandoverRequest.newBuilder()
    *     .setName(name.toString())

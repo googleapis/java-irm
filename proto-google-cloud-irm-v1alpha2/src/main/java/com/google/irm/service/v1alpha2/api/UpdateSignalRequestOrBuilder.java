@@ -27,10 +27,11 @@ public interface UpdateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the signal field is set.
    */
@@ -39,10 +40,11 @@ public interface UpdateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The signal.
    */
@@ -51,10 +53,11 @@ public interface UpdateSignalRequestOrBuilder
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder();
 

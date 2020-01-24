@@ -27,10 +27,12 @@ public interface CreateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to create.
+   * Required. The incident to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the incident field is set.
    */
@@ -39,10 +41,12 @@ public interface CreateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to create.
+   * Required. The incident to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The incident.
    */
@@ -51,10 +55,12 @@ public interface CreateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The incident to create.
+   * Required. The incident to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder();
 
@@ -62,13 +68,15 @@ public interface CreateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which the incident
+   * Required. The resource name of the hosting Stackdriver project which the incident
    * belongs to.
    * The name is of the form `projects/{project_id_or_number}`
    * .
    * </pre>
    *
-   * <code>string parent = 2;</code>
+   * <code>
+   * string parent = 2 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -77,13 +85,15 @@ public interface CreateIncidentRequestOrBuilder
    *
    *
    * <pre>
-   * The resource name of the hosting Stackdriver project which the incident
+   * Required. The resource name of the hosting Stackdriver project which the incident
    * belongs to.
    * The name is of the form `projects/{project_id_or_number}`
    * .
    * </pre>
    *
-   * <code>string parent = 2;</code>
+   * <code>
+   * string parent = 2 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */

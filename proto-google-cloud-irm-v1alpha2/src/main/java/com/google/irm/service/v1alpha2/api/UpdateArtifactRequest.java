@@ -139,10 +139,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the artifact field is set.
    */
@@ -153,10 +155,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The artifact.
    */
@@ -169,10 +173,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    *
    * <pre>
-   * The artifact to update with the new values.
+   * Required. The artifact to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactOrBuilder() {
     return getArtifact();
@@ -590,10 +596,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the artifact field is set.
      */
@@ -604,10 +612,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The artifact.
      */
@@ -624,10 +634,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setArtifact(com.google.irm.service.v1alpha2.api.Artifact value) {
       if (artifactBuilder_ == null) {
@@ -646,10 +658,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setArtifact(
         com.google.irm.service.v1alpha2.api.Artifact.Builder builderForValue) {
@@ -666,10 +680,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeArtifact(com.google.irm.service.v1alpha2.api.Artifact value) {
       if (artifactBuilder_ == null) {
@@ -692,10 +708,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearArtifact() {
       if (artifactBuilder_ == null) {
@@ -712,10 +730,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Artifact.Builder getArtifactBuilder() {
 
@@ -726,10 +746,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactOrBuilder() {
       if (artifactBuilder_ != null) {
@@ -744,10 +766,12 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
      *
      *
      * <pre>
-     * The artifact to update with the new values.
+     * Required. The artifact to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Artifact artifact = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Artifact,

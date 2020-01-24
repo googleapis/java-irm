@@ -134,10 +134,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
    *
    *
    * <pre>
-   * Resource name of the role assignment.
+   * Required. Resource name of the role assignment.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The name.
    */
@@ -156,10 +156,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
    *
    *
    * <pre>
-   * Resource name of the role assignment.
+   * Required. Resource name of the role assignment.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for name.
    */
@@ -181,10 +181,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the newAssignee field is set.
    */
@@ -195,10 +197,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The newAssignee.
    */
@@ -211,10 +215,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getNewAssigneeOrBuilder() {
     return getNewAssignee();
@@ -581,10 +587,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * Resource name of the role assignment.
+     * Required. Resource name of the role assignment.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return The name.
      */
@@ -603,10 +609,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * Resource name of the role assignment.
+     * Required. Resource name of the role assignment.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return The bytes for name.
      */
@@ -625,10 +631,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * Resource name of the role assignment.
+     * Required. Resource name of the role assignment.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @param value The name to set.
      * @return This builder for chaining.
@@ -646,10 +652,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * Resource name of the role assignment.
+     * Required. Resource name of the role assignment.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return This builder for chaining.
      */
@@ -663,10 +669,10 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * Resource name of the role assignment.
+     * Required. Resource name of the role assignment.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @param value The bytes for name to set.
      * @return This builder for chaining.
@@ -692,10 +698,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the newAssignee field is set.
      */
@@ -706,10 +714,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The newAssignee.
      */
@@ -726,10 +736,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setNewAssignee(com.google.irm.service.v1alpha2.api.User value) {
       if (newAssigneeBuilder_ == null) {
@@ -748,10 +760,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setNewAssignee(
         com.google.irm.service.v1alpha2.api.User.Builder builderForValue) {
@@ -768,10 +782,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeNewAssignee(com.google.irm.service.v1alpha2.api.User value) {
       if (newAssigneeBuilder_ == null) {
@@ -794,10 +810,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearNewAssignee() {
       if (newAssigneeBuilder_ == null) {
@@ -814,10 +832,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.User.Builder getNewAssigneeBuilder() {
 
@@ -828,10 +848,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.UserOrBuilder getNewAssigneeOrBuilder() {
       if (newAssigneeBuilder_ != null) {
@@ -846,10 +868,12 @@ public final class RequestIncidentRoleHandoverRequest extends com.google.protobu
      *
      *
      * <pre>
-     * The proposed assignee.
+     * Required. The proposed assignee.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.User,

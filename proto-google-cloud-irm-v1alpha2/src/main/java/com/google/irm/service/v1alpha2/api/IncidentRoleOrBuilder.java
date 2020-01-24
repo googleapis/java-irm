@@ -54,8 +54,8 @@ public interface IncidentRoleOrBuilder
    *
    *
    * <pre>
-   * Output only unless TYPE_OTHER is used. Title of the role. For TYPE_OTHER,
-   * must be unique within an incident.
+   * Output only and empty unless TYPE_OTHER is used. Title of the role. For
+   * TYPE_OTHER, must be unique within an incident.
    * </pre>
    *
    * <code>string title = 2;</code>
@@ -67,8 +67,8 @@ public interface IncidentRoleOrBuilder
    *
    *
    * <pre>
-   * Output only unless TYPE_OTHER is used. Title of the role. For TYPE_OTHER,
-   * must be unique within an incident.
+   * Output only and empty unless TYPE_OTHER is used. Title of the role. For
+   * TYPE_OTHER, must be unique within an incident.
    * </pre>
    *
    * <code>string title = 2;</code>
@@ -81,7 +81,7 @@ public interface IncidentRoleOrBuilder
    *
    *
    * <pre>
-   * Output only unless TYPE_OTHER is used. Description of the role.
+   * Output only and empty unless TYPE_OTHER is used. Description of the role.
    * </pre>
    *
    * <code>string description = 3;</code>
@@ -93,7 +93,7 @@ public interface IncidentRoleOrBuilder
    *
    *
    * <pre>
-   * Output only unless TYPE_OTHER is used. Description of the role.
+   * Output only and empty unless TYPE_OTHER is used. Description of the role.
    * </pre>
    *
    * <code>string description = 3;</code>

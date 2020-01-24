@@ -28,7 +28,7 @@ public interface TagOrBuilder
    *
    * <pre>
    * Resource name of a tag, for example,
-   * "projects/{project_id}/incidents/{incident_id}/tags/{tag_id}"
+   * "projects/{project_id_or_number}/incidents/{incident_id}/tags/{tag_id}"
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -41,7 +41,7 @@ public interface TagOrBuilder
    *
    * <pre>
    * Resource name of a tag, for example,
-   * "projects/{project_id}/incidents/{incident_id}/tags/{tag_id}"
+   * "projects/{project_id_or_number}/incidents/{incident_id}/tags/{tag_id}"
    * </pre>
    *
    * <code>string name = 1;</code>

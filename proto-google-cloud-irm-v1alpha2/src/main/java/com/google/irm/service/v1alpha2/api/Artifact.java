@@ -303,7 +303,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * <pre>
    * Output only. Resource name such as
-   * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -326,7 +326,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * <pre>
    * Output only. Resource name such as
-   * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -909,7 +909,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * Output only. Resource name such as
-     * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+     * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -932,7 +932,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * Output only. Resource name such as
-     * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+     * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -955,7 +955,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * Output only. Resource name such as
-     * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+     * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -977,7 +977,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * Output only. Resource name such as
-     * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+     * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -995,7 +995,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * <pre>
      * Output only. Resource name such as
-     * "projects/{project_id}/incidents/{incident_id}/artifacts/{artifact_id}".
+     * "projects/{project_id_or_number}/incidents/{incident_id}/artifacts/{artifact_id}".
      * </pre>
      *
      * <code>string name = 1;</code>

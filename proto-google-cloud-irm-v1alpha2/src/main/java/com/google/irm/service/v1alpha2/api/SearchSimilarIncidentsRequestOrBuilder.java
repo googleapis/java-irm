@@ -27,11 +27,13 @@ public interface SearchSimilarIncidentsRequestOrBuilder
    *
    *
    * <pre>
-   * Resource name of the incident or signal, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident or signal, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -40,11 +42,13 @@ public interface SearchSimilarIncidentsRequestOrBuilder
    *
    *
    * <pre>
-   * Resource name of the incident or signal, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident or signal, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */

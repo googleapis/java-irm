@@ -28,10 +28,10 @@ public interface IncidentOrBuilder
    *
    * <pre>
    * Output only. Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
    *
    * @return The name.
    */
@@ -41,10 +41,10 @@ public interface IncidentOrBuilder
    *
    * <pre>
    * Output only. Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = OUTPUT_ONLY];</code>
    *
    * @return The bytes for name.
    */

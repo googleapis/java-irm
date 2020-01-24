@@ -28,7 +28,7 @@ public interface AnnotationOrBuilder
    *
    * <pre>
    * Resource name of the annotation, for example,
-   * "projects/{project_id}/incidents/{incident_id}/annotations/{annotation_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/annotations/{annotation_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -41,7 +41,7 @@ public interface AnnotationOrBuilder
    *
    * <pre>
    * Resource name of the annotation, for example,
-   * "projects/{project_id}/incidents/{incident_id}/annotations/{annotation_id}".
+   * "projects/{project_id_or_number}/incidents/{incident_id}/annotations/{annotation_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -124,7 +124,7 @@ public interface AnnotationOrBuilder
    *
    *
    * <pre>
-   * Content of the annotation. Immutable.
+   * Content of the annotation.
    * </pre>
    *
    * <code>string content = 4;</code>
@@ -136,7 +136,7 @@ public interface AnnotationOrBuilder
    *
    *
    * <pre>
-   * Content of the annotation. Immutable.
+   * Content of the annotation.
    * </pre>
    *
    * <code>string content = 4;</code>
@@ -150,7 +150,7 @@ public interface AnnotationOrBuilder
    *
    * <pre>
    * Content type of the annotation, for example, 'text/plain'
-   * or 'text/markdown'. Immutable.
+   * or 'text/markdown'.
    * </pre>
    *
    * <code>string content_type = 5;</code>
@@ -163,7 +163,7 @@ public interface AnnotationOrBuilder
    *
    * <pre>
    * Content type of the annotation, for example, 'text/plain'
-   * or 'text/markdown'. Immutable.
+   * or 'text/markdown'.
    * </pre>
    *
    * <code>string content_type = 5;</code>
