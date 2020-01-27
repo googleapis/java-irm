@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/googleapis/java-irm/compare/v0.1.1...v0.2.0) (2020-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename RoleAssignmentName to IncidentRoleAssignmentName (#35)
+
+### Features
+
+* rename RoleAssignmentName to IncidentRoleAssignmentName ([#35](https://www.github.com/googleapis/java-irm/issues/35)) ([2f390ba](https://www.github.com/googleapis/java-irm/commit/2f390ba129c2bf3637f19e96ac3282b7a3d5a4d5))
+
+
+### Documentation
+
+* **regen:** fix javadoc return annotation ([#33](https://www.github.com/googleapis/java-irm/issues/33)) ([72b2cb1](https://www.github.com/googleapis/java-irm/commit/72b2cb1df34d54b7d64fe6091002739b926d5406))
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([bff1a81](https://www.github.com/googleapis/java-irm/commit/bff1a81bd813d7bdfcc8cf5660b0d199233ff70d))
+
 ### [0.1.1](https://www.github.com/googleapis/java-irm/compare/v0.1.0...v0.1.1) (2020-01-07)
 
 
