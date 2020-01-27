@@ -207,10 +207,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the incident field is set.
    */
@@ -221,10 +223,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The incident.
    */
@@ -237,10 +241,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    *
    * <pre>
-   * The incident to escalate with the new values.
+   * Required. The incident to escalate with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
     return getIncident();
@@ -1147,10 +1153,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the incident field is set.
      */
@@ -1161,10 +1169,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The incident.
      */
@@ -1181,10 +1191,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setIncident(com.google.irm.service.v1alpha2.api.Incident value) {
       if (incidentBuilder_ == null) {
@@ -1203,10 +1215,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setIncident(
         com.google.irm.service.v1alpha2.api.Incident.Builder builderForValue) {
@@ -1223,10 +1237,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeIncident(com.google.irm.service.v1alpha2.api.Incident value) {
       if (incidentBuilder_ == null) {
@@ -1249,10 +1265,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearIncident() {
       if (incidentBuilder_ == null) {
@@ -1269,10 +1287,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Incident.Builder getIncidentBuilder() {
 
@@ -1283,10 +1303,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
       if (incidentBuilder_ != null) {
@@ -1301,10 +1323,12 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
      *
      *
      * <pre>
-     * The incident to escalate with the new values.
+     * Required. The incident to escalate with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Incident,

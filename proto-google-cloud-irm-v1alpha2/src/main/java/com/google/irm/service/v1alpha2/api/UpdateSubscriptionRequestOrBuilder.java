@@ -27,10 +27,12 @@ public interface UpdateSubscriptionRequestOrBuilder
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the subscription field is set.
    */
@@ -39,10 +41,12 @@ public interface UpdateSubscriptionRequestOrBuilder
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The subscription.
    */
@@ -51,10 +55,12 @@ public interface UpdateSubscriptionRequestOrBuilder
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionOrBuilder();
 

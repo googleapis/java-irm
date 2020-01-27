@@ -133,11 +133,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -156,11 +158,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -182,10 +186,10 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Tag to create. Only tag.display_name is an input argument.
+   * Required. Tag to create. Only tag.display_name is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return Whether the tag field is set.
    */
@@ -196,10 +200,10 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Tag to create. Only tag.display_name is an input argument.
+   * Required. Tag to create. Only tag.display_name is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The tag.
    */
@@ -210,10 +214,10 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
    *
    *
    * <pre>
-   * Tag to create. Only tag.display_name is an input argument.
+   * Required. Tag to create. Only tag.display_name is an input argument.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+   * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];</code>
    */
   public com.google.irm.service.v1alpha2.api.TagOrBuilder getTagOrBuilder() {
     return getTag();
@@ -570,11 +574,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The parent.
      */
@@ -593,11 +599,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for parent.
      */
@@ -616,11 +624,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The parent to set.
      * @return This builder for chaining.
@@ -638,11 +648,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -656,11 +668,13 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for parent to set.
      * @return This builder for chaining.
@@ -686,10 +700,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the tag field is set.
      */
@@ -700,10 +715,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The tag.
      */
@@ -718,10 +734,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setTag(com.google.irm.service.v1alpha2.api.Tag value) {
       if (tagBuilder_ == null) {
@@ -740,10 +757,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setTag(com.google.irm.service.v1alpha2.api.Tag.Builder builderForValue) {
       if (tagBuilder_ == null) {
@@ -759,10 +777,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeTag(com.google.irm.service.v1alpha2.api.Tag value) {
       if (tagBuilder_ == null) {
@@ -785,10 +804,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearTag() {
       if (tagBuilder_ == null) {
@@ -805,10 +825,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Tag.Builder getTagBuilder() {
 
@@ -819,10 +840,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.TagOrBuilder getTagOrBuilder() {
       if (tagBuilder_ != null) {
@@ -835,10 +857,11 @@ public final class CreateTagRequest extends com.google.protobuf.GeneratedMessage
      *
      *
      * <pre>
-     * Tag to create. Only tag.display_name is an input argument.
+     * Required. Tag to create. Only tag.display_name is an input argument.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2;</code>
+     * <code>.google.cloud.irm.v1alpha2.Tag tag = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Tag,

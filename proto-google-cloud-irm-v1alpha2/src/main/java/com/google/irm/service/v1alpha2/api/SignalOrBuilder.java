@@ -28,7 +28,7 @@ public interface SignalOrBuilder
    *
    * <pre>
    * Resource name of the signal, for example,
-   * "projects/{project_id}/signals/{signal_id}".
+   * "projects/{project_id_or_number}/signals/{signal_id}".
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -41,7 +41,7 @@ public interface SignalOrBuilder
    *
    * <pre>
    * Resource name of the signal, for example,
-   * "projects/{project_id}/signals/{signal_id}".
+   * "projects/{project_id_or_number}/signals/{signal_id}".
    * </pre>
    *
    * <code>string name = 1;</code>

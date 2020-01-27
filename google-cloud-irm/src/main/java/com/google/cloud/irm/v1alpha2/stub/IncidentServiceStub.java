@@ -89,6 +89,27 @@ import javax.annotation.Generated;
 @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
 public abstract class IncidentServiceStub implements BackgroundResource {
 
+  public UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
+    throw new UnsupportedOperationException("Not implemented: deleteArtifactCallable()");
+  }
+
+  public UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverCallable() {
+    throw new UnsupportedOperationException(
+        "Not implemented: requestIncidentRoleHandoverCallable()");
+  }
+
+  public UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverCallable() {
+    throw new UnsupportedOperationException(
+        "Not implemented: confirmIncidentRoleHandoverCallable()");
+  }
+
+  public UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverCallable() {
+    throw new UnsupportedOperationException("Not implemented: forceIncidentRoleHandoverCallable()");
+  }
+
   public UnaryCallable<CreateIncidentRequest, Incident> createIncidentCallable() {
     throw new UnsupportedOperationException("Not implemented: createIncidentCallable()");
   }
@@ -163,12 +184,12 @@ public abstract class IncidentServiceStub implements BackgroundResource {
     throw new UnsupportedOperationException("Not implemented: searchSignalsCallable()");
   }
 
-  public UnaryCallable<GetSignalRequest, Signal> getSignalCallable() {
-    throw new UnsupportedOperationException("Not implemented: getSignalCallable()");
-  }
-
   public UnaryCallable<LookupSignalRequest, Signal> lookupSignalCallable() {
     throw new UnsupportedOperationException("Not implemented: lookupSignalCallable()");
+  }
+
+  public UnaryCallable<GetSignalRequest, Signal> getSignalCallable() {
+    throw new UnsupportedOperationException("Not implemented: getSignalCallable()");
   }
 
   public UnaryCallable<UpdateSignalRequest, Signal> updateSignalCallable() {
@@ -195,10 +216,6 @@ public abstract class IncidentServiceStub implements BackgroundResource {
 
   public UnaryCallable<UpdateArtifactRequest, Artifact> updateArtifactCallable() {
     throw new UnsupportedOperationException("Not implemented: updateArtifactCallable()");
-  }
-
-  public UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
-    throw new UnsupportedOperationException("Not implemented: deleteArtifactCallable()");
   }
 
   public UnaryCallable<SendShiftHandoffRequest, SendShiftHandoffResponse>
@@ -250,23 +267,6 @@ public abstract class IncidentServiceStub implements BackgroundResource {
       listIncidentRoleAssignmentsCallable() {
     throw new UnsupportedOperationException(
         "Not implemented: listIncidentRoleAssignmentsCallable()");
-  }
-
-  public UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverCallable() {
-    throw new UnsupportedOperationException(
-        "Not implemented: requestIncidentRoleHandoverCallable()");
-  }
-
-  public UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverCallable() {
-    throw new UnsupportedOperationException(
-        "Not implemented: confirmIncidentRoleHandoverCallable()");
-  }
-
-  public UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverCallable() {
-    throw new UnsupportedOperationException("Not implemented: forceIncidentRoleHandoverCallable()");
   }
 
   public UnaryCallable<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>

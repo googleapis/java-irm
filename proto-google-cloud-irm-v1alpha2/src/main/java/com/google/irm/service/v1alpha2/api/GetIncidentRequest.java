@@ -117,11 +117,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -140,11 +142,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */
@@ -484,11 +488,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The name.
      */
@@ -507,11 +513,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for name.
      */
@@ -530,11 +538,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The name to set.
      * @return This builder for chaining.
@@ -552,11 +562,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -570,11 +582,13 @@ public final class GetIncidentRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for name to set.
      * @return This builder for chaining.

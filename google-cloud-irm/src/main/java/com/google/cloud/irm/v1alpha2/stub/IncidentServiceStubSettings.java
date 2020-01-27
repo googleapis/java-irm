@@ -120,13 +120,13 @@ import org.threeten.bp.Duration;
  * <p>The builder of this class is recursive, so contained classes are themselves builders. When
  * build() is called, the tree of builders is called to create the complete settings object.
  *
- * <p>For example, to set the total timeout of createIncident to 30 seconds:
+ * <p>For example, to set the total timeout of deleteArtifact to 30 seconds:
  *
  * <pre>
  * <code>
  * IncidentServiceStubSettings.Builder incidentServiceSettingsBuilder =
  *     IncidentServiceStubSettings.newBuilder();
- * incidentServiceSettingsBuilder.createIncidentSettings().getRetrySettings().toBuilder()
+ * incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
  *     .setTotalTimeout(Duration.ofSeconds(30));
  * IncidentServiceStubSettings incidentServiceSettings = incidentServiceSettingsBuilder.build();
  * </code>
@@ -139,6 +139,13 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
   private static final ImmutableList<String> DEFAULT_SERVICE_SCOPES =
       ImmutableList.<String>builder().add("https://www.googleapis.com/auth/cloud-platform").build();
 
+  private final UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings;
+  private final UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverSettings;
+  private final UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverSettings;
+  private final UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverSettings;
   private final UnaryCallSettings<CreateIncidentRequest, Incident> createIncidentSettings;
   private final UnaryCallSettings<GetIncidentRequest, Incident> getIncidentSettings;
   private final PagedCallSettings<
@@ -162,8 +169,8 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
   private final PagedCallSettings<
           SearchSignalsRequest, SearchSignalsResponse, SearchSignalsPagedResponse>
       searchSignalsSettings;
-  private final UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings;
   private final UnaryCallSettings<LookupSignalRequest, Signal> lookupSignalSettings;
+  private final UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings;
   private final UnaryCallSettings<UpdateSignalRequest, Signal> updateSignalSettings;
   private final UnaryCallSettings<EscalateIncidentRequest, EscalateIncidentResponse>
       escalateIncidentSettings;
@@ -172,7 +179,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           ListArtifactsRequest, ListArtifactsResponse, ListArtifactsPagedResponse>
       listArtifactsSettings;
   private final UnaryCallSettings<UpdateArtifactRequest, Artifact> updateArtifactSettings;
-  private final UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings;
   private final UnaryCallSettings<SendShiftHandoffRequest, SendShiftHandoffResponse>
       sendShiftHandoffSettings;
   private final UnaryCallSettings<CreateSubscriptionRequest, Subscription>
@@ -192,14 +198,31 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           ListIncidentRoleAssignmentsResponse,
           ListIncidentRoleAssignmentsPagedResponse>
       listIncidentRoleAssignmentsSettings;
-  private final UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverSettings;
-  private final UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverSettings;
-  private final UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverSettings;
   private final UnaryCallSettings<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>
       cancelIncidentRoleHandoverSettings;
+
+  /** Returns the object with the settings used for calls to deleteArtifact. */
+  public UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
+    return deleteArtifactSettings;
+  }
+
+  /** Returns the object with the settings used for calls to requestIncidentRoleHandover. */
+  public UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverSettings() {
+    return requestIncidentRoleHandoverSettings;
+  }
+
+  /** Returns the object with the settings used for calls to confirmIncidentRoleHandover. */
+  public UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverSettings() {
+    return confirmIncidentRoleHandoverSettings;
+  }
+
+  /** Returns the object with the settings used for calls to forceIncidentRoleHandover. */
+  public UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverSettings() {
+    return forceIncidentRoleHandoverSettings;
+  }
 
   /** Returns the object with the settings used for calls to createIncident. */
   public UnaryCallSettings<CreateIncidentRequest, Incident> createIncidentSettings() {
@@ -271,14 +294,14 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     return searchSignalsSettings;
   }
 
-  /** Returns the object with the settings used for calls to getSignal. */
-  public UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings() {
-    return getSignalSettings;
-  }
-
   /** Returns the object with the settings used for calls to lookupSignal. */
   public UnaryCallSettings<LookupSignalRequest, Signal> lookupSignalSettings() {
     return lookupSignalSettings;
+  }
+
+  /** Returns the object with the settings used for calls to getSignal. */
+  public UnaryCallSettings<GetSignalRequest, Signal> getSignalSettings() {
+    return getSignalSettings;
   }
 
   /** Returns the object with the settings used for calls to updateSignal. */
@@ -306,11 +329,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
   /** Returns the object with the settings used for calls to updateArtifact. */
   public UnaryCallSettings<UpdateArtifactRequest, Artifact> updateArtifactSettings() {
     return updateArtifactSettings;
-  }
-
-  /** Returns the object with the settings used for calls to deleteArtifact. */
-  public UnaryCallSettings<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
-    return deleteArtifactSettings;
   }
 
   /** Returns the object with the settings used for calls to sendShiftHandoff. */
@@ -360,24 +378,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           ListIncidentRoleAssignmentsPagedResponse>
       listIncidentRoleAssignmentsSettings() {
     return listIncidentRoleAssignmentsSettings;
-  }
-
-  /** Returns the object with the settings used for calls to requestIncidentRoleHandover. */
-  public UnaryCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverSettings() {
-    return requestIncidentRoleHandoverSettings;
-  }
-
-  /** Returns the object with the settings used for calls to confirmIncidentRoleHandover. */
-  public UnaryCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverSettings() {
-    return confirmIncidentRoleHandoverSettings;
-  }
-
-  /** Returns the object with the settings used for calls to forceIncidentRoleHandover. */
-  public UnaryCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverSettings() {
-    return forceIncidentRoleHandoverSettings;
   }
 
   /** Returns the object with the settings used for calls to cancelIncidentRoleHandover. */
@@ -455,6 +455,12 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
   protected IncidentServiceStubSettings(Builder settingsBuilder) throws IOException {
     super(settingsBuilder);
 
+    deleteArtifactSettings = settingsBuilder.deleteArtifactSettings().build();
+    requestIncidentRoleHandoverSettings =
+        settingsBuilder.requestIncidentRoleHandoverSettings().build();
+    confirmIncidentRoleHandoverSettings =
+        settingsBuilder.confirmIncidentRoleHandoverSettings().build();
+    forceIncidentRoleHandoverSettings = settingsBuilder.forceIncidentRoleHandoverSettings().build();
     createIncidentSettings = settingsBuilder.createIncidentSettings().build();
     getIncidentSettings = settingsBuilder.getIncidentSettings().build();
     searchIncidentsSettings = settingsBuilder.searchIncidentsSettings().build();
@@ -467,14 +473,13 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     listTagsSettings = settingsBuilder.listTagsSettings().build();
     createSignalSettings = settingsBuilder.createSignalSettings().build();
     searchSignalsSettings = settingsBuilder.searchSignalsSettings().build();
-    getSignalSettings = settingsBuilder.getSignalSettings().build();
     lookupSignalSettings = settingsBuilder.lookupSignalSettings().build();
+    getSignalSettings = settingsBuilder.getSignalSettings().build();
     updateSignalSettings = settingsBuilder.updateSignalSettings().build();
     escalateIncidentSettings = settingsBuilder.escalateIncidentSettings().build();
     createArtifactSettings = settingsBuilder.createArtifactSettings().build();
     listArtifactsSettings = settingsBuilder.listArtifactsSettings().build();
     updateArtifactSettings = settingsBuilder.updateArtifactSettings().build();
-    deleteArtifactSettings = settingsBuilder.deleteArtifactSettings().build();
     sendShiftHandoffSettings = settingsBuilder.sendShiftHandoffSettings().build();
     createSubscriptionSettings = settingsBuilder.createSubscriptionSettings().build();
     updateSubscriptionSettings = settingsBuilder.updateSubscriptionSettings().build();
@@ -486,11 +491,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
         settingsBuilder.deleteIncidentRoleAssignmentSettings().build();
     listIncidentRoleAssignmentsSettings =
         settingsBuilder.listIncidentRoleAssignmentsSettings().build();
-    requestIncidentRoleHandoverSettings =
-        settingsBuilder.requestIncidentRoleHandoverSettings().build();
-    confirmIncidentRoleHandoverSettings =
-        settingsBuilder.confirmIncidentRoleHandoverSettings().build();
-    forceIncidentRoleHandoverSettings = settingsBuilder.forceIncidentRoleHandoverSettings().build();
     cancelIncidentRoleHandoverSettings =
         settingsBuilder.cancelIncidentRoleHandoverSettings().build();
   }
@@ -982,6 +982,16 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
   public static class Builder extends StubSettings.Builder<IncidentServiceStubSettings, Builder> {
     private final ImmutableList<UnaryCallSettings.Builder<?, ?>> unaryMethodSettingsBuilders;
 
+    private final UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings;
+    private final UnaryCallSettings.Builder<
+            RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        requestIncidentRoleHandoverSettings;
+    private final UnaryCallSettings.Builder<
+            ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        confirmIncidentRoleHandoverSettings;
+    private final UnaryCallSettings.Builder<
+            ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        forceIncidentRoleHandoverSettings;
     private final UnaryCallSettings.Builder<CreateIncidentRequest, Incident> createIncidentSettings;
     private final UnaryCallSettings.Builder<GetIncidentRequest, Incident> getIncidentSettings;
     private final PagedCallSettings.Builder<
@@ -1007,8 +1017,8 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     private final PagedCallSettings.Builder<
             SearchSignalsRequest, SearchSignalsResponse, SearchSignalsPagedResponse>
         searchSignalsSettings;
-    private final UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings;
     private final UnaryCallSettings.Builder<LookupSignalRequest, Signal> lookupSignalSettings;
+    private final UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings;
     private final UnaryCallSettings.Builder<UpdateSignalRequest, Signal> updateSignalSettings;
     private final UnaryCallSettings.Builder<EscalateIncidentRequest, EscalateIncidentResponse>
         escalateIncidentSettings;
@@ -1017,7 +1027,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
             ListArtifactsRequest, ListArtifactsResponse, ListArtifactsPagedResponse>
         listArtifactsSettings;
     private final UnaryCallSettings.Builder<UpdateArtifactRequest, Artifact> updateArtifactSettings;
-    private final UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings;
     private final UnaryCallSettings.Builder<SendShiftHandoffRequest, SendShiftHandoffResponse>
         sendShiftHandoffSettings;
     private final UnaryCallSettings.Builder<CreateSubscriptionRequest, Subscription>
@@ -1039,15 +1048,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
             ListIncidentRoleAssignmentsResponse,
             ListIncidentRoleAssignmentsPagedResponse>
         listIncidentRoleAssignmentsSettings;
-    private final UnaryCallSettings.Builder<
-            RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        requestIncidentRoleHandoverSettings;
-    private final UnaryCallSettings.Builder<
-            ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        confirmIncidentRoleHandoverSettings;
-    private final UnaryCallSettings.Builder<
-            ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        forceIncidentRoleHandoverSettings;
     private final UnaryCallSettings.Builder<
             CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>
         cancelIncidentRoleHandoverSettings;
@@ -1093,6 +1093,14 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     protected Builder(ClientContext clientContext) {
       super(clientContext);
 
+      deleteArtifactSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+
+      requestIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+
+      confirmIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+
+      forceIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+
       createIncidentSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
       getIncidentSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
@@ -1118,9 +1126,9 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
 
       searchSignalsSettings = PagedCallSettings.newBuilder(SEARCH_SIGNALS_PAGE_STR_FACT);
 
-      getSignalSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
-
       lookupSignalSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
+
+      getSignalSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
       updateSignalSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
@@ -1131,8 +1139,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
       listArtifactsSettings = PagedCallSettings.newBuilder(LIST_ARTIFACTS_PAGE_STR_FACT);
 
       updateArtifactSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
-
-      deleteArtifactSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
       sendShiftHandoffSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
@@ -1151,16 +1157,14 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
       listIncidentRoleAssignmentsSettings =
           PagedCallSettings.newBuilder(LIST_INCIDENT_ROLE_ASSIGNMENTS_PAGE_STR_FACT);
 
-      requestIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
-
-      confirmIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
-
-      forceIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
-
       cancelIncidentRoleHandoverSettings = UnaryCallSettings.newUnaryCallSettingsBuilder();
 
       unaryMethodSettingsBuilders =
           ImmutableList.<UnaryCallSettings.Builder<?, ?>>of(
+              deleteArtifactSettings,
+              requestIncidentRoleHandoverSettings,
+              confirmIncidentRoleHandoverSettings,
+              forceIncidentRoleHandoverSettings,
               createIncidentSettings,
               getIncidentSettings,
               searchIncidentsSettings,
@@ -1173,14 +1177,13 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
               listTagsSettings,
               createSignalSettings,
               searchSignalsSettings,
-              getSignalSettings,
               lookupSignalSettings,
+              getSignalSettings,
               updateSignalSettings,
               escalateIncidentSettings,
               createArtifactSettings,
               listArtifactsSettings,
               updateArtifactSettings,
-              deleteArtifactSettings,
               sendShiftHandoffSettings,
               createSubscriptionSettings,
               updateSubscriptionSettings,
@@ -1189,9 +1192,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
               createIncidentRoleAssignmentSettings,
               deleteIncidentRoleAssignmentSettings,
               listIncidentRoleAssignmentsSettings,
-              requestIncidentRoleHandoverSettings,
-              confirmIncidentRoleHandoverSettings,
-              forceIncidentRoleHandoverSettings,
               cancelIncidentRoleHandoverSettings);
 
       initDefaults(this);
@@ -1207,6 +1207,26 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     }
 
     private static Builder initDefaults(Builder builder) {
+
+      builder
+          .deleteArtifactSettings()
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
+          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
+
+      builder
+          .requestIncidentRoleHandoverSettings()
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
+          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
+
+      builder
+          .confirmIncidentRoleHandoverSettings()
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
+          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
+
+      builder
+          .forceIncidentRoleHandoverSettings()
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
+          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
           .createIncidentSettings()
@@ -1250,7 +1270,7 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
 
       builder
           .deleteTagSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
@@ -1269,12 +1289,12 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
-          .getSignalSettings()
+          .lookupSignalSettings()
           .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
-          .lookupSignalSettings()
+          .getSignalSettings()
           .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
@@ -1304,11 +1324,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
-          .deleteArtifactSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
-          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
-
-      builder
           .sendShiftHandoffSettings()
           .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
@@ -1330,7 +1345,7 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
 
       builder
           .deleteSubscriptionSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
@@ -1340,27 +1355,12 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
 
       builder
           .deleteIncidentRoleAssignmentSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
+          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
           .listIncidentRoleAssignmentsSettings()
           .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("idempotent"))
-          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
-
-      builder
-          .requestIncidentRoleHandoverSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
-          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
-
-      builder
-          .confirmIncidentRoleHandoverSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
-          .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
-
-      builder
-          .forceIncidentRoleHandoverSettings()
-          .setRetryableCodes(RETRYABLE_CODE_DEFINITIONS.get("non_idempotent"))
           .setRetrySettings(RETRY_PARAM_DEFINITIONS.get("default"));
 
       builder
@@ -1374,6 +1374,12 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     protected Builder(IncidentServiceStubSettings settings) {
       super(settings);
 
+      deleteArtifactSettings = settings.deleteArtifactSettings.toBuilder();
+      requestIncidentRoleHandoverSettings =
+          settings.requestIncidentRoleHandoverSettings.toBuilder();
+      confirmIncidentRoleHandoverSettings =
+          settings.confirmIncidentRoleHandoverSettings.toBuilder();
+      forceIncidentRoleHandoverSettings = settings.forceIncidentRoleHandoverSettings.toBuilder();
       createIncidentSettings = settings.createIncidentSettings.toBuilder();
       getIncidentSettings = settings.getIncidentSettings.toBuilder();
       searchIncidentsSettings = settings.searchIncidentsSettings.toBuilder();
@@ -1386,14 +1392,13 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
       listTagsSettings = settings.listTagsSettings.toBuilder();
       createSignalSettings = settings.createSignalSettings.toBuilder();
       searchSignalsSettings = settings.searchSignalsSettings.toBuilder();
-      getSignalSettings = settings.getSignalSettings.toBuilder();
       lookupSignalSettings = settings.lookupSignalSettings.toBuilder();
+      getSignalSettings = settings.getSignalSettings.toBuilder();
       updateSignalSettings = settings.updateSignalSettings.toBuilder();
       escalateIncidentSettings = settings.escalateIncidentSettings.toBuilder();
       createArtifactSettings = settings.createArtifactSettings.toBuilder();
       listArtifactsSettings = settings.listArtifactsSettings.toBuilder();
       updateArtifactSettings = settings.updateArtifactSettings.toBuilder();
-      deleteArtifactSettings = settings.deleteArtifactSettings.toBuilder();
       sendShiftHandoffSettings = settings.sendShiftHandoffSettings.toBuilder();
       createSubscriptionSettings = settings.createSubscriptionSettings.toBuilder();
       updateSubscriptionSettings = settings.updateSubscriptionSettings.toBuilder();
@@ -1405,15 +1410,14 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
           settings.deleteIncidentRoleAssignmentSettings.toBuilder();
       listIncidentRoleAssignmentsSettings =
           settings.listIncidentRoleAssignmentsSettings.toBuilder();
-      requestIncidentRoleHandoverSettings =
-          settings.requestIncidentRoleHandoverSettings.toBuilder();
-      confirmIncidentRoleHandoverSettings =
-          settings.confirmIncidentRoleHandoverSettings.toBuilder();
-      forceIncidentRoleHandoverSettings = settings.forceIncidentRoleHandoverSettings.toBuilder();
       cancelIncidentRoleHandoverSettings = settings.cancelIncidentRoleHandoverSettings.toBuilder();
 
       unaryMethodSettingsBuilders =
           ImmutableList.<UnaryCallSettings.Builder<?, ?>>of(
+              deleteArtifactSettings,
+              requestIncidentRoleHandoverSettings,
+              confirmIncidentRoleHandoverSettings,
+              forceIncidentRoleHandoverSettings,
               createIncidentSettings,
               getIncidentSettings,
               searchIncidentsSettings,
@@ -1426,14 +1430,13 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
               listTagsSettings,
               createSignalSettings,
               searchSignalsSettings,
-              getSignalSettings,
               lookupSignalSettings,
+              getSignalSettings,
               updateSignalSettings,
               escalateIncidentSettings,
               createArtifactSettings,
               listArtifactsSettings,
               updateArtifactSettings,
-              deleteArtifactSettings,
               sendShiftHandoffSettings,
               createSubscriptionSettings,
               updateSubscriptionSettings,
@@ -1442,9 +1445,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
               createIncidentRoleAssignmentSettings,
               deleteIncidentRoleAssignmentSettings,
               listIncidentRoleAssignmentsSettings,
-              requestIncidentRoleHandoverSettings,
-              confirmIncidentRoleHandoverSettings,
-              forceIncidentRoleHandoverSettings,
               cancelIncidentRoleHandoverSettings);
     }
 
@@ -1462,6 +1462,29 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
 
     public ImmutableList<UnaryCallSettings.Builder<?, ?>> unaryMethodSettingsBuilders() {
       return unaryMethodSettingsBuilders;
+    }
+
+    /** Returns the builder for the settings used for calls to deleteArtifact. */
+    public UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
+      return deleteArtifactSettings;
+    }
+
+    /** Returns the builder for the settings used for calls to requestIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        requestIncidentRoleHandoverSettings() {
+      return requestIncidentRoleHandoverSettings;
+    }
+
+    /** Returns the builder for the settings used for calls to confirmIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        confirmIncidentRoleHandoverSettings() {
+      return confirmIncidentRoleHandoverSettings;
+    }
+
+    /** Returns the builder for the settings used for calls to forceIncidentRoleHandover. */
+    public UnaryCallSettings.Builder<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        forceIncidentRoleHandoverSettings() {
+      return forceIncidentRoleHandoverSettings;
     }
 
     /** Returns the builder for the settings used for calls to createIncident. */
@@ -1536,14 +1559,14 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
       return searchSignalsSettings;
     }
 
-    /** Returns the builder for the settings used for calls to getSignal. */
-    public UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings() {
-      return getSignalSettings;
-    }
-
     /** Returns the builder for the settings used for calls to lookupSignal. */
     public UnaryCallSettings.Builder<LookupSignalRequest, Signal> lookupSignalSettings() {
       return lookupSignalSettings;
+    }
+
+    /** Returns the builder for the settings used for calls to getSignal. */
+    public UnaryCallSettings.Builder<GetSignalRequest, Signal> getSignalSettings() {
+      return getSignalSettings;
     }
 
     /** Returns the builder for the settings used for calls to updateSignal. */
@@ -1572,11 +1595,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
     /** Returns the builder for the settings used for calls to updateArtifact. */
     public UnaryCallSettings.Builder<UpdateArtifactRequest, Artifact> updateArtifactSettings() {
       return updateArtifactSettings;
-    }
-
-    /** Returns the builder for the settings used for calls to deleteArtifact. */
-    public UnaryCallSettings.Builder<DeleteArtifactRequest, Empty> deleteArtifactSettings() {
-      return deleteArtifactSettings;
     }
 
     /** Returns the builder for the settings used for calls to sendShiftHandoff. */
@@ -1629,24 +1647,6 @@ public class IncidentServiceStubSettings extends StubSettings<IncidentServiceStu
             ListIncidentRoleAssignmentsPagedResponse>
         listIncidentRoleAssignmentsSettings() {
       return listIncidentRoleAssignmentsSettings;
-    }
-
-    /** Returns the builder for the settings used for calls to requestIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        requestIncidentRoleHandoverSettings() {
-      return requestIncidentRoleHandoverSettings;
-    }
-
-    /** Returns the builder for the settings used for calls to confirmIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        confirmIncidentRoleHandoverSettings() {
-      return confirmIncidentRoleHandoverSettings;
-    }
-
-    /** Returns the builder for the settings used for calls to forceIncidentRoleHandover. */
-    public UnaryCallSettings.Builder<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        forceIncidentRoleHandoverSettings() {
-      return forceIncidentRoleHandoverSettings;
     }
 
     /** Returns the builder for the settings used for calls to cancelIncidentRoleHandover. */

@@ -139,10 +139,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the subscription field is set.
    */
@@ -153,10 +155,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The subscription.
    */
@@ -169,10 +173,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    *
    * <pre>
-   * The subscription to update, with new values.
+   * Required. The subscription to update, with new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionOrBuilder() {
     return getSubscription();
@@ -593,10 +599,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the subscription field is set.
      */
@@ -607,10 +615,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The subscription.
      */
@@ -627,10 +637,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSubscription(com.google.irm.service.v1alpha2.api.Subscription value) {
       if (subscriptionBuilder_ == null) {
@@ -649,10 +661,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSubscription(
         com.google.irm.service.v1alpha2.api.Subscription.Builder builderForValue) {
@@ -669,10 +683,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeSubscription(com.google.irm.service.v1alpha2.api.Subscription value) {
       if (subscriptionBuilder_ == null) {
@@ -695,10 +711,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearSubscription() {
       if (subscriptionBuilder_ == null) {
@@ -715,10 +733,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Subscription.Builder getSubscriptionBuilder() {
 
@@ -729,10 +749,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionOrBuilder() {
       if (subscriptionBuilder_ != null) {
@@ -747,10 +769,12 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
      *
      *
      * <pre>
-     * The subscription to update, with new values.
+     * Required. The subscription to update, with new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Subscription subscription = 1;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Subscription,

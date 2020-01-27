@@ -2129,6 +2129,9 @@ public final class IncidentServiceGrpc {
      * <pre>
      * Lists signals that are part of an incident.
      * Signals are returned in reverse chronological order.
+     * Note that search should not be relied on for critical functionality.  It
+     * has lower availability guarantees and might fail to return valid results.
+     * Returned results might include stale or extraneous entries.
      * </pre>
      */
     public void searchSignals(
@@ -2372,6 +2375,8 @@ public final class IncidentServiceGrpc {
      * Starts a role handover. The proposed assignee will receive an email
      * notifying them of the assignment. This will fail if a role handover is
      * already pending.
+     * Handover to an oncall ladder is not permitted. Use
+     * CreateIncidentRoleAssignment instead.
      * </pre>
      */
     public void requestIncidentRoleHandover(
@@ -2870,6 +2875,9 @@ public final class IncidentServiceGrpc {
      * <pre>
      * Lists signals that are part of an incident.
      * Signals are returned in reverse chronological order.
+     * Note that search should not be relied on for critical functionality.  It
+     * has lower availability guarantees and might fail to return valid results.
+     * Returned results might include stale or extraneous entries.
      * </pre>
      */
     public void searchSignals(
@@ -3164,6 +3172,8 @@ public final class IncidentServiceGrpc {
      * Starts a role handover. The proposed assignee will receive an email
      * notifying them of the assignment. This will fail if a role handover is
      * already pending.
+     * Handover to an oncall ladder is not permitted. Use
+     * CreateIncidentRoleAssignment instead.
      * </pre>
      */
     public void requestIncidentRoleHandover(
@@ -3411,6 +3421,9 @@ public final class IncidentServiceGrpc {
      * <pre>
      * Lists signals that are part of an incident.
      * Signals are returned in reverse chronological order.
+     * Note that search should not be relied on for critical functionality.  It
+     * has lower availability guarantees and might fail to return valid results.
+     * Returned results might include stale or extraneous entries.
      * </pre>
      */
     public com.google.irm.service.v1alpha2.api.SearchSignalsResponse searchSignals(
@@ -3642,6 +3655,8 @@ public final class IncidentServiceGrpc {
      * Starts a role handover. The proposed assignee will receive an email
      * notifying them of the assignment. This will fail if a role handover is
      * already pending.
+     * Handover to an oncall ladder is not permitted. Use
+     * CreateIncidentRoleAssignment instead.
      * </pre>
      */
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment requestIncidentRoleHandover(
@@ -3886,6 +3901,9 @@ public final class IncidentServiceGrpc {
      * <pre>
      * Lists signals that are part of an incident.
      * Signals are returned in reverse chronological order.
+     * Note that search should not be relied on for critical functionality.  It
+     * has lower availability guarantees and might fail to return valid results.
+     * Returned results might include stale or extraneous entries.
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<
@@ -4137,6 +4155,8 @@ public final class IncidentServiceGrpc {
      * Starts a role handover. The proposed assignee will receive an email
      * notifying them of the assignment. This will fail if a role handover is
      * already pending.
+     * Handover to an oncall ladder is not permitted. Use
+     * CreateIncidentRoleAssignment instead.
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<

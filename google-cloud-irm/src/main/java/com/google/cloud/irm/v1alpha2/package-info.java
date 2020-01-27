@@ -28,9 +28,8 @@
  * <pre>
  * <code>
  * try (IncidentServiceClient incidentServiceClient = IncidentServiceClient.create()) {
- *   Incident incident = Incident.newBuilder().build();
- *   ProjectName parent = ProjectName.of("[PROJECT]");
- *   Incident response = incidentServiceClient.createIncident(incident, parent);
+ *   ArtifactName name = ArtifactName.of("[PROJECT]", "[INCIDENT]", "[ARTIFACT]");
+ *   incidentServiceClient.deleteArtifact(name);
  * }
  * </code>
  * </pre>

@@ -136,11 +136,13 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -159,11 +161,13 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    *
    * <pre>
-   * Resource name of the incident, for example,
-   * "projects/{project_id}/incidents/{incident_id}".
+   * Required. Resource name of the incident, for example,
+   * "projects/{project_id_or_number}/incidents/{incident_id}".
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -185,10 +189,12 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    *
    * <pre>
-   * Role assignment to create.
+   * Required. Role assignment to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the incidentRoleAssignment field is set.
    */
@@ -199,10 +205,12 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    *
    * <pre>
-   * Role assignment to create.
+   * Required. Role assignment to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The incidentRoleAssignment.
    */
@@ -215,10 +223,12 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    *
    * <pre>
-   * Role assignment to create.
+   * Required. Role assignment to create.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder
       getIncidentRoleAssignmentOrBuilder() {
@@ -589,11 +599,13 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The parent.
      */
@@ -612,11 +624,13 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for parent.
      */
@@ -635,11 +649,13 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The parent to set.
      * @return This builder for chaining.
@@ -657,11 +673,13 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -675,11 +693,13 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Resource name of the incident, for example,
-     * "projects/{project_id}/incidents/{incident_id}".
+     * Required. Resource name of the incident, for example,
+     * "projects/{project_id_or_number}/incidents/{incident_id}".
      * </pre>
      *
-     * <code>string parent = 1;</code>
+     * <code>
+     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for parent to set.
      * @return This builder for chaining.
@@ -705,10 +725,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the incidentRoleAssignment field is set.
      */
@@ -719,10 +741,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The incidentRoleAssignment.
      */
@@ -739,10 +763,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.IncidentRoleAssignment value) {
@@ -762,10 +788,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.Builder builderForValue) {
@@ -782,10 +810,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.IncidentRoleAssignment value) {
@@ -810,10 +840,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearIncidentRoleAssignment() {
       if (incidentRoleAssignmentBuilder_ == null) {
@@ -830,10 +862,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.Builder
         getIncidentRoleAssignmentBuilder() {
@@ -845,10 +879,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder
         getIncidentRoleAssignmentOrBuilder() {
@@ -864,10 +900,12 @@ public final class CreateIncidentRoleAssignmentRequest
      *
      *
      * <pre>
-     * Role assignment to create.
+     * Required. Role assignment to create.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2;</code>
+     * <code>
+     * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment,

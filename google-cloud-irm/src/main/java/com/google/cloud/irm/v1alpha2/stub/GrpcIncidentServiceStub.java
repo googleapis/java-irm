@@ -100,6 +100,48 @@ import javax.annotation.Generated;
 @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
 public class GrpcIncidentServiceStub extends IncidentServiceStub {
 
+  private static final MethodDescriptor<DeleteArtifactRequest, Empty>
+      deleteArtifactMethodDescriptor =
+          MethodDescriptor.<DeleteArtifactRequest, Empty>newBuilder()
+              .setType(MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName("google.cloud.irm.v1alpha2.IncidentService/DeleteArtifact")
+              .setRequestMarshaller(
+                  ProtoUtils.marshaller(DeleteArtifactRequest.getDefaultInstance()))
+              .setResponseMarshaller(ProtoUtils.marshaller(Empty.getDefaultInstance()))
+              .build();
+  private static final MethodDescriptor<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverMethodDescriptor =
+          MethodDescriptor.<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+              .setType(MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(
+                  "google.cloud.irm.v1alpha2.IncidentService/RequestIncidentRoleHandover")
+              .setRequestMarshaller(
+                  ProtoUtils.marshaller(RequestIncidentRoleHandoverRequest.getDefaultInstance()))
+              .setResponseMarshaller(
+                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
+              .build();
+  private static final MethodDescriptor<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverMethodDescriptor =
+          MethodDescriptor.<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+              .setType(MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(
+                  "google.cloud.irm.v1alpha2.IncidentService/ConfirmIncidentRoleHandover")
+              .setRequestMarshaller(
+                  ProtoUtils.marshaller(ConfirmIncidentRoleHandoverRequest.getDefaultInstance()))
+              .setResponseMarshaller(
+                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
+              .build();
+  private static final MethodDescriptor<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverMethodDescriptor =
+          MethodDescriptor.<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+              .setType(MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(
+                  "google.cloud.irm.v1alpha2.IncidentService/ForceIncidentRoleHandover")
+              .setRequestMarshaller(
+                  ProtoUtils.marshaller(ForceIncidentRoleHandoverRequest.getDefaultInstance()))
+              .setResponseMarshaller(
+                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
+              .build();
   private static final MethodDescriptor<CreateIncidentRequest, Incident>
       createIncidentMethodDescriptor =
           MethodDescriptor.<CreateIncidentRequest, Incident>newBuilder()
@@ -205,18 +247,18 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
               .setResponseMarshaller(
                   ProtoUtils.marshaller(SearchSignalsResponse.getDefaultInstance()))
               .build();
-  private static final MethodDescriptor<GetSignalRequest, Signal> getSignalMethodDescriptor =
-      MethodDescriptor.<GetSignalRequest, Signal>newBuilder()
-          .setType(MethodDescriptor.MethodType.UNARY)
-          .setFullMethodName("google.cloud.irm.v1alpha2.IncidentService/GetSignal")
-          .setRequestMarshaller(ProtoUtils.marshaller(GetSignalRequest.getDefaultInstance()))
-          .setResponseMarshaller(ProtoUtils.marshaller(Signal.getDefaultInstance()))
-          .build();
   private static final MethodDescriptor<LookupSignalRequest, Signal> lookupSignalMethodDescriptor =
       MethodDescriptor.<LookupSignalRequest, Signal>newBuilder()
           .setType(MethodDescriptor.MethodType.UNARY)
           .setFullMethodName("google.cloud.irm.v1alpha2.IncidentService/LookupSignal")
           .setRequestMarshaller(ProtoUtils.marshaller(LookupSignalRequest.getDefaultInstance()))
+          .setResponseMarshaller(ProtoUtils.marshaller(Signal.getDefaultInstance()))
+          .build();
+  private static final MethodDescriptor<GetSignalRequest, Signal> getSignalMethodDescriptor =
+      MethodDescriptor.<GetSignalRequest, Signal>newBuilder()
+          .setType(MethodDescriptor.MethodType.UNARY)
+          .setFullMethodName("google.cloud.irm.v1alpha2.IncidentService/GetSignal")
+          .setRequestMarshaller(ProtoUtils.marshaller(GetSignalRequest.getDefaultInstance()))
           .setResponseMarshaller(ProtoUtils.marshaller(Signal.getDefaultInstance()))
           .build();
   private static final MethodDescriptor<UpdateSignalRequest, Signal> updateSignalMethodDescriptor =
@@ -263,15 +305,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
               .setRequestMarshaller(
                   ProtoUtils.marshaller(UpdateArtifactRequest.getDefaultInstance()))
               .setResponseMarshaller(ProtoUtils.marshaller(Artifact.getDefaultInstance()))
-              .build();
-  private static final MethodDescriptor<DeleteArtifactRequest, Empty>
-      deleteArtifactMethodDescriptor =
-          MethodDescriptor.<DeleteArtifactRequest, Empty>newBuilder()
-              .setType(MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName("google.cloud.irm.v1alpha2.IncidentService/DeleteArtifact")
-              .setRequestMarshaller(
-                  ProtoUtils.marshaller(DeleteArtifactRequest.getDefaultInstance()))
-              .setResponseMarshaller(ProtoUtils.marshaller(Empty.getDefaultInstance()))
               .build();
   private static final MethodDescriptor<SendShiftHandoffRequest, SendShiftHandoffResponse>
       sendShiftHandoffMethodDescriptor =
@@ -354,39 +387,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
               .setResponseMarshaller(
                   ProtoUtils.marshaller(ListIncidentRoleAssignmentsResponse.getDefaultInstance()))
               .build();
-  private static final MethodDescriptor<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverMethodDescriptor =
-          MethodDescriptor.<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-              .setType(MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(
-                  "google.cloud.irm.v1alpha2.IncidentService/RequestIncidentRoleHandover")
-              .setRequestMarshaller(
-                  ProtoUtils.marshaller(RequestIncidentRoleHandoverRequest.getDefaultInstance()))
-              .setResponseMarshaller(
-                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
-              .build();
-  private static final MethodDescriptor<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverMethodDescriptor =
-          MethodDescriptor.<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-              .setType(MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(
-                  "google.cloud.irm.v1alpha2.IncidentService/ConfirmIncidentRoleHandover")
-              .setRequestMarshaller(
-                  ProtoUtils.marshaller(ConfirmIncidentRoleHandoverRequest.getDefaultInstance()))
-              .setResponseMarshaller(
-                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
-              .build();
-  private static final MethodDescriptor<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverMethodDescriptor =
-          MethodDescriptor.<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-              .setType(MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(
-                  "google.cloud.irm.v1alpha2.IncidentService/ForceIncidentRoleHandover")
-              .setRequestMarshaller(
-                  ProtoUtils.marshaller(ForceIncidentRoleHandoverRequest.getDefaultInstance()))
-              .setResponseMarshaller(
-                  ProtoUtils.marshaller(IncidentRoleAssignment.getDefaultInstance()))
-              .build();
   private static final MethodDescriptor<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>
       cancelIncidentRoleHandoverMethodDescriptor =
           MethodDescriptor.<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
@@ -401,6 +401,13 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
 
   private final BackgroundResource backgroundResources;
 
+  private final UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable;
+  private final UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverCallable;
+  private final UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverCallable;
+  private final UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverCallable;
   private final UnaryCallable<CreateIncidentRequest, Incident> createIncidentCallable;
   private final UnaryCallable<GetIncidentRequest, Incident> getIncidentCallable;
   private final UnaryCallable<SearchIncidentsRequest, SearchIncidentsResponse>
@@ -425,8 +432,8 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
   private final UnaryCallable<SearchSignalsRequest, SearchSignalsResponse> searchSignalsCallable;
   private final UnaryCallable<SearchSignalsRequest, SearchSignalsPagedResponse>
       searchSignalsPagedCallable;
-  private final UnaryCallable<GetSignalRequest, Signal> getSignalCallable;
   private final UnaryCallable<LookupSignalRequest, Signal> lookupSignalCallable;
+  private final UnaryCallable<GetSignalRequest, Signal> getSignalCallable;
   private final UnaryCallable<UpdateSignalRequest, Signal> updateSignalCallable;
   private final UnaryCallable<EscalateIncidentRequest, EscalateIncidentResponse>
       escalateIncidentCallable;
@@ -435,7 +442,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
   private final UnaryCallable<ListArtifactsRequest, ListArtifactsPagedResponse>
       listArtifactsPagedCallable;
   private final UnaryCallable<UpdateArtifactRequest, Artifact> updateArtifactCallable;
-  private final UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable;
   private final UnaryCallable<SendShiftHandoffRequest, SendShiftHandoffResponse>
       sendShiftHandoffCallable;
   private final UnaryCallable<CreateSubscriptionRequest, Subscription> createSubscriptionCallable;
@@ -455,12 +461,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
   private final UnaryCallable<
           ListIncidentRoleAssignmentsRequest, ListIncidentRoleAssignmentsPagedResponse>
       listIncidentRoleAssignmentsPagedCallable;
-  private final UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverCallable;
-  private final UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverCallable;
-  private final UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverCallable;
   private final UnaryCallable<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>
       cancelIncidentRoleHandoverCallable;
 
@@ -505,6 +505,65 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
       throws IOException {
     this.callableFactory = callableFactory;
 
+    GrpcCallSettings<DeleteArtifactRequest, Empty> deleteArtifactTransportSettings =
+        GrpcCallSettings.<DeleteArtifactRequest, Empty>newBuilder()
+            .setMethodDescriptor(deleteArtifactMethodDescriptor)
+            .setParamsExtractor(
+                new RequestParamsExtractor<DeleteArtifactRequest>() {
+                  @Override
+                  public Map<String, String> extract(DeleteArtifactRequest request) {
+                    ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
+                    params.put("name", String.valueOf(request.getName()));
+                    return params.build();
+                  }
+                })
+            .build();
+    GrpcCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        requestIncidentRoleHandoverTransportSettings =
+            GrpcCallSettings
+                .<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+                .setMethodDescriptor(requestIncidentRoleHandoverMethodDescriptor)
+                .setParamsExtractor(
+                    new RequestParamsExtractor<RequestIncidentRoleHandoverRequest>() {
+                      @Override
+                      public Map<String, String> extract(
+                          RequestIncidentRoleHandoverRequest request) {
+                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
+                        params.put("name", String.valueOf(request.getName()));
+                        return params.build();
+                      }
+                    })
+                .build();
+    GrpcCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        confirmIncidentRoleHandoverTransportSettings =
+            GrpcCallSettings
+                .<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+                .setMethodDescriptor(confirmIncidentRoleHandoverMethodDescriptor)
+                .setParamsExtractor(
+                    new RequestParamsExtractor<ConfirmIncidentRoleHandoverRequest>() {
+                      @Override
+                      public Map<String, String> extract(
+                          ConfirmIncidentRoleHandoverRequest request) {
+                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
+                        params.put("name", String.valueOf(request.getName()));
+                        return params.build();
+                      }
+                    })
+                .build();
+    GrpcCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+        forceIncidentRoleHandoverTransportSettings =
+            GrpcCallSettings.<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
+                .setMethodDescriptor(forceIncidentRoleHandoverMethodDescriptor)
+                .setParamsExtractor(
+                    new RequestParamsExtractor<ForceIncidentRoleHandoverRequest>() {
+                      @Override
+                      public Map<String, String> extract(ForceIncidentRoleHandoverRequest request) {
+                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
+                        params.put("name", String.valueOf(request.getName()));
+                        return params.build();
+                      }
+                    })
+                .build();
     GrpcCallSettings<CreateIncidentRequest, Incident> createIncidentTransportSettings =
         GrpcCallSettings.<CreateIncidentRequest, Incident>newBuilder()
             .setMethodDescriptor(createIncidentMethodDescriptor)
@@ -665,6 +724,10 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
                   }
                 })
             .build();
+    GrpcCallSettings<LookupSignalRequest, Signal> lookupSignalTransportSettings =
+        GrpcCallSettings.<LookupSignalRequest, Signal>newBuilder()
+            .setMethodDescriptor(lookupSignalMethodDescriptor)
+            .build();
     GrpcCallSettings<GetSignalRequest, Signal> getSignalTransportSettings =
         GrpcCallSettings.<GetSignalRequest, Signal>newBuilder()
             .setMethodDescriptor(getSignalMethodDescriptor)
@@ -677,10 +740,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
                     return params.build();
                   }
                 })
-            .build();
-    GrpcCallSettings<LookupSignalRequest, Signal> lookupSignalTransportSettings =
-        GrpcCallSettings.<LookupSignalRequest, Signal>newBuilder()
-            .setMethodDescriptor(lookupSignalMethodDescriptor)
             .build();
     GrpcCallSettings<UpdateSignalRequest, Signal> updateSignalTransportSettings =
         GrpcCallSettings.<UpdateSignalRequest, Signal>newBuilder()
@@ -745,19 +804,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
                   public Map<String, String> extract(UpdateArtifactRequest request) {
                     ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
                     params.put("artifact.name", String.valueOf(request.getArtifact().getName()));
-                    return params.build();
-                  }
-                })
-            .build();
-    GrpcCallSettings<DeleteArtifactRequest, Empty> deleteArtifactTransportSettings =
-        GrpcCallSettings.<DeleteArtifactRequest, Empty>newBuilder()
-            .setMethodDescriptor(deleteArtifactMethodDescriptor)
-            .setParamsExtractor(
-                new RequestParamsExtractor<DeleteArtifactRequest>() {
-                  @Override
-                  public Map<String, String> extract(DeleteArtifactRequest request) {
-                    ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
-                    params.put("name", String.valueOf(request.getName()));
                     return params.build();
                   }
                 })
@@ -878,52 +924,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
                       }
                     })
                 .build();
-    GrpcCallSettings<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        requestIncidentRoleHandoverTransportSettings =
-            GrpcCallSettings
-                .<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-                .setMethodDescriptor(requestIncidentRoleHandoverMethodDescriptor)
-                .setParamsExtractor(
-                    new RequestParamsExtractor<RequestIncidentRoleHandoverRequest>() {
-                      @Override
-                      public Map<String, String> extract(
-                          RequestIncidentRoleHandoverRequest request) {
-                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
-                        params.put("name", String.valueOf(request.getName()));
-                        return params.build();
-                      }
-                    })
-                .build();
-    GrpcCallSettings<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        confirmIncidentRoleHandoverTransportSettings =
-            GrpcCallSettings
-                .<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-                .setMethodDescriptor(confirmIncidentRoleHandoverMethodDescriptor)
-                .setParamsExtractor(
-                    new RequestParamsExtractor<ConfirmIncidentRoleHandoverRequest>() {
-                      @Override
-                      public Map<String, String> extract(
-                          ConfirmIncidentRoleHandoverRequest request) {
-                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
-                        params.put("name", String.valueOf(request.getName()));
-                        return params.build();
-                      }
-                    })
-                .build();
-    GrpcCallSettings<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-        forceIncidentRoleHandoverTransportSettings =
-            GrpcCallSettings.<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
-                .setMethodDescriptor(forceIncidentRoleHandoverMethodDescriptor)
-                .setParamsExtractor(
-                    new RequestParamsExtractor<ForceIncidentRoleHandoverRequest>() {
-                      @Override
-                      public Map<String, String> extract(ForceIncidentRoleHandoverRequest request) {
-                        ImmutableMap.Builder<String, String> params = ImmutableMap.builder();
-                        params.put("name", String.valueOf(request.getName()));
-                        return params.build();
-                      }
-                    })
-                .build();
     GrpcCallSettings<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>
         cancelIncidentRoleHandoverTransportSettings =
             GrpcCallSettings.<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>newBuilder()
@@ -940,6 +940,24 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
                     })
                 .build();
 
+    this.deleteArtifactCallable =
+        callableFactory.createUnaryCallable(
+            deleteArtifactTransportSettings, settings.deleteArtifactSettings(), clientContext);
+    this.requestIncidentRoleHandoverCallable =
+        callableFactory.createUnaryCallable(
+            requestIncidentRoleHandoverTransportSettings,
+            settings.requestIncidentRoleHandoverSettings(),
+            clientContext);
+    this.confirmIncidentRoleHandoverCallable =
+        callableFactory.createUnaryCallable(
+            confirmIncidentRoleHandoverTransportSettings,
+            settings.confirmIncidentRoleHandoverSettings(),
+            clientContext);
+    this.forceIncidentRoleHandoverCallable =
+        callableFactory.createUnaryCallable(
+            forceIncidentRoleHandoverTransportSettings,
+            settings.forceIncidentRoleHandoverSettings(),
+            clientContext);
     this.createIncidentCallable =
         callableFactory.createUnaryCallable(
             createIncidentTransportSettings, settings.createIncidentSettings(), clientContext);
@@ -995,12 +1013,12 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
     this.searchSignalsPagedCallable =
         callableFactory.createPagedCallable(
             searchSignalsTransportSettings, settings.searchSignalsSettings(), clientContext);
-    this.getSignalCallable =
-        callableFactory.createUnaryCallable(
-            getSignalTransportSettings, settings.getSignalSettings(), clientContext);
     this.lookupSignalCallable =
         callableFactory.createUnaryCallable(
             lookupSignalTransportSettings, settings.lookupSignalSettings(), clientContext);
+    this.getSignalCallable =
+        callableFactory.createUnaryCallable(
+            getSignalTransportSettings, settings.getSignalSettings(), clientContext);
     this.updateSignalCallable =
         callableFactory.createUnaryCallable(
             updateSignalTransportSettings, settings.updateSignalSettings(), clientContext);
@@ -1019,9 +1037,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
     this.updateArtifactCallable =
         callableFactory.createUnaryCallable(
             updateArtifactTransportSettings, settings.updateArtifactSettings(), clientContext);
-    this.deleteArtifactCallable =
-        callableFactory.createUnaryCallable(
-            deleteArtifactTransportSettings, settings.deleteArtifactSettings(), clientContext);
     this.sendShiftHandoffCallable =
         callableFactory.createUnaryCallable(
             sendShiftHandoffTransportSettings, settings.sendShiftHandoffSettings(), clientContext);
@@ -1070,21 +1085,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
             listIncidentRoleAssignmentsTransportSettings,
             settings.listIncidentRoleAssignmentsSettings(),
             clientContext);
-    this.requestIncidentRoleHandoverCallable =
-        callableFactory.createUnaryCallable(
-            requestIncidentRoleHandoverTransportSettings,
-            settings.requestIncidentRoleHandoverSettings(),
-            clientContext);
-    this.confirmIncidentRoleHandoverCallable =
-        callableFactory.createUnaryCallable(
-            confirmIncidentRoleHandoverTransportSettings,
-            settings.confirmIncidentRoleHandoverSettings(),
-            clientContext);
-    this.forceIncidentRoleHandoverCallable =
-        callableFactory.createUnaryCallable(
-            forceIncidentRoleHandoverTransportSettings,
-            settings.forceIncidentRoleHandoverSettings(),
-            clientContext);
     this.cancelIncidentRoleHandoverCallable =
         callableFactory.createUnaryCallable(
             cancelIncidentRoleHandoverTransportSettings,
@@ -1092,6 +1092,25 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
             clientContext);
 
     backgroundResources = new BackgroundResourceAggregation(clientContext.getBackgroundResources());
+  }
+
+  public UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
+    return deleteArtifactCallable;
+  }
+
+  public UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      requestIncidentRoleHandoverCallable() {
+    return requestIncidentRoleHandoverCallable;
+  }
+
+  public UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      confirmIncidentRoleHandoverCallable() {
+    return confirmIncidentRoleHandoverCallable;
+  }
+
+  public UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
+      forceIncidentRoleHandoverCallable() {
+    return forceIncidentRoleHandoverCallable;
   }
 
   public UnaryCallable<CreateIncidentRequest, Incident> createIncidentCallable() {
@@ -1167,12 +1186,12 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
     return searchSignalsCallable;
   }
 
-  public UnaryCallable<GetSignalRequest, Signal> getSignalCallable() {
-    return getSignalCallable;
-  }
-
   public UnaryCallable<LookupSignalRequest, Signal> lookupSignalCallable() {
     return lookupSignalCallable;
+  }
+
+  public UnaryCallable<GetSignalRequest, Signal> getSignalCallable() {
+    return getSignalCallable;
   }
 
   public UnaryCallable<UpdateSignalRequest, Signal> updateSignalCallable() {
@@ -1199,10 +1218,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
 
   public UnaryCallable<UpdateArtifactRequest, Artifact> updateArtifactCallable() {
     return updateArtifactCallable;
-  }
-
-  public UnaryCallable<DeleteArtifactRequest, Empty> deleteArtifactCallable() {
-    return deleteArtifactCallable;
   }
 
   public UnaryCallable<SendShiftHandoffRequest, SendShiftHandoffResponse>
@@ -1250,21 +1265,6 @@ public class GrpcIncidentServiceStub extends IncidentServiceStub {
   public UnaryCallable<ListIncidentRoleAssignmentsRequest, ListIncidentRoleAssignmentsResponse>
       listIncidentRoleAssignmentsCallable() {
     return listIncidentRoleAssignmentsCallable;
-  }
-
-  public UnaryCallable<RequestIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      requestIncidentRoleHandoverCallable() {
-    return requestIncidentRoleHandoverCallable;
-  }
-
-  public UnaryCallable<ConfirmIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      confirmIncidentRoleHandoverCallable() {
-    return confirmIncidentRoleHandoverCallable;
-  }
-
-  public UnaryCallable<ForceIncidentRoleHandoverRequest, IncidentRoleAssignment>
-      forceIncidentRoleHandoverCallable() {
-    return forceIncidentRoleHandoverCallable;
   }
 
   public UnaryCallable<CancelIncidentRoleHandoverRequest, IncidentRoleAssignment>

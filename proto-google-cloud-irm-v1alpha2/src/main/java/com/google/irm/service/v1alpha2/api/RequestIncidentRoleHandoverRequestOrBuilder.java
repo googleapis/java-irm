@@ -27,10 +27,10 @@ public interface RequestIncidentRoleHandoverRequestOrBuilder
    *
    *
    * <pre>
-   * Resource name of the role assignment.
+   * Required. Resource name of the role assignment.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The name.
    */
@@ -39,10 +39,10 @@ public interface RequestIncidentRoleHandoverRequestOrBuilder
    *
    *
    * <pre>
-   * Resource name of the role assignment.
+   * Required. Resource name of the role assignment.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>string name = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for name.
    */
@@ -52,10 +52,12 @@ public interface RequestIncidentRoleHandoverRequestOrBuilder
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the newAssignee field is set.
    */
@@ -64,10 +66,12 @@ public interface RequestIncidentRoleHandoverRequestOrBuilder
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The newAssignee.
    */
@@ -76,10 +80,12 @@ public interface RequestIncidentRoleHandoverRequestOrBuilder
    *
    *
    * <pre>
-   * The proposed assignee.
+   * Required. The proposed assignee.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.User new_assignee = 2;</code>
+   * <code>
+   * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.irm.service.v1alpha2.api.UserOrBuilder getNewAssigneeOrBuilder();
 }

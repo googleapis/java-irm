@@ -139,10 +139,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the signal field is set.
    */
@@ -153,10 +154,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The signal.
    */
@@ -169,10 +171,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * The signal to update with the new values.
+   * Required. The signal to update with the new values.
    * </pre>
    *
-   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+   * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
     return getSignal();
@@ -590,10 +593,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return Whether the signal field is set.
      */
@@ -604,10 +608,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      *
      * @return The signal.
      */
@@ -624,10 +629,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSignal(com.google.irm.service.v1alpha2.api.Signal value) {
       if (signalBuilder_ == null) {
@@ -646,10 +652,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder setSignal(com.google.irm.service.v1alpha2.api.Signal.Builder builderForValue) {
       if (signalBuilder_ == null) {
@@ -665,10 +672,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder mergeSignal(com.google.irm.service.v1alpha2.api.Signal value) {
       if (signalBuilder_ == null) {
@@ -691,10 +699,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public Builder clearSignal() {
       if (signalBuilder_ == null) {
@@ -711,10 +720,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.Signal.Builder getSignalBuilder() {
 
@@ -725,10 +735,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
       if (signalBuilder_ != null) {
@@ -743,10 +754,11 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * The signal to update with the new values.
+     * Required. The signal to update with the new values.
      * </pre>
      *
-     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1;</code>
+     * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
+     * </code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.irm.service.v1alpha2.api.Signal,
