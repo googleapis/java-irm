@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#   http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,16 +25,12 @@ versions = ['v1alpha2']
 config_pattern = '/google/cloud/{service}/artman_{service}_{version}.yaml'
 
 for version in versions:
-    library = java.gapic_library(
-        service=service,
-        version=version,
-        config_pattern=config_pattern,
-        package_pattern='com.google.{service}.service.{version}.api',
-        gapic=gapic
-    )
+  library = java.gapic_library(
+    service=service,
+    version=version,
+    config_pattern=config_pattern,
+    package_pattern='com.google.{service}.service.{version}.api',
+    gapic=gapic
+  )
 
-common_templates = gcp.CommonTemplates()
-templates = common_templates.java_library()
-s.copy(templates, excludes=[
-    'README.md',
-])
+java.common_templates()

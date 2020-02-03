@@ -2,11 +2,15 @@
   "name": "google-cloud-irm",
   "name_pretty": "Stackdriver Incident Response & Management",
   "product_documentation": "https://cloud.google.com/incident-response/",
-  "client_documentation": "https://googleapis.dev/java/java-irm/latest",
+  "client_documentation": "https://googleapis.dev/java/google-cloud-irm/latest/",
   "release_level": "alpha",
   "language": "java",
   "repo": "googleapis/java-irm",
   "repo_short": "java-irm",
   "distribution_name": "com.google.cloud:google-cloud-irm",
-  "api_id": "irm.googleapis.com"
+  "api_id": "irm.googleapis.com",
+  "transport": "grpc",
+  "issue_tracker": "https://issuetracker.google.com/savedsearches/559785",
+  "requires_billing": true,
+  "api_description": "provides end-to-end incident lifecycle management that incorporates battle-tested response processes and data-driven intelligence to reduce median time to mitigation. IRM leverages Stackdriver\u2019s breadth, depth, and freshness of ops data to auto-correlate information, in the context of the incident, to produce insights and accelerate the investigation process."
 }
