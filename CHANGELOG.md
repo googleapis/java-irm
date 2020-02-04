@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/googleapis/java-irm/compare/v0.2.0...v0.2.1) (2020-02-04)
+
+
+### Dependencies
+
+* update core dependencies ([#26](https://www.github.com/googleapis/java-irm/issues/26)) ([b439dd2](https://www.github.com/googleapis/java-irm/commit/b439dd27a00b7fb6045a5f6e446a64bc21688b3f))
+* update core dependencies to v1.53.1 ([#40](https://www.github.com/googleapis/java-irm/issues/40)) ([4fbf252](https://www.github.com/googleapis/java-irm/commit/4fbf252351f9b8e6438d25cde9d2c12c2c524f38))
+* update dependency com.google.guava:guava-bom to v28.2-android ([#11](https://www.github.com/googleapis/java-irm/issues/11)) ([8274d4d](https://www.github.com/googleapis/java-irm/commit/8274d4db039608a3b30da34ce15ee0daa0250b88))
+* update dependency com.google.protobuf:protobuf-java to v3.11.3 ([#42](https://www.github.com/googleapis/java-irm/issues/42)) ([2413e95](https://www.github.com/googleapis/java-irm/commit/2413e95b2725aa987deca8adf8928a2439a2af50))
+
 ## [0.2.0](https://www.github.com/googleapis/java-irm/compare/v0.1.1...v0.2.0) (2020-01-27)
 
 
