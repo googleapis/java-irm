@@ -49,6 +49,8 @@ import com.google.irm.service.v1alpha2.api.DeleteArtifactRequest;
 import com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest;
 import com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest;
 import com.google.irm.service.v1alpha2.api.DeleteTagRequest;
+import com.google.irm.service.v1alpha2.api.EscalateIncidentRequest;
+import com.google.irm.service.v1alpha2.api.EscalateIncidentResponse;
 import com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest;
 import com.google.irm.service.v1alpha2.api.GetIncidentRequest;
 import com.google.irm.service.v1alpha2.api.GetSignalRequest;
@@ -66,6 +68,7 @@ import com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest;
 import com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse;
 import com.google.irm.service.v1alpha2.api.ListTagsRequest;
 import com.google.irm.service.v1alpha2.api.ListTagsResponse;
+import com.google.irm.service.v1alpha2.api.LookupSignalRequest;
 import com.google.irm.service.v1alpha2.api.ProjectName;
 import com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest;
 import com.google.irm.service.v1alpha2.api.SearchIncidentsRequest;
@@ -74,6 +77,8 @@ import com.google.irm.service.v1alpha2.api.SearchSignalsRequest;
 import com.google.irm.service.v1alpha2.api.SearchSignalsResponse;
 import com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest;
 import com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse;
+import com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest;
+import com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse;
 import com.google.irm.service.v1alpha2.api.Signal;
 import com.google.irm.service.v1alpha2.api.SignalName;
 import com.google.irm.service.v1alpha2.api.Subscription;
@@ -91,6 +96,7 @@ import com.google.protobuf.FieldMask;
 import io.grpc.Status;
 import io.grpc.StatusRuntimeException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
@@ -905,6 +911,57 @@ public class IncidentServiceClientTest {
 
   @Test
   @SuppressWarnings("all")
+  public void lookupSignalTest() {
+    SignalName name = SignalName.of("[PROJECT]", "[SIGNAL]");
+    String etag = "etag3123477";
+    String incident = "incident86983890";
+    String title = "title110371416";
+    String contentType = "contentType831846208";
+    String content = "content951530617";
+    Signal expectedResponse =
+        Signal.newBuilder()
+            .setName(name.toString())
+            .setEtag(etag)
+            .setIncident(incident)
+            .setTitle(title)
+            .setContentType(contentType)
+            .setContent(content)
+            .build();
+    mockIncidentService.addResponse(expectedResponse);
+
+    LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
+
+    Signal actualResponse = client.lookupSignal(request);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockIncidentService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    LookupSignalRequest actualRequest = (LookupSignalRequest) actualRequests.get(0);
+
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  @SuppressWarnings("all")
+  public void lookupSignalExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(Status.INVALID_ARGUMENT);
+    mockIncidentService.addException(exception);
+
+    try {
+      LookupSignalRequest request = LookupSignalRequest.newBuilder().build();
+
+      client.lookupSignal(request);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception
+    }
+  }
+
+  @Test
+  @SuppressWarnings("all")
   public void getSignalTest() {
     SignalName name2 = SignalName.of("[PROJECT]", "[SIGNAL]");
     String etag = "etag3123477";
@@ -1004,6 +1061,48 @@ public class IncidentServiceClientTest {
       FieldMask updateMask = FieldMask.newBuilder().build();
 
       client.updateSignal(signal, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception
+    }
+  }
+
+  @Test
+  @SuppressWarnings("all")
+  public void escalateIncidentTest() {
+    EscalateIncidentResponse expectedResponse = EscalateIncidentResponse.newBuilder().build();
+    mockIncidentService.addResponse(expectedResponse);
+
+    Incident incident = Incident.newBuilder().build();
+    EscalateIncidentRequest request =
+        EscalateIncidentRequest.newBuilder().setIncident(incident).build();
+
+    EscalateIncidentResponse actualResponse = client.escalateIncident(request);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockIncidentService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    EscalateIncidentRequest actualRequest = (EscalateIncidentRequest) actualRequests.get(0);
+
+    Assert.assertEquals(incident, actualRequest.getIncident());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  @SuppressWarnings("all")
+  public void escalateIncidentExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(Status.INVALID_ARGUMENT);
+    mockIncidentService.addException(exception);
+
+    try {
+      Incident incident = Incident.newBuilder().build();
+      EscalateIncidentRequest request =
+          EscalateIncidentRequest.newBuilder().setIncident(incident).build();
+
+      client.escalateIncident(request);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
       // Expected exception
@@ -1154,6 +1253,68 @@ public class IncidentServiceClientTest {
       FieldMask updateMask = FieldMask.newBuilder().build();
 
       client.updateArtifact(artifact, updateMask);
+      Assert.fail("No exception raised");
+    } catch (InvalidArgumentException e) {
+      // Expected exception
+    }
+  }
+
+  @Test
+  @SuppressWarnings("all")
+  public void sendShiftHandoffTest() {
+    String contentType = "contentType831846208";
+    String content = "content951530617";
+    SendShiftHandoffResponse expectedResponse =
+        SendShiftHandoffResponse.newBuilder()
+            .setContentType(contentType)
+            .setContent(content)
+            .build();
+    mockIncidentService.addResponse(expectedResponse);
+
+    ProjectName parent = ProjectName.of("[PROJECT]");
+    List<String> recipients = new ArrayList<>();
+    String subject = "subject-1867885268";
+    SendShiftHandoffRequest request =
+        SendShiftHandoffRequest.newBuilder()
+            .setParent(parent.toString())
+            .addAllRecipients(recipients)
+            .setSubject(subject)
+            .build();
+
+    SendShiftHandoffResponse actualResponse = client.sendShiftHandoff(request);
+    Assert.assertEquals(expectedResponse, actualResponse);
+
+    List<AbstractMessage> actualRequests = mockIncidentService.getRequests();
+    Assert.assertEquals(1, actualRequests.size());
+    SendShiftHandoffRequest actualRequest = (SendShiftHandoffRequest) actualRequests.get(0);
+
+    Assert.assertEquals(parent, ProjectName.parse(actualRequest.getParent()));
+    Assert.assertEquals(recipients, actualRequest.getRecipientsList());
+    Assert.assertEquals(subject, actualRequest.getSubject());
+    Assert.assertTrue(
+        channelProvider.isHeaderSent(
+            ApiClientHeaderProvider.getDefaultApiClientHeaderKey(),
+            GaxGrpcProperties.getDefaultApiClientHeaderPattern()));
+  }
+
+  @Test
+  @SuppressWarnings("all")
+  public void sendShiftHandoffExceptionTest() throws Exception {
+    StatusRuntimeException exception = new StatusRuntimeException(Status.INVALID_ARGUMENT);
+    mockIncidentService.addException(exception);
+
+    try {
+      ProjectName parent = ProjectName.of("[PROJECT]");
+      List<String> recipients = new ArrayList<>();
+      String subject = "subject-1867885268";
+      SendShiftHandoffRequest request =
+          SendShiftHandoffRequest.newBuilder()
+              .setParent(parent.toString())
+              .addAllRecipients(recipients)
+              .setSubject(subject)
+              .build();
+
+      client.sendShiftHandoff(request);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
       // Expected exception
