@@ -111,8 +111,12 @@ import javax.annotation.Generated;
  * <code>
  * IncidentServiceSettings.Builder incidentServiceSettingsBuilder =
  *     IncidentServiceSettings.newBuilder();
- * incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
- *     .setTotalTimeout(Duration.ofSeconds(30));
+ * incidentServiceSettingsBuilder
+ *     .deleteArtifactSettings()
+ *     .setRetrySettings(
+ *         incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
+ *             .setTotalTimeout(Duration.ofSeconds(30))
+ *             .build());
  * IncidentServiceSettings incidentServiceSettings = incidentServiceSettingsBuilder.build();
  * </code>
  * </pre>

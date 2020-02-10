@@ -126,8 +126,12 @@ import org.threeten.bp.Duration;
  * <code>
  * IncidentServiceStubSettings.Builder incidentServiceSettingsBuilder =
  *     IncidentServiceStubSettings.newBuilder();
- * incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
- *     .setTotalTimeout(Duration.ofSeconds(30));
+ * incidentServiceSettingsBuilder
+ *     .deleteArtifactSettings()
+ *     .setRetrySettings(
+ *         incidentServiceSettingsBuilder.deleteArtifactSettings().getRetrySettings().toBuilder()
+ *             .setTotalTimeout(Duration.ofSeconds(30))
+ *             .build());
  * IncidentServiceStubSettings incidentServiceSettings = incidentServiceSettingsBuilder.build();
  * </code>
  * </pre>
