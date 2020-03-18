@@ -31,7 +31,7 @@
       <artifactId>google-cloud-irm</artifactId>
       <version>0.2.1</version>
     </dependency>
-    <!-- [END google-cloud-irm_install_with_bom] -->
+    <!-- [END google-cloud-irm_install_without_bom] -->
 
     <dependency>
       <groupId>junit</groupId>
