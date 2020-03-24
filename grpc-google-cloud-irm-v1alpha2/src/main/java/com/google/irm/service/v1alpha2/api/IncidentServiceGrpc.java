@@ -30,7 +30,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler",
+    value = "by gRPC proto compiler (version 1.10.0)",
     comments = "Source: google/cloud/irm/v1alpha2/incidents_service.proto")
 public final class IncidentServiceGrpc {
 
@@ -39,20 +39,30 @@ public final class IncidentServiceGrpc {
   public static final String SERVICE_NAME = "google.cloud.irm.v1alpha2.IncidentService";
 
   // Static method descriptors that strictly reflect the proto.
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateIncidentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      METHOD_CREATE_INCIDENT = getCreateIncidentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getCreateIncidentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateIncident",
-      requestType = com.google.irm.service.v1alpha2.api.CreateIncidentRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Incident.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getCreateIncidentMethod() {
+    return getCreateIncidentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      getCreateIncidentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
             com.google.irm.service.v1alpha2.api.Incident>
@@ -67,7 +77,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Incident>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateIncident"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateIncident"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -85,20 +97,30 @@ public final class IncidentServiceGrpc {
     return getCreateIncidentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getGetIncidentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.GetIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      METHOD_GET_INCIDENT = getGetIncidentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.GetIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getGetIncidentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetIncident",
-      requestType = com.google.irm.service.v1alpha2.api.GetIncidentRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Incident.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.GetIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getGetIncidentMethod() {
+    return getGetIncidentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.GetIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      getGetIncidentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.GetIncidentRequest,
             com.google.irm.service.v1alpha2.api.Incident>
@@ -113,7 +135,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Incident>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetIncident"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "GetIncident"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -131,20 +155,30 @@ public final class IncidentServiceGrpc {
     return getGetIncidentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSearchIncidentsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
+          com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
+      METHOD_SEARCH_INCIDENTS = getSearchIncidentsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
           com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
       getSearchIncidentsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SearchIncidents",
-      requestType = com.google.irm.service.v1alpha2.api.SearchIncidentsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.SearchIncidentsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
           com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
       getSearchIncidentsMethod() {
+    return getSearchIncidentsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
+          com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
+      getSearchIncidentsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
             com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
@@ -159,7 +193,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SearchIncidents"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "SearchIncidents"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -178,20 +214,30 @@ public final class IncidentServiceGrpc {
     return getSearchIncidentsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateIncidentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      METHOD_UPDATE_INCIDENT = getUpdateIncidentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getUpdateIncidentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateIncident",
-      requestType = com.google.irm.service.v1alpha2.api.UpdateIncidentRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Incident.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
           com.google.irm.service.v1alpha2.api.Incident>
       getUpdateIncidentMethod() {
+    return getUpdateIncidentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.Incident>
+      getUpdateIncidentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
             com.google.irm.service.v1alpha2.api.Incident>
@@ -206,7 +252,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Incident>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateIncident"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "UpdateIncident"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -224,20 +272,30 @@ public final class IncidentServiceGrpc {
     return getUpdateIncidentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSearchSimilarIncidentsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
+          com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
+      METHOD_SEARCH_SIMILAR_INCIDENTS = getSearchSimilarIncidentsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
           com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
       getSearchSimilarIncidentsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SearchSimilarIncidents",
-      requestType = com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
           com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
       getSearchSimilarIncidentsMethod() {
+    return getSearchSimilarIncidentsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
+          com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
+      getSearchSimilarIncidentsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
             com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
@@ -255,7 +313,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "SearchSimilarIncidents"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "SearchSimilarIncidents"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -274,20 +334,30 @@ public final class IncidentServiceGrpc {
     return getSearchSimilarIncidentsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateAnnotationMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
+          com.google.irm.service.v1alpha2.api.Annotation>
+      METHOD_CREATE_ANNOTATION = getCreateAnnotationMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
           com.google.irm.service.v1alpha2.api.Annotation>
       getCreateAnnotationMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateAnnotation",
-      requestType = com.google.irm.service.v1alpha2.api.CreateAnnotationRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Annotation.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
           com.google.irm.service.v1alpha2.api.Annotation>
       getCreateAnnotationMethod() {
+    return getCreateAnnotationMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
+          com.google.irm.service.v1alpha2.api.Annotation>
+      getCreateAnnotationMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
             com.google.irm.service.v1alpha2.api.Annotation>
@@ -302,7 +372,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Annotation>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateAnnotation"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateAnnotation"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -320,20 +392,30 @@ public final class IncidentServiceGrpc {
     return getCreateAnnotationMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListAnnotationsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
+          com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
+      METHOD_LIST_ANNOTATIONS = getListAnnotationsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
           com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
       getListAnnotationsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListAnnotations",
-      requestType = com.google.irm.service.v1alpha2.api.ListAnnotationsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.ListAnnotationsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
           com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
       getListAnnotationsMethod() {
+    return getListAnnotationsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
+          com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
+      getListAnnotationsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
             com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
@@ -348,7 +430,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListAnnotations"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "ListAnnotations"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -367,20 +451,30 @@ public final class IncidentServiceGrpc {
     return getListAnnotationsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateTagMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateTagRequest,
+          com.google.irm.service.v1alpha2.api.Tag>
+      METHOD_CREATE_TAG = getCreateTagMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateTagRequest,
           com.google.irm.service.v1alpha2.api.Tag>
       getCreateTagMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateTag",
-      requestType = com.google.irm.service.v1alpha2.api.CreateTagRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Tag.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateTagRequest,
           com.google.irm.service.v1alpha2.api.Tag>
       getCreateTagMethod() {
+    return getCreateTagMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateTagRequest,
+          com.google.irm.service.v1alpha2.api.Tag>
+      getCreateTagMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateTagRequest,
             com.google.irm.service.v1alpha2.api.Tag>
@@ -395,7 +489,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Tag>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateTag"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateTag"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -412,18 +508,26 @@ public final class IncidentServiceGrpc {
     return getCreateTagMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteTagMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteTagRequest, com.google.protobuf.Empty>
+      METHOD_DELETE_TAG = getDeleteTagMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteTagRequest, com.google.protobuf.Empty>
       getDeleteTagMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteTag",
-      requestType = com.google.irm.service.v1alpha2.api.DeleteTagRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteTagRequest, com.google.protobuf.Empty>
       getDeleteTagMethod() {
+    return getDeleteTagMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteTagRequest, com.google.protobuf.Empty>
+      getDeleteTagMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.DeleteTagRequest, com.google.protobuf.Empty>
         getDeleteTagMethod;
@@ -437,7 +541,9 @@ public final class IncidentServiceGrpc {
                           com.google.protobuf.Empty>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteTag"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "DeleteTag"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -454,20 +560,30 @@ public final class IncidentServiceGrpc {
     return getDeleteTagMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListTagsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListTagsRequest,
+          com.google.irm.service.v1alpha2.api.ListTagsResponse>
+      METHOD_LIST_TAGS = getListTagsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListTagsRequest,
           com.google.irm.service.v1alpha2.api.ListTagsResponse>
       getListTagsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListTags",
-      requestType = com.google.irm.service.v1alpha2.api.ListTagsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.ListTagsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListTagsRequest,
           com.google.irm.service.v1alpha2.api.ListTagsResponse>
       getListTagsMethod() {
+    return getListTagsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListTagsRequest,
+          com.google.irm.service.v1alpha2.api.ListTagsResponse>
+      getListTagsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ListTagsRequest,
             com.google.irm.service.v1alpha2.api.ListTagsResponse>
@@ -482,7 +598,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.ListTagsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListTags"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "ListTags"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -500,20 +618,30 @@ public final class IncidentServiceGrpc {
     return getListTagsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateSignalMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      METHOD_CREATE_SIGNAL = getCreateSignalMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getCreateSignalMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateSignal",
-      requestType = com.google.irm.service.v1alpha2.api.CreateSignalRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Signal.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getCreateSignalMethod() {
+    return getCreateSignalMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      getCreateSignalMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateSignalRequest,
             com.google.irm.service.v1alpha2.api.Signal>
@@ -528,7 +656,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Signal>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateSignal"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateSignal"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -546,20 +676,30 @@ public final class IncidentServiceGrpc {
     return getCreateSignalMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSearchSignalsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
+          com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
+      METHOD_SEARCH_SIGNALS = getSearchSignalsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
           com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
       getSearchSignalsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SearchSignals",
-      requestType = com.google.irm.service.v1alpha2.api.SearchSignalsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.SearchSignalsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
           com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
       getSearchSignalsMethod() {
+    return getSearchSignalsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
+          com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
+      getSearchSignalsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
             com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
@@ -574,7 +714,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SearchSignals"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "SearchSignals"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -593,20 +735,30 @@ public final class IncidentServiceGrpc {
     return getSearchSignalsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getLookupSignalMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.LookupSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      METHOD_LOOKUP_SIGNAL = getLookupSignalMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.LookupSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getLookupSignalMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "LookupSignal",
-      requestType = com.google.irm.service.v1alpha2.api.LookupSignalRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Signal.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.LookupSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getLookupSignalMethod() {
+    return getLookupSignalMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.LookupSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      getLookupSignalMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.LookupSignalRequest,
             com.google.irm.service.v1alpha2.api.Signal>
@@ -621,7 +773,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Signal>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "LookupSignal"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "LookupSignal"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -639,20 +793,30 @@ public final class IncidentServiceGrpc {
     return getLookupSignalMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getGetSignalMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.GetSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      METHOD_GET_SIGNAL = getGetSignalMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.GetSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getGetSignalMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetSignal",
-      requestType = com.google.irm.service.v1alpha2.api.GetSignalRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Signal.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.GetSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getGetSignalMethod() {
+    return getGetSignalMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.GetSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      getGetSignalMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.GetSignalRequest,
             com.google.irm.service.v1alpha2.api.Signal>
@@ -667,7 +831,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Signal>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetSignal"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "GetSignal"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -684,20 +850,30 @@ public final class IncidentServiceGrpc {
     return getGetSignalMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateSignalMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      METHOD_UPDATE_SIGNAL = getUpdateSignalMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getUpdateSignalMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateSignal",
-      requestType = com.google.irm.service.v1alpha2.api.UpdateSignalRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Signal.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
           com.google.irm.service.v1alpha2.api.Signal>
       getUpdateSignalMethod() {
+    return getUpdateSignalMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
+          com.google.irm.service.v1alpha2.api.Signal>
+      getUpdateSignalMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
             com.google.irm.service.v1alpha2.api.Signal>
@@ -712,7 +888,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Signal>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateSignal"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "UpdateSignal"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -730,20 +908,30 @@ public final class IncidentServiceGrpc {
     return getUpdateSignalMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getEscalateIncidentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
+      METHOD_ESCALATE_INCIDENT = getEscalateIncidentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
           com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
       getEscalateIncidentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "EscalateIncident",
-      requestType = com.google.irm.service.v1alpha2.api.EscalateIncidentRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.EscalateIncidentResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
           com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
       getEscalateIncidentMethod() {
+    return getEscalateIncidentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
+          com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
+      getEscalateIncidentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
             com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
@@ -758,7 +946,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "EscalateIncident"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "EscalateIncident"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -777,20 +967,30 @@ public final class IncidentServiceGrpc {
     return getEscalateIncidentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateArtifactMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
+          com.google.irm.service.v1alpha2.api.Artifact>
+      METHOD_CREATE_ARTIFACT = getCreateArtifactMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
           com.google.irm.service.v1alpha2.api.Artifact>
       getCreateArtifactMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateArtifact",
-      requestType = com.google.irm.service.v1alpha2.api.CreateArtifactRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Artifact.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
           com.google.irm.service.v1alpha2.api.Artifact>
       getCreateArtifactMethod() {
+    return getCreateArtifactMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
+          com.google.irm.service.v1alpha2.api.Artifact>
+      getCreateArtifactMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
             com.google.irm.service.v1alpha2.api.Artifact>
@@ -805,7 +1005,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Artifact>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateArtifact"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateArtifact"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -823,20 +1025,30 @@ public final class IncidentServiceGrpc {
     return getCreateArtifactMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListArtifactsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
+          com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
+      METHOD_LIST_ARTIFACTS = getListArtifactsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
           com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
       getListArtifactsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListArtifacts",
-      requestType = com.google.irm.service.v1alpha2.api.ListArtifactsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.ListArtifactsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
           com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
       getListArtifactsMethod() {
+    return getListArtifactsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
+          com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
+      getListArtifactsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
             com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
@@ -851,7 +1063,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListArtifacts"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "ListArtifacts"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -870,20 +1084,30 @@ public final class IncidentServiceGrpc {
     return getListArtifactsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateArtifactMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
+          com.google.irm.service.v1alpha2.api.Artifact>
+      METHOD_UPDATE_ARTIFACT = getUpdateArtifactMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
           com.google.irm.service.v1alpha2.api.Artifact>
       getUpdateArtifactMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateArtifact",
-      requestType = com.google.irm.service.v1alpha2.api.UpdateArtifactRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Artifact.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
           com.google.irm.service.v1alpha2.api.Artifact>
       getUpdateArtifactMethod() {
+    return getUpdateArtifactMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
+          com.google.irm.service.v1alpha2.api.Artifact>
+      getUpdateArtifactMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
             com.google.irm.service.v1alpha2.api.Artifact>
@@ -898,7 +1122,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Artifact>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateArtifact"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "UpdateArtifact"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -916,18 +1142,26 @@ public final class IncidentServiceGrpc {
     return getUpdateArtifactMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteArtifactMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteArtifactRequest, com.google.protobuf.Empty>
+      METHOD_DELETE_ARTIFACT = getDeleteArtifactMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteArtifactRequest, com.google.protobuf.Empty>
       getDeleteArtifactMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteArtifact",
-      requestType = com.google.irm.service.v1alpha2.api.DeleteArtifactRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteArtifactRequest, com.google.protobuf.Empty>
       getDeleteArtifactMethod() {
+    return getDeleteArtifactMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteArtifactRequest, com.google.protobuf.Empty>
+      getDeleteArtifactMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.DeleteArtifactRequest, com.google.protobuf.Empty>
         getDeleteArtifactMethod;
@@ -941,7 +1175,9 @@ public final class IncidentServiceGrpc {
                           com.google.protobuf.Empty>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteArtifact"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "DeleteArtifact"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -959,20 +1195,30 @@ public final class IncidentServiceGrpc {
     return getDeleteArtifactMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSendShiftHandoffMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
+          com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
+      METHOD_SEND_SHIFT_HANDOFF = getSendShiftHandoffMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
           com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
       getSendShiftHandoffMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SendShiftHandoff",
-      requestType = com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
           com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
       getSendShiftHandoffMethod() {
+    return getSendShiftHandoffMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
+          com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
+      getSendShiftHandoffMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
             com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
@@ -987,7 +1233,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SendShiftHandoff"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "SendShiftHandoff"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1006,20 +1254,30 @@ public final class IncidentServiceGrpc {
     return getSendShiftHandoffMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateSubscriptionMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
+          com.google.irm.service.v1alpha2.api.Subscription>
+      METHOD_CREATE_SUBSCRIPTION = getCreateSubscriptionMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
           com.google.irm.service.v1alpha2.api.Subscription>
       getCreateSubscriptionMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateSubscription",
-      requestType = com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Subscription.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
           com.google.irm.service.v1alpha2.api.Subscription>
       getCreateSubscriptionMethod() {
+    return getCreateSubscriptionMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
+          com.google.irm.service.v1alpha2.api.Subscription>
+      getCreateSubscriptionMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
             com.google.irm.service.v1alpha2.api.Subscription>
@@ -1035,7 +1293,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Subscription>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateSubscription"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "CreateSubscription"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1054,20 +1314,30 @@ public final class IncidentServiceGrpc {
     return getCreateSubscriptionMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateSubscriptionMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
+          com.google.irm.service.v1alpha2.api.Subscription>
+      METHOD_UPDATE_SUBSCRIPTION = getUpdateSubscriptionMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
           com.google.irm.service.v1alpha2.api.Subscription>
       getUpdateSubscriptionMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateSubscription",
-      requestType = com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.Subscription.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
           com.google.irm.service.v1alpha2.api.Subscription>
       getUpdateSubscriptionMethod() {
+    return getUpdateSubscriptionMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
+          com.google.irm.service.v1alpha2.api.Subscription>
+      getUpdateSubscriptionMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
             com.google.irm.service.v1alpha2.api.Subscription>
@@ -1083,7 +1353,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.Subscription>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateSubscription"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "UpdateSubscription"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1102,20 +1374,30 @@ public final class IncidentServiceGrpc {
     return getUpdateSubscriptionMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListSubscriptionsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
+          com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
+      METHOD_LIST_SUBSCRIPTIONS = getListSubscriptionsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
           com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
       getListSubscriptionsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListSubscriptions",
-      requestType = com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
           com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
       getListSubscriptionsMethod() {
+    return getListSubscriptionsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
+          com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
+      getListSubscriptionsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
             com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
@@ -1130,7 +1412,9 @@ public final class IncidentServiceGrpc {
                           com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListSubscriptions"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "ListSubscriptions"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1149,18 +1433,26 @@ public final class IncidentServiceGrpc {
     return getListSubscriptionsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteSubscriptionMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest, com.google.protobuf.Empty>
+      METHOD_DELETE_SUBSCRIPTION = getDeleteSubscriptionMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest, com.google.protobuf.Empty>
       getDeleteSubscriptionMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteSubscription",
-      requestType = com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest, com.google.protobuf.Empty>
       getDeleteSubscriptionMethod() {
+    return getDeleteSubscriptionMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest, com.google.protobuf.Empty>
+      getDeleteSubscriptionMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest,
             com.google.protobuf.Empty>
@@ -1176,7 +1468,9 @@ public final class IncidentServiceGrpc {
                           com.google.protobuf.Empty>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteSubscription"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService", "DeleteSubscription"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1194,20 +1488,30 @@ public final class IncidentServiceGrpc {
     return getDeleteSubscriptionMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateIncidentRoleAssignmentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      METHOD_CREATE_INCIDENT_ROLE_ASSIGNMENT = getCreateIncidentRoleAssignmentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getCreateIncidentRoleAssignmentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateIncidentRoleAssignment",
-      requestType = com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getCreateIncidentRoleAssignmentMethod() {
+    return getCreateIncidentRoleAssignmentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      getCreateIncidentRoleAssignmentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
@@ -1227,7 +1531,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "CreateIncidentRoleAssignment"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "CreateIncidentRoleAssignment"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1247,20 +1553,30 @@ public final class IncidentServiceGrpc {
     return getCreateIncidentRoleAssignmentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteIncidentRoleAssignmentMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
+          com.google.protobuf.Empty>
+      METHOD_DELETE_INCIDENT_ROLE_ASSIGNMENT = getDeleteIncidentRoleAssignmentMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
           com.google.protobuf.Empty>
       getDeleteIncidentRoleAssignmentMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteIncidentRoleAssignment",
-      requestType = com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
           com.google.protobuf.Empty>
       getDeleteIncidentRoleAssignmentMethod() {
+    return getDeleteIncidentRoleAssignmentMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
+          com.google.protobuf.Empty>
+      getDeleteIncidentRoleAssignmentMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
             com.google.protobuf.Empty>
@@ -1280,7 +1596,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "DeleteIncidentRoleAssignment"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "DeleteIncidentRoleAssignment"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1299,20 +1617,30 @@ public final class IncidentServiceGrpc {
     return getDeleteIncidentRoleAssignmentMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListIncidentRoleAssignmentsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
+          com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
+      METHOD_LIST_INCIDENT_ROLE_ASSIGNMENTS = getListIncidentRoleAssignmentsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
           com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
       getListIncidentRoleAssignmentsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListIncidentRoleAssignments",
-      requestType = com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
           com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
       getListIncidentRoleAssignmentsMethod() {
+    return getListIncidentRoleAssignmentsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
+          com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
+      getListIncidentRoleAssignmentsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
             com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
@@ -1332,7 +1660,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ListIncidentRoleAssignments"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "ListIncidentRoleAssignments"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1352,20 +1682,30 @@ public final class IncidentServiceGrpc {
     return getListIncidentRoleAssignmentsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getRequestIncidentRoleHandoverMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      METHOD_REQUEST_INCIDENT_ROLE_HANDOVER = getRequestIncidentRoleHandoverMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getRequestIncidentRoleHandoverMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "RequestIncidentRoleHandover",
-      requestType = com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getRequestIncidentRoleHandoverMethod() {
+    return getRequestIncidentRoleHandoverMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      getRequestIncidentRoleHandoverMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
@@ -1385,7 +1725,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "RequestIncidentRoleHandover"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "RequestIncidentRoleHandover"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1405,20 +1747,30 @@ public final class IncidentServiceGrpc {
     return getRequestIncidentRoleHandoverMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getConfirmIncidentRoleHandoverMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      METHOD_CONFIRM_INCIDENT_ROLE_HANDOVER = getConfirmIncidentRoleHandoverMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getConfirmIncidentRoleHandoverMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ConfirmIncidentRoleHandover",
-      requestType = com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getConfirmIncidentRoleHandoverMethod() {
+    return getConfirmIncidentRoleHandoverMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      getConfirmIncidentRoleHandoverMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
@@ -1438,7 +1790,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ConfirmIncidentRoleHandover"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "ConfirmIncidentRoleHandover"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1458,20 +1812,30 @@ public final class IncidentServiceGrpc {
     return getConfirmIncidentRoleHandoverMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getForceIncidentRoleHandoverMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      METHOD_FORCE_INCIDENT_ROLE_HANDOVER = getForceIncidentRoleHandoverMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getForceIncidentRoleHandoverMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ForceIncidentRoleHandover",
-      requestType = com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getForceIncidentRoleHandoverMethod() {
+    return getForceIncidentRoleHandoverMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      getForceIncidentRoleHandoverMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
@@ -1491,7 +1855,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ForceIncidentRoleHandover"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "ForceIncidentRoleHandover"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1510,20 +1876,30 @@ public final class IncidentServiceGrpc {
     return getForceIncidentRoleHandoverMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCancelIncidentRoleHandoverMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      METHOD_CANCEL_INCIDENT_ROLE_HANDOVER = getCancelIncidentRoleHandoverMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getCancelIncidentRoleHandoverMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CancelIncidentRoleHandover",
-      requestType = com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest.class,
-      responseType = com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
           com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getCancelIncidentRoleHandoverMethod() {
+    return getCancelIncidentRoleHandoverMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
+          com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
+      getCancelIncidentRoleHandoverMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
             com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
@@ -1543,7 +1919,9 @@ public final class IncidentServiceGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "CancelIncidentRoleHandover"))
+                          generateFullMethodName(
+                              "google.cloud.irm.v1alpha2.IncidentService",
+                              "CancelIncidentRoleHandover"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -1564,43 +1942,19 @@ public final class IncidentServiceGrpc {
 
   /** Creates a new async stub that supports all call types for the service */
   public static IncidentServiceStub newStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceStub>() {
-          @java.lang.Override
-          public IncidentServiceStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new IncidentServiceStub(channel, callOptions);
-          }
-        };
-    return IncidentServiceStub.newStub(factory, channel);
+    return new IncidentServiceStub(channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
   public static IncidentServiceBlockingStub newBlockingStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceBlockingStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceBlockingStub>() {
-          @java.lang.Override
-          public IncidentServiceBlockingStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new IncidentServiceBlockingStub(channel, callOptions);
-          }
-        };
-    return IncidentServiceBlockingStub.newStub(factory, channel);
+    return new IncidentServiceBlockingStub(channel);
   }
 
   /** Creates a new ListenableFuture-style stub that supports unary calls on the service */
   public static IncidentServiceFutureStub newFutureStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceFutureStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceFutureStub>() {
-          @java.lang.Override
-          public IncidentServiceFutureStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new IncidentServiceFutureStub(channel, callOptions);
-          }
-        };
-    return IncidentServiceFutureStub.newStub(factory, channel);
+    return new IncidentServiceFutureStub(channel);
   }
 
   /**
@@ -1623,7 +1977,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateIncidentRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateIncidentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateIncidentMethodHelper(), responseObserver);
     }
 
     /**
@@ -1637,7 +1991,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.GetIncidentRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getGetIncidentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetIncidentMethodHelper(), responseObserver);
     }
 
     /**
@@ -1652,7 +2006,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.SearchIncidentsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getSearchIncidentsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSearchIncidentsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1666,7 +2020,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.UpdateIncidentRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateIncidentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateIncidentMethodHelper(), responseObserver);
     }
 
     /**
@@ -1683,7 +2037,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<
                 com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getSearchSimilarIncidentsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSearchSimilarIncidentsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1698,7 +2052,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateAnnotationRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Annotation>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAnnotationMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateAnnotationMethodHelper(), responseObserver);
     }
 
     /**
@@ -1713,7 +2067,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ListAnnotationsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListAnnotationsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListAnnotationsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1726,7 +2080,7 @@ public final class IncidentServiceGrpc {
     public void createTag(
         com.google.irm.service.v1alpha2.api.CreateTagRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Tag> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateTagMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateTagMethodHelper(), responseObserver);
     }
 
     /**
@@ -1739,7 +2093,7 @@ public final class IncidentServiceGrpc {
     public void deleteTag(
         com.google.irm.service.v1alpha2.api.DeleteTagRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteTagMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteTagMethodHelper(), responseObserver);
     }
 
     /**
@@ -1753,7 +2107,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ListTagsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListTagsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListTagsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListTagsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1766,7 +2120,7 @@ public final class IncidentServiceGrpc {
     public void createSignal(
         com.google.irm.service.v1alpha2.api.CreateSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateSignalMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateSignalMethodHelper(), responseObserver);
     }
 
     /**
@@ -1784,7 +2138,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.SearchSignalsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getSearchSignalsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSearchSignalsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1797,7 +2151,7 @@ public final class IncidentServiceGrpc {
     public void lookupSignal(
         com.google.irm.service.v1alpha2.api.LookupSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
-      asyncUnimplementedUnaryCall(getLookupSignalMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getLookupSignalMethodHelper(), responseObserver);
     }
 
     /**
@@ -1810,7 +2164,7 @@ public final class IncidentServiceGrpc {
     public void getSignal(
         com.google.irm.service.v1alpha2.api.GetSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetSignalMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetSignalMethodHelper(), responseObserver);
     }
 
     /**
@@ -1824,7 +2178,7 @@ public final class IncidentServiceGrpc {
     public void updateSignal(
         com.google.irm.service.v1alpha2.api.UpdateSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateSignalMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateSignalMethodHelper(), responseObserver);
     }
 
     /**
@@ -1838,7 +2192,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.EscalateIncidentRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getEscalateIncidentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getEscalateIncidentMethodHelper(), responseObserver);
     }
 
     /**
@@ -1852,7 +2206,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateArtifactRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Artifact>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateArtifactMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateArtifactMethodHelper(), responseObserver);
     }
 
     /**
@@ -1866,7 +2220,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ListArtifactsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListArtifactsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListArtifactsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1880,7 +2234,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.UpdateArtifactRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Artifact>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateArtifactMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateArtifactMethodHelper(), responseObserver);
     }
 
     /**
@@ -1893,7 +2247,7 @@ public final class IncidentServiceGrpc {
     public void deleteArtifact(
         com.google.irm.service.v1alpha2.api.DeleteArtifactRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteArtifactMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteArtifactMethodHelper(), responseObserver);
     }
 
     /**
@@ -1907,7 +2261,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getSendShiftHandoffMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSendShiftHandoffMethodHelper(), responseObserver);
     }
 
     /**
@@ -1924,7 +2278,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Subscription>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateSubscriptionMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateSubscriptionMethodHelper(), responseObserver);
     }
 
     /**
@@ -1938,7 +2292,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Subscription>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateSubscriptionMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateSubscriptionMethodHelper(), responseObserver);
     }
 
     /**
@@ -1952,7 +2306,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListSubscriptionsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListSubscriptionsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1965,7 +2319,7 @@ public final class IncidentServiceGrpc {
     public void deleteSubscription(
         com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteSubscriptionMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteSubscriptionMethodHelper(), responseObserver);
     }
 
     /**
@@ -1983,7 +2337,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateIncidentRoleAssignmentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateIncidentRoleAssignmentMethodHelper(), responseObserver);
     }
 
     /**
@@ -1996,7 +2350,7 @@ public final class IncidentServiceGrpc {
     public void deleteIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteIncidentRoleAssignmentMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteIncidentRoleAssignmentMethodHelper(), responseObserver);
     }
 
     /**
@@ -2011,7 +2365,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<
                 com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListIncidentRoleAssignmentsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListIncidentRoleAssignmentsMethodHelper(), responseObserver);
     }
 
     /**
@@ -2029,7 +2383,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getRequestIncidentRoleHandoverMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getRequestIncidentRoleHandoverMethodHelper(), responseObserver);
     }
 
     /**
@@ -2046,7 +2400,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getConfirmIncidentRoleHandoverMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getConfirmIncidentRoleHandoverMethodHelper(), responseObserver);
     }
 
     /**
@@ -2063,7 +2417,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getForceIncidentRoleHandoverMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getForceIncidentRoleHandoverMethodHelper(), responseObserver);
     }
 
     /**
@@ -2079,221 +2433,221 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getCancelIncidentRoleHandoverMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCancelIncidentRoleHandoverMethodHelper(), responseObserver);
     }
 
     @java.lang.Override
     public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-              getCreateIncidentMethod(),
+              getCreateIncidentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateIncidentRequest,
                       com.google.irm.service.v1alpha2.api.Incident>(
                       this, METHODID_CREATE_INCIDENT)))
           .addMethod(
-              getGetIncidentMethod(),
+              getGetIncidentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.GetIncidentRequest,
                       com.google.irm.service.v1alpha2.api.Incident>(this, METHODID_GET_INCIDENT)))
           .addMethod(
-              getSearchIncidentsMethod(),
+              getSearchIncidentsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.SearchIncidentsRequest,
                       com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>(
                       this, METHODID_SEARCH_INCIDENTS)))
           .addMethod(
-              getUpdateIncidentMethod(),
+              getUpdateIncidentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.UpdateIncidentRequest,
                       com.google.irm.service.v1alpha2.api.Incident>(
                       this, METHODID_UPDATE_INCIDENT)))
           .addMethod(
-              getSearchSimilarIncidentsMethod(),
+              getSearchSimilarIncidentsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest,
                       com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>(
                       this, METHODID_SEARCH_SIMILAR_INCIDENTS)))
           .addMethod(
-              getCreateAnnotationMethod(),
+              getCreateAnnotationMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateAnnotationRequest,
                       com.google.irm.service.v1alpha2.api.Annotation>(
                       this, METHODID_CREATE_ANNOTATION)))
           .addMethod(
-              getListAnnotationsMethod(),
+              getListAnnotationsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ListAnnotationsRequest,
                       com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>(
                       this, METHODID_LIST_ANNOTATIONS)))
           .addMethod(
-              getCreateTagMethod(),
+              getCreateTagMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateTagRequest,
                       com.google.irm.service.v1alpha2.api.Tag>(this, METHODID_CREATE_TAG)))
           .addMethod(
-              getDeleteTagMethod(),
+              getDeleteTagMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.DeleteTagRequest,
                       com.google.protobuf.Empty>(this, METHODID_DELETE_TAG)))
           .addMethod(
-              getListTagsMethod(),
+              getListTagsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ListTagsRequest,
                       com.google.irm.service.v1alpha2.api.ListTagsResponse>(
                       this, METHODID_LIST_TAGS)))
           .addMethod(
-              getCreateSignalMethod(),
+              getCreateSignalMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateSignalRequest,
                       com.google.irm.service.v1alpha2.api.Signal>(this, METHODID_CREATE_SIGNAL)))
           .addMethod(
-              getSearchSignalsMethod(),
+              getSearchSignalsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.SearchSignalsRequest,
                       com.google.irm.service.v1alpha2.api.SearchSignalsResponse>(
                       this, METHODID_SEARCH_SIGNALS)))
           .addMethod(
-              getLookupSignalMethod(),
+              getLookupSignalMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.LookupSignalRequest,
                       com.google.irm.service.v1alpha2.api.Signal>(this, METHODID_LOOKUP_SIGNAL)))
           .addMethod(
-              getGetSignalMethod(),
+              getGetSignalMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.GetSignalRequest,
                       com.google.irm.service.v1alpha2.api.Signal>(this, METHODID_GET_SIGNAL)))
           .addMethod(
-              getUpdateSignalMethod(),
+              getUpdateSignalMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.UpdateSignalRequest,
                       com.google.irm.service.v1alpha2.api.Signal>(this, METHODID_UPDATE_SIGNAL)))
           .addMethod(
-              getEscalateIncidentMethod(),
+              getEscalateIncidentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.EscalateIncidentRequest,
                       com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>(
                       this, METHODID_ESCALATE_INCIDENT)))
           .addMethod(
-              getCreateArtifactMethod(),
+              getCreateArtifactMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateArtifactRequest,
                       com.google.irm.service.v1alpha2.api.Artifact>(
                       this, METHODID_CREATE_ARTIFACT)))
           .addMethod(
-              getListArtifactsMethod(),
+              getListArtifactsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ListArtifactsRequest,
                       com.google.irm.service.v1alpha2.api.ListArtifactsResponse>(
                       this, METHODID_LIST_ARTIFACTS)))
           .addMethod(
-              getUpdateArtifactMethod(),
+              getUpdateArtifactMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.UpdateArtifactRequest,
                       com.google.irm.service.v1alpha2.api.Artifact>(
                       this, METHODID_UPDATE_ARTIFACT)))
           .addMethod(
-              getDeleteArtifactMethod(),
+              getDeleteArtifactMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.DeleteArtifactRequest,
                       com.google.protobuf.Empty>(this, METHODID_DELETE_ARTIFACT)))
           .addMethod(
-              getSendShiftHandoffMethod(),
+              getSendShiftHandoffMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest,
                       com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>(
                       this, METHODID_SEND_SHIFT_HANDOFF)))
           .addMethod(
-              getCreateSubscriptionMethod(),
+              getCreateSubscriptionMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest,
                       com.google.irm.service.v1alpha2.api.Subscription>(
                       this, METHODID_CREATE_SUBSCRIPTION)))
           .addMethod(
-              getUpdateSubscriptionMethod(),
+              getUpdateSubscriptionMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest,
                       com.google.irm.service.v1alpha2.api.Subscription>(
                       this, METHODID_UPDATE_SUBSCRIPTION)))
           .addMethod(
-              getListSubscriptionsMethod(),
+              getListSubscriptionsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest,
                       com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>(
                       this, METHODID_LIST_SUBSCRIPTIONS)))
           .addMethod(
-              getDeleteSubscriptionMethod(),
+              getDeleteSubscriptionMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest,
                       com.google.protobuf.Empty>(this, METHODID_DELETE_SUBSCRIPTION)))
           .addMethod(
-              getCreateIncidentRoleAssignmentMethod(),
+              getCreateIncidentRoleAssignmentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest,
                       com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>(
                       this, METHODID_CREATE_INCIDENT_ROLE_ASSIGNMENT)))
           .addMethod(
-              getDeleteIncidentRoleAssignmentMethod(),
+              getDeleteIncidentRoleAssignmentMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest,
                       com.google.protobuf.Empty>(this, METHODID_DELETE_INCIDENT_ROLE_ASSIGNMENT)))
           .addMethod(
-              getListIncidentRoleAssignmentsMethod(),
+              getListIncidentRoleAssignmentsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest,
                       com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>(
                       this, METHODID_LIST_INCIDENT_ROLE_ASSIGNMENTS)))
           .addMethod(
-              getRequestIncidentRoleHandoverMethod(),
+              getRequestIncidentRoleHandoverMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest,
                       com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>(
                       this, METHODID_REQUEST_INCIDENT_ROLE_HANDOVER)))
           .addMethod(
-              getConfirmIncidentRoleHandoverMethod(),
+              getConfirmIncidentRoleHandoverMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest,
                       com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>(
                       this, METHODID_CONFIRM_INCIDENT_ROLE_HANDOVER)))
           .addMethod(
-              getForceIncidentRoleHandoverMethod(),
+              getForceIncidentRoleHandoverMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest,
                       com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>(
                       this, METHODID_FORCE_INCIDENT_ROLE_HANDOVER)))
           .addMethod(
-              getCancelIncidentRoleHandoverMethod(),
+              getCancelIncidentRoleHandoverMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest,
@@ -2311,7 +2665,11 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceStub
-      extends io.grpc.stub.AbstractAsyncStub<IncidentServiceStub> {
+      extends io.grpc.stub.AbstractStub<IncidentServiceStub> {
+    private IncidentServiceStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private IncidentServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -2333,7 +2691,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateIncidentMethod(), getCallOptions()),
+          getChannel().newCall(getCreateIncidentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2350,7 +2708,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetIncidentMethod(), getCallOptions()),
+          getChannel().newCall(getGetIncidentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2368,7 +2726,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSearchIncidentsMethod(), getCallOptions()),
+          getChannel().newCall(getSearchIncidentsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2385,7 +2743,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Incident>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateIncidentMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateIncidentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2405,7 +2763,7 @@ public final class IncidentServiceGrpc {
                 com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSearchSimilarIncidentsMethod(), getCallOptions()),
+          getChannel().newCall(getSearchSimilarIncidentsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2423,7 +2781,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Annotation>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateAnnotationMethod(), getCallOptions()),
+          getChannel().newCall(getCreateAnnotationMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2441,7 +2799,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListAnnotationsMethod(), getCallOptions()),
+          getChannel().newCall(getListAnnotationsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2457,7 +2815,9 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateTagRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Tag> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateTagMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getCreateTagMethodHelper(), getCallOptions()),
+          request,
+          responseObserver);
     }
 
     /**
@@ -2471,7 +2831,9 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.DeleteTagRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteTagMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getDeleteTagMethodHelper(), getCallOptions()),
+          request,
+          responseObserver);
     }
 
     /**
@@ -2486,7 +2848,9 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListTagsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListTagsMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getListTagsMethodHelper(), getCallOptions()),
+          request,
+          responseObserver);
     }
 
     /**
@@ -2500,7 +2864,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.CreateSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateSignalMethod(), getCallOptions()),
+          getChannel().newCall(getCreateSignalMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2521,7 +2885,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSearchSignalsMethod(), getCallOptions()),
+          getChannel().newCall(getSearchSignalsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2537,7 +2901,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.LookupSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getLookupSignalMethod(), getCallOptions()),
+          getChannel().newCall(getLookupSignalMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2553,7 +2917,9 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.GetSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetSignalMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGetSignalMethodHelper(), getCallOptions()),
+          request,
+          responseObserver);
     }
 
     /**
@@ -2568,7 +2934,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.UpdateSignalRequest request,
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Signal> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateSignalMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateSignalMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2585,7 +2951,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getEscalateIncidentMethod(), getCallOptions()),
+          getChannel().newCall(getEscalateIncidentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2602,7 +2968,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Artifact>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateArtifactMethod(), getCallOptions()),
+          getChannel().newCall(getCreateArtifactMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2619,7 +2985,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListArtifactsMethod(), getCallOptions()),
+          getChannel().newCall(getListArtifactsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2636,7 +3002,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Artifact>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateArtifactMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateArtifactMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2652,7 +3018,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.DeleteArtifactRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteArtifactMethod(), getCallOptions()),
+          getChannel().newCall(getDeleteArtifactMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2669,7 +3035,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSendShiftHandoffMethod(), getCallOptions()),
+          getChannel().newCall(getSendShiftHandoffMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2689,7 +3055,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Subscription>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateSubscriptionMethod(), getCallOptions()),
+          getChannel().newCall(getCreateSubscriptionMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2706,7 +3072,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.Subscription>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateSubscriptionMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateSubscriptionMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2723,7 +3089,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListSubscriptionsMethod(), getCallOptions()),
+          getChannel().newCall(getListSubscriptionsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2739,7 +3105,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteSubscriptionMethod(), getCallOptions()),
+          getChannel().newCall(getDeleteSubscriptionMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2760,7 +3126,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateIncidentRoleAssignmentMethod(), getCallOptions()),
+          getChannel().newCall(getCreateIncidentRoleAssignmentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2776,7 +3142,7 @@ public final class IncidentServiceGrpc {
         com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteIncidentRoleAssignmentMethod(), getCallOptions()),
+          getChannel().newCall(getDeleteIncidentRoleAssignmentMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2794,7 +3160,7 @@ public final class IncidentServiceGrpc {
                 com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListIncidentRoleAssignmentsMethod(), getCallOptions()),
+          getChannel().newCall(getListIncidentRoleAssignmentsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2815,7 +3181,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getRequestIncidentRoleHandoverMethod(), getCallOptions()),
+          getChannel().newCall(getRequestIncidentRoleHandoverMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2835,7 +3201,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getConfirmIncidentRoleHandoverMethod(), getCallOptions()),
+          getChannel().newCall(getConfirmIncidentRoleHandoverMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2855,7 +3221,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getForceIncidentRoleHandoverMethod(), getCallOptions()),
+          getChannel().newCall(getForceIncidentRoleHandoverMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2874,7 +3240,7 @@ public final class IncidentServiceGrpc {
         io.grpc.stub.StreamObserver<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCancelIncidentRoleHandoverMethod(), getCallOptions()),
+          getChannel().newCall(getCancelIncidentRoleHandoverMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -2888,7 +3254,11 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceBlockingStub
-      extends io.grpc.stub.AbstractBlockingStub<IncidentServiceBlockingStub> {
+      extends io.grpc.stub.AbstractStub<IncidentServiceBlockingStub> {
+    private IncidentServiceBlockingStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private IncidentServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -2908,7 +3278,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Incident createIncident(
         com.google.irm.service.v1alpha2.api.CreateIncidentRequest request) {
-      return blockingUnaryCall(getChannel(), getCreateIncidentMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getCreateIncidentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2920,7 +3291,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Incident getIncident(
         com.google.irm.service.v1alpha2.api.GetIncidentRequest request) {
-      return blockingUnaryCall(getChannel(), getGetIncidentMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getGetIncidentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2933,7 +3305,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.SearchIncidentsResponse searchIncidents(
         com.google.irm.service.v1alpha2.api.SearchIncidentsRequest request) {
-      return blockingUnaryCall(getChannel(), getSearchIncidentsMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getSearchIncidentsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2945,7 +3318,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Incident updateIncident(
         com.google.irm.service.v1alpha2.api.UpdateIncidentRequest request) {
-      return blockingUnaryCall(getChannel(), getUpdateIncidentMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getUpdateIncidentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2961,7 +3335,7 @@ public final class IncidentServiceGrpc {
         searchSimilarIncidents(
             com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSearchSimilarIncidentsMethod(), getCallOptions(), request);
+          getChannel(), getSearchSimilarIncidentsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2975,7 +3349,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.Annotation createAnnotation(
         com.google.irm.service.v1alpha2.api.CreateAnnotationRequest request) {
       return blockingUnaryCall(
-          getChannel(), getCreateAnnotationMethod(), getCallOptions(), request);
+          getChannel(), getCreateAnnotationMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -2988,7 +3362,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.ListAnnotationsResponse listAnnotations(
         com.google.irm.service.v1alpha2.api.ListAnnotationsRequest request) {
-      return blockingUnaryCall(getChannel(), getListAnnotationsMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getListAnnotationsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3000,7 +3375,7 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Tag createTag(
         com.google.irm.service.v1alpha2.api.CreateTagRequest request) {
-      return blockingUnaryCall(getChannel(), getCreateTagMethod(), getCallOptions(), request);
+      return blockingUnaryCall(getChannel(), getCreateTagMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3012,7 +3387,7 @@ public final class IncidentServiceGrpc {
      */
     public com.google.protobuf.Empty deleteTag(
         com.google.irm.service.v1alpha2.api.DeleteTagRequest request) {
-      return blockingUnaryCall(getChannel(), getDeleteTagMethod(), getCallOptions(), request);
+      return blockingUnaryCall(getChannel(), getDeleteTagMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3024,7 +3399,7 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.ListTagsResponse listTags(
         com.google.irm.service.v1alpha2.api.ListTagsRequest request) {
-      return blockingUnaryCall(getChannel(), getListTagsMethod(), getCallOptions(), request);
+      return blockingUnaryCall(getChannel(), getListTagsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3036,7 +3411,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Signal createSignal(
         com.google.irm.service.v1alpha2.api.CreateSignalRequest request) {
-      return blockingUnaryCall(getChannel(), getCreateSignalMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getCreateSignalMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3052,7 +3428,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.SearchSignalsResponse searchSignals(
         com.google.irm.service.v1alpha2.api.SearchSignalsRequest request) {
-      return blockingUnaryCall(getChannel(), getSearchSignalsMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getSearchSignalsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3064,7 +3441,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Signal lookupSignal(
         com.google.irm.service.v1alpha2.api.LookupSignalRequest request) {
-      return blockingUnaryCall(getChannel(), getLookupSignalMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getLookupSignalMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3076,7 +3454,7 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Signal getSignal(
         com.google.irm.service.v1alpha2.api.GetSignalRequest request) {
-      return blockingUnaryCall(getChannel(), getGetSignalMethod(), getCallOptions(), request);
+      return blockingUnaryCall(getChannel(), getGetSignalMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3089,7 +3467,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Signal updateSignal(
         com.google.irm.service.v1alpha2.api.UpdateSignalRequest request) {
-      return blockingUnaryCall(getChannel(), getUpdateSignalMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getUpdateSignalMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3102,7 +3481,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.EscalateIncidentResponse escalateIncident(
         com.google.irm.service.v1alpha2.api.EscalateIncidentRequest request) {
       return blockingUnaryCall(
-          getChannel(), getEscalateIncidentMethod(), getCallOptions(), request);
+          getChannel(), getEscalateIncidentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3114,7 +3493,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Artifact createArtifact(
         com.google.irm.service.v1alpha2.api.CreateArtifactRequest request) {
-      return blockingUnaryCall(getChannel(), getCreateArtifactMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getCreateArtifactMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3126,7 +3506,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.ListArtifactsResponse listArtifacts(
         com.google.irm.service.v1alpha2.api.ListArtifactsRequest request) {
-      return blockingUnaryCall(getChannel(), getListArtifactsMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getListArtifactsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3138,7 +3519,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.irm.service.v1alpha2.api.Artifact updateArtifact(
         com.google.irm.service.v1alpha2.api.UpdateArtifactRequest request) {
-      return blockingUnaryCall(getChannel(), getUpdateArtifactMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getUpdateArtifactMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3150,7 +3532,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.protobuf.Empty deleteArtifact(
         com.google.irm.service.v1alpha2.api.DeleteArtifactRequest request) {
-      return blockingUnaryCall(getChannel(), getDeleteArtifactMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getDeleteArtifactMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3163,7 +3546,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse sendShiftHandoff(
         com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSendShiftHandoffMethod(), getCallOptions(), request);
+          getChannel(), getSendShiftHandoffMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3179,7 +3562,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.Subscription createSubscription(
         com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest request) {
       return blockingUnaryCall(
-          getChannel(), getCreateSubscriptionMethod(), getCallOptions(), request);
+          getChannel(), getCreateSubscriptionMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3192,7 +3575,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.Subscription updateSubscription(
         com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest request) {
       return blockingUnaryCall(
-          getChannel(), getUpdateSubscriptionMethod(), getCallOptions(), request);
+          getChannel(), getUpdateSubscriptionMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3205,7 +3588,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse listSubscriptions(
         com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest request) {
       return blockingUnaryCall(
-          getChannel(), getListSubscriptionsMethod(), getCallOptions(), request);
+          getChannel(), getListSubscriptionsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3218,7 +3601,7 @@ public final class IncidentServiceGrpc {
     public com.google.protobuf.Empty deleteSubscription(
         com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest request) {
       return blockingUnaryCall(
-          getChannel(), getDeleteSubscriptionMethod(), getCallOptions(), request);
+          getChannel(), getDeleteSubscriptionMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3235,7 +3618,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment createIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest request) {
       return blockingUnaryCall(
-          getChannel(), getCreateIncidentRoleAssignmentMethod(), getCallOptions(), request);
+          getChannel(), getCreateIncidentRoleAssignmentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3248,7 +3631,7 @@ public final class IncidentServiceGrpc {
     public com.google.protobuf.Empty deleteIncidentRoleAssignment(
         com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest request) {
       return blockingUnaryCall(
-          getChannel(), getDeleteIncidentRoleAssignmentMethod(), getCallOptions(), request);
+          getChannel(), getDeleteIncidentRoleAssignmentMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3262,7 +3645,7 @@ public final class IncidentServiceGrpc {
         listIncidentRoleAssignments(
             com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest request) {
       return blockingUnaryCall(
-          getChannel(), getListIncidentRoleAssignmentsMethod(), getCallOptions(), request);
+          getChannel(), getListIncidentRoleAssignmentsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3279,7 +3662,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment requestIncidentRoleHandover(
         com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest request) {
       return blockingUnaryCall(
-          getChannel(), getRequestIncidentRoleHandoverMethod(), getCallOptions(), request);
+          getChannel(), getRequestIncidentRoleHandoverMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3295,7 +3678,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment confirmIncidentRoleHandover(
         com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest request) {
       return blockingUnaryCall(
-          getChannel(), getConfirmIncidentRoleHandoverMethod(), getCallOptions(), request);
+          getChannel(), getConfirmIncidentRoleHandoverMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3311,7 +3694,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment forceIncidentRoleHandover(
         com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest request) {
       return blockingUnaryCall(
-          getChannel(), getForceIncidentRoleHandoverMethod(), getCallOptions(), request);
+          getChannel(), getForceIncidentRoleHandoverMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -3326,7 +3709,7 @@ public final class IncidentServiceGrpc {
     public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment cancelIncidentRoleHandover(
         com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest request) {
       return blockingUnaryCall(
-          getChannel(), getCancelIncidentRoleHandoverMethod(), getCallOptions(), request);
+          getChannel(), getCancelIncidentRoleHandoverMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -3338,7 +3721,11 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceFutureStub
-      extends io.grpc.stub.AbstractFutureStub<IncidentServiceFutureStub> {
+      extends io.grpc.stub.AbstractStub<IncidentServiceFutureStub> {
+    private IncidentServiceFutureStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private IncidentServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -3360,7 +3747,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Incident>
         createIncident(com.google.irm.service.v1alpha2.api.CreateIncidentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateIncidentMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateIncidentMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3374,7 +3761,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Incident>
         getIncident(com.google.irm.service.v1alpha2.api.GetIncidentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetIncidentMethod(), getCallOptions()), request);
+          getChannel().newCall(getGetIncidentMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3389,7 +3776,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.SearchIncidentsResponse>
         searchIncidents(com.google.irm.service.v1alpha2.api.SearchIncidentsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSearchIncidentsMethod(), getCallOptions()), request);
+          getChannel().newCall(getSearchIncidentsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3403,7 +3790,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Incident>
         updateIncident(com.google.irm.service.v1alpha2.api.UpdateIncidentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateIncidentMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateIncidentMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3420,7 +3807,7 @@ public final class IncidentServiceGrpc {
         searchSimilarIncidents(
             com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSearchSimilarIncidentsMethod(), getCallOptions()), request);
+          getChannel().newCall(getSearchSimilarIncidentsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3435,7 +3822,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Annotation>
         createAnnotation(com.google.irm.service.v1alpha2.api.CreateAnnotationRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateAnnotationMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateAnnotationMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3450,7 +3837,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.ListAnnotationsResponse>
         listAnnotations(com.google.irm.service.v1alpha2.api.ListAnnotationsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListAnnotationsMethod(), getCallOptions()), request);
+          getChannel().newCall(getListAnnotationsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3463,7 +3850,8 @@ public final class IncidentServiceGrpc {
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.irm.service.v1alpha2.api.Tag>
         createTag(com.google.irm.service.v1alpha2.api.CreateTagRequest request) {
-      return futureUnaryCall(getChannel().newCall(getCreateTagMethod(), getCallOptions()), request);
+      return futureUnaryCall(
+          getChannel().newCall(getCreateTagMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3475,7 +3863,8 @@ public final class IncidentServiceGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> deleteTag(
         com.google.irm.service.v1alpha2.api.DeleteTagRequest request) {
-      return futureUnaryCall(getChannel().newCall(getDeleteTagMethod(), getCallOptions()), request);
+      return futureUnaryCall(
+          getChannel().newCall(getDeleteTagMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3488,7 +3877,8 @@ public final class IncidentServiceGrpc {
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.irm.service.v1alpha2.api.ListTagsResponse>
         listTags(com.google.irm.service.v1alpha2.api.ListTagsRequest request) {
-      return futureUnaryCall(getChannel().newCall(getListTagsMethod(), getCallOptions()), request);
+      return futureUnaryCall(
+          getChannel().newCall(getListTagsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3502,7 +3892,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Signal>
         createSignal(com.google.irm.service.v1alpha2.api.CreateSignalRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateSignalMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateSignalMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3520,7 +3910,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.SearchSignalsResponse>
         searchSignals(com.google.irm.service.v1alpha2.api.SearchSignalsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSearchSignalsMethod(), getCallOptions()), request);
+          getChannel().newCall(getSearchSignalsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3534,7 +3924,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Signal>
         lookupSignal(com.google.irm.service.v1alpha2.api.LookupSignalRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getLookupSignalMethod(), getCallOptions()), request);
+          getChannel().newCall(getLookupSignalMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3547,7 +3937,8 @@ public final class IncidentServiceGrpc {
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.irm.service.v1alpha2.api.Signal>
         getSignal(com.google.irm.service.v1alpha2.api.GetSignalRequest request) {
-      return futureUnaryCall(getChannel().newCall(getGetSignalMethod(), getCallOptions()), request);
+      return futureUnaryCall(
+          getChannel().newCall(getGetSignalMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3562,7 +3953,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Signal>
         updateSignal(com.google.irm.service.v1alpha2.api.UpdateSignalRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateSignalMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateSignalMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3576,7 +3967,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.EscalateIncidentResponse>
         escalateIncident(com.google.irm.service.v1alpha2.api.EscalateIncidentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getEscalateIncidentMethod(), getCallOptions()), request);
+          getChannel().newCall(getEscalateIncidentMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3590,7 +3981,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Artifact>
         createArtifact(com.google.irm.service.v1alpha2.api.CreateArtifactRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateArtifactMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateArtifactMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3604,7 +3995,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.ListArtifactsResponse>
         listArtifacts(com.google.irm.service.v1alpha2.api.ListArtifactsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListArtifactsMethod(), getCallOptions()), request);
+          getChannel().newCall(getListArtifactsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3618,7 +4009,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Artifact>
         updateArtifact(com.google.irm.service.v1alpha2.api.UpdateArtifactRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateArtifactMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateArtifactMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3631,7 +4022,7 @@ public final class IncidentServiceGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteArtifact(com.google.irm.service.v1alpha2.api.DeleteArtifactRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getDeleteArtifactMethod(), getCallOptions()), request);
+          getChannel().newCall(getDeleteArtifactMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3645,7 +4036,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.SendShiftHandoffResponse>
         sendShiftHandoff(com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSendShiftHandoffMethod(), getCallOptions()), request);
+          getChannel().newCall(getSendShiftHandoffMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3662,7 +4053,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Subscription>
         createSubscription(com.google.irm.service.v1alpha2.api.CreateSubscriptionRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateSubscriptionMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateSubscriptionMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3676,7 +4067,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.Subscription>
         updateSubscription(com.google.irm.service.v1alpha2.api.UpdateSubscriptionRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateSubscriptionMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateSubscriptionMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3690,7 +4081,7 @@ public final class IncidentServiceGrpc {
             com.google.irm.service.v1alpha2.api.ListSubscriptionsResponse>
         listSubscriptions(com.google.irm.service.v1alpha2.api.ListSubscriptionsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListSubscriptionsMethod(), getCallOptions()), request);
+          getChannel().newCall(getListSubscriptionsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3703,7 +4094,7 @@ public final class IncidentServiceGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteSubscription(com.google.irm.service.v1alpha2.api.DeleteSubscriptionRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getDeleteSubscriptionMethod(), getCallOptions()), request);
+          getChannel().newCall(getDeleteSubscriptionMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -3722,7 +4113,8 @@ public final class IncidentServiceGrpc {
         createIncidentRoleAssignment(
             com.google.irm.service.v1alpha2.api.CreateIncidentRoleAssignmentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateIncidentRoleAssignmentMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateIncidentRoleAssignmentMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3736,7 +4128,8 @@ public final class IncidentServiceGrpc {
         deleteIncidentRoleAssignment(
             com.google.irm.service.v1alpha2.api.DeleteIncidentRoleAssignmentRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getDeleteIncidentRoleAssignmentMethod(), getCallOptions()), request);
+          getChannel().newCall(getDeleteIncidentRoleAssignmentMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3751,7 +4144,8 @@ public final class IncidentServiceGrpc {
         listIncidentRoleAssignments(
             com.google.irm.service.v1alpha2.api.ListIncidentRoleAssignmentsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListIncidentRoleAssignmentsMethod(), getCallOptions()), request);
+          getChannel().newCall(getListIncidentRoleAssignmentsMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3770,7 +4164,8 @@ public final class IncidentServiceGrpc {
         requestIncidentRoleHandover(
             com.google.irm.service.v1alpha2.api.RequestIncidentRoleHandoverRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getRequestIncidentRoleHandoverMethod(), getCallOptions()), request);
+          getChannel().newCall(getRequestIncidentRoleHandoverMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3788,7 +4183,8 @@ public final class IncidentServiceGrpc {
         confirmIncidentRoleHandover(
             com.google.irm.service.v1alpha2.api.ConfirmIncidentRoleHandoverRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getConfirmIncidentRoleHandoverMethod(), getCallOptions()), request);
+          getChannel().newCall(getConfirmIncidentRoleHandoverMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3806,7 +4202,8 @@ public final class IncidentServiceGrpc {
         forceIncidentRoleHandover(
             com.google.irm.service.v1alpha2.api.ForceIncidentRoleHandoverRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getForceIncidentRoleHandoverMethod(), getCallOptions()), request);
+          getChannel().newCall(getForceIncidentRoleHandoverMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -3823,7 +4220,8 @@ public final class IncidentServiceGrpc {
         cancelIncidentRoleHandover(
             com.google.irm.service.v1alpha2.api.CancelIncidentRoleHandoverRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCancelIncidentRoleHandoverMethod(), getCallOptions()), request);
+          getChannel().newCall(getCancelIncidentRoleHandoverMethodHelper(), getCallOptions()),
+          request);
     }
   }
 
@@ -4143,38 +4541,38 @@ public final class IncidentServiceGrpc {
               result =
                   io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
                       .setSchemaDescriptor(new IncidentServiceFileDescriptorSupplier())
-                      .addMethod(getCreateIncidentMethod())
-                      .addMethod(getGetIncidentMethod())
-                      .addMethod(getSearchIncidentsMethod())
-                      .addMethod(getUpdateIncidentMethod())
-                      .addMethod(getSearchSimilarIncidentsMethod())
-                      .addMethod(getCreateAnnotationMethod())
-                      .addMethod(getListAnnotationsMethod())
-                      .addMethod(getCreateTagMethod())
-                      .addMethod(getDeleteTagMethod())
-                      .addMethod(getListTagsMethod())
-                      .addMethod(getCreateSignalMethod())
-                      .addMethod(getSearchSignalsMethod())
-                      .addMethod(getLookupSignalMethod())
-                      .addMethod(getGetSignalMethod())
-                      .addMethod(getUpdateSignalMethod())
-                      .addMethod(getEscalateIncidentMethod())
-                      .addMethod(getCreateArtifactMethod())
-                      .addMethod(getListArtifactsMethod())
-                      .addMethod(getUpdateArtifactMethod())
-                      .addMethod(getDeleteArtifactMethod())
-                      .addMethod(getSendShiftHandoffMethod())
-                      .addMethod(getCreateSubscriptionMethod())
-                      .addMethod(getUpdateSubscriptionMethod())
-                      .addMethod(getListSubscriptionsMethod())
-                      .addMethod(getDeleteSubscriptionMethod())
-                      .addMethod(getCreateIncidentRoleAssignmentMethod())
-                      .addMethod(getDeleteIncidentRoleAssignmentMethod())
-                      .addMethod(getListIncidentRoleAssignmentsMethod())
-                      .addMethod(getRequestIncidentRoleHandoverMethod())
-                      .addMethod(getConfirmIncidentRoleHandoverMethod())
-                      .addMethod(getForceIncidentRoleHandoverMethod())
-                      .addMethod(getCancelIncidentRoleHandoverMethod())
+                      .addMethod(getCreateIncidentMethodHelper())
+                      .addMethod(getGetIncidentMethodHelper())
+                      .addMethod(getSearchIncidentsMethodHelper())
+                      .addMethod(getUpdateIncidentMethodHelper())
+                      .addMethod(getSearchSimilarIncidentsMethodHelper())
+                      .addMethod(getCreateAnnotationMethodHelper())
+                      .addMethod(getListAnnotationsMethodHelper())
+                      .addMethod(getCreateTagMethodHelper())
+                      .addMethod(getDeleteTagMethodHelper())
+                      .addMethod(getListTagsMethodHelper())
+                      .addMethod(getCreateSignalMethodHelper())
+                      .addMethod(getSearchSignalsMethodHelper())
+                      .addMethod(getLookupSignalMethodHelper())
+                      .addMethod(getGetSignalMethodHelper())
+                      .addMethod(getUpdateSignalMethodHelper())
+                      .addMethod(getEscalateIncidentMethodHelper())
+                      .addMethod(getCreateArtifactMethodHelper())
+                      .addMethod(getListArtifactsMethodHelper())
+                      .addMethod(getUpdateArtifactMethodHelper())
+                      .addMethod(getDeleteArtifactMethodHelper())
+                      .addMethod(getSendShiftHandoffMethodHelper())
+                      .addMethod(getCreateSubscriptionMethodHelper())
+                      .addMethod(getUpdateSubscriptionMethodHelper())
+                      .addMethod(getListSubscriptionsMethodHelper())
+                      .addMethod(getDeleteSubscriptionMethodHelper())
+                      .addMethod(getCreateIncidentRoleAssignmentMethodHelper())
+                      .addMethod(getDeleteIncidentRoleAssignmentMethodHelper())
+                      .addMethod(getListIncidentRoleAssignmentsMethodHelper())
+                      .addMethod(getRequestIncidentRoleHandoverMethodHelper())
+                      .addMethod(getConfirmIncidentRoleHandoverMethodHelper())
+                      .addMethod(getForceIncidentRoleHandoverMethodHelper())
+                      .addMethod(getCancelIncidentRoleHandoverMethodHelper())
                       .build();
         }
       }
