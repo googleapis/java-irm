@@ -1564,19 +1564,43 @@ public final class IncidentServiceGrpc {
 
   /** Creates a new async stub that supports all call types for the service */
   public static IncidentServiceStub newStub(io.grpc.Channel channel) {
-    return new IncidentServiceStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceStub>() {
+          @java.lang.Override
+          public IncidentServiceStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new IncidentServiceStub(channel, callOptions);
+          }
+        };
+    return IncidentServiceStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
   public static IncidentServiceBlockingStub newBlockingStub(io.grpc.Channel channel) {
-    return new IncidentServiceBlockingStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceBlockingStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceBlockingStub>() {
+          @java.lang.Override
+          public IncidentServiceBlockingStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new IncidentServiceBlockingStub(channel, callOptions);
+          }
+        };
+    return IncidentServiceBlockingStub.newStub(factory, channel);
   }
 
   /** Creates a new ListenableFuture-style stub that supports unary calls on the service */
   public static IncidentServiceFutureStub newFutureStub(io.grpc.Channel channel) {
-    return new IncidentServiceFutureStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<IncidentServiceFutureStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<IncidentServiceFutureStub>() {
+          @java.lang.Override
+          public IncidentServiceFutureStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new IncidentServiceFutureStub(channel, callOptions);
+          }
+        };
+    return IncidentServiceFutureStub.newStub(factory, channel);
   }
 
   /**
@@ -2287,11 +2311,7 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceStub
-      extends io.grpc.stub.AbstractStub<IncidentServiceStub> {
-    private IncidentServiceStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+      extends io.grpc.stub.AbstractAsyncStub<IncidentServiceStub> {
     private IncidentServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -2868,11 +2888,7 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceBlockingStub
-      extends io.grpc.stub.AbstractStub<IncidentServiceBlockingStub> {
-    private IncidentServiceBlockingStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+      extends io.grpc.stub.AbstractBlockingStub<IncidentServiceBlockingStub> {
     private IncidentServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -3322,11 +3338,7 @@ public final class IncidentServiceGrpc {
    * </pre>
    */
   public static final class IncidentServiceFutureStub
-      extends io.grpc.stub.AbstractStub<IncidentServiceFutureStub> {
-    private IncidentServiceFutureStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+      extends io.grpc.stub.AbstractFutureStub<IncidentServiceFutureStub> {
     private IncidentServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
