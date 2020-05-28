@@ -140,6 +140,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Subscription> getSubscriptionsList() {
     return subscriptions_;
   }
@@ -152,6 +153,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder>
       getSubscriptionsOrBuilderList() {
     return subscriptions_;
@@ -165,6 +167,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 1;</code>
    */
+  @java.lang.Override
   public int getSubscriptionsCount() {
     return subscriptions_.size();
   }
@@ -177,6 +180,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Subscription getSubscriptions(int index) {
     return subscriptions_.get(index);
   }
@@ -189,6 +193,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionsOrBuilder(
       int index) {
     return subscriptions_.get(index);
@@ -207,6 +212,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -229,6 +235,7 @@ public final class ListSubscriptionsResponse extends com.google.protobuf.Generat
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

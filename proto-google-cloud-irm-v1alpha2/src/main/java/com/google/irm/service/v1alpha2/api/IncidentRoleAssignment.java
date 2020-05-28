@@ -181,6 +181,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -204,6 +205,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -231,6 +233,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The etag.
    */
+  @java.lang.Override
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -255,6 +258,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The bytes for etag.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -280,6 +284,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return Whether the role field is set.
    */
+  @java.lang.Override
   public boolean hasRole() {
     return role_ != null;
   }
@@ -294,6 +299,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The role.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRole getRole() {
     return role_ == null
         ? com.google.irm.service.v1alpha2.api.IncidentRole.getDefaultInstance()
@@ -308,6 +314,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * <code>.google.cloud.irm.v1alpha2.IncidentRole role = 3;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleOrBuilder getRoleOrBuilder() {
     return getRole();
   }
@@ -327,6 +334,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return Whether the assignee field is set.
    */
+  @java.lang.Override
   public boolean hasAssignee() {
     return assignee_ != null;
   }
@@ -343,6 +351,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The assignee.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.User getAssignee() {
     return assignee_ == null
         ? com.google.irm.service.v1alpha2.api.User.getDefaultInstance()
@@ -359,6 +368,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * <code>.google.cloud.irm.v1alpha2.User assignee = 4;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getAssigneeOrBuilder() {
     return getAssignee();
   }
@@ -394,6 +404,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return Whether the proposedAssignee field is set.
    */
+  @java.lang.Override
   public boolean hasProposedAssignee() {
     return proposedAssignee_ != null;
   }
@@ -426,6 +437,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * @return The proposedAssignee.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.User getProposedAssignee() {
     return proposedAssignee_ == null
         ? com.google.irm.service.v1alpha2.api.User.getDefaultInstance()
@@ -458,6 +470,7 @@ public final class IncidentRoleAssignment extends com.google.protobuf.GeneratedM
    *
    * <code>.google.cloud.irm.v1alpha2.User proposed_assignee = 5;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getProposedAssigneeOrBuilder() {
     return getProposedAssignee();
   }

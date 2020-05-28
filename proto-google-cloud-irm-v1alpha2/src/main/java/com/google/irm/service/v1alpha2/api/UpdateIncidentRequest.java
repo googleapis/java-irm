@@ -148,6 +148,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the incident field is set.
    */
+  @java.lang.Override
   public boolean hasIncident() {
     return incident_ != null;
   }
@@ -164,6 +165,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The incident.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident getIncident() {
     return incident_ == null
         ? com.google.irm.service.v1alpha2.api.Incident.getDefaultInstance()
@@ -180,6 +182,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
     return getIncident();
   }
@@ -197,6 +200,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the updateMask field is set.
    */
+  @java.lang.Override
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
@@ -211,6 +215,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The updateMask.
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
   }
@@ -223,6 +228,7 @@ public final class UpdateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
   }

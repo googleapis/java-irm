@@ -376,6 +376,10 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
         };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -422,6 +426,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -445,6 +450,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -472,6 +478,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The etag.
    */
+  @java.lang.Override
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -496,6 +503,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for etag.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -521,6 +529,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the subscriptionChannel field is set.
    */
+  @java.lang.Override
   public boolean hasSubscriptionChannel() {
     return subscriptionChannel_ != null;
   }
@@ -535,6 +544,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The subscriptionChannel.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannel getSubscriptionChannel() {
     return subscriptionChannel_ == null
         ? com.google.irm.service.v1alpha2.api.CommunicationChannel.getDefaultInstance()
@@ -549,6 +559,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel subscription_channel = 3;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannelOrBuilder
       getSubscriptionChannelOrBuilder() {
     return getSubscriptionChannel();
@@ -582,6 +593,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return A list containing the eventTypes.
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Subscription.EventType>
       getEventTypesList() {
     return new com.google.protobuf.Internal.ListAdapter<
@@ -599,6 +611,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The count of eventTypes.
    */
+  @java.lang.Override
   public int getEventTypesCount() {
     return eventTypes_.size();
   }
@@ -614,6 +627,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * @param index The index of the element to return.
    * @return The eventTypes at the given index.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Subscription.EventType getEventTypes(int index) {
     return eventTypes_converter_.convert(eventTypes_.get(index));
   }
@@ -628,6 +642,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    *
    * @return A list containing the enum numeric values on the wire for eventTypes.
    */
+  @java.lang.Override
   public java.util.List<java.lang.Integer> getEventTypesValueList() {
     return eventTypes_;
   }
@@ -643,6 +658,7 @@ public final class Subscription extends com.google.protobuf.GeneratedMessageV3
    * @param index The index of the value to return.
    * @return The enum numeric value on the wire of eventTypes at the given index.
    */
+  @java.lang.Override
   public int getEventTypesValue(int index) {
     return eventTypes_.get(index);
   }

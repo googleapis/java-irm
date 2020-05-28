@@ -143,6 +143,7 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -168,6 +169,7 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -195,6 +197,7 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    * @return Whether the annotation field is set.
    */
+  @java.lang.Override
   public boolean hasAnnotation() {
     return annotation_ != null;
   }
@@ -211,6 +214,7 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    *
    * @return The annotation.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Annotation getAnnotation() {
     return annotation_ == null
         ? com.google.irm.service.v1alpha2.api.Annotation.getDefaultInstance()
@@ -227,6 +231,7 @@ public final class CreateAnnotationRequest extends com.google.protobuf.Generated
    * .google.cloud.irm.v1alpha2.Annotation annotation = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.AnnotationOrBuilder getAnnotationOrBuilder() {
     return getAnnotation();
   }

@@ -148,6 +148,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the artifact field is set.
    */
+  @java.lang.Override
   public boolean hasArtifact() {
     return artifact_ != null;
   }
@@ -164,6 +165,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The artifact.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Artifact getArtifact() {
     return artifact_ == null
         ? com.google.irm.service.v1alpha2.api.Artifact.getDefaultInstance()
@@ -180,6 +182,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    * .google.cloud.irm.v1alpha2.Artifact artifact = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactOrBuilder() {
     return getArtifact();
   }
@@ -197,6 +200,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the updateMask field is set.
    */
+  @java.lang.Override
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
@@ -211,6 +215,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The updateMask.
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
   }
@@ -223,6 +228,7 @@ public final class UpdateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
   }

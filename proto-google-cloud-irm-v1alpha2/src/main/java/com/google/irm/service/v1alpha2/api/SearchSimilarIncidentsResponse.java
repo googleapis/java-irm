@@ -292,6 +292,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      *
      * @return Whether the incident field is set.
      */
+    @java.lang.Override
     public boolean hasIncident() {
       return incident_ != null;
     }
@@ -307,6 +308,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      *
      * @return The incident.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Incident getIncident() {
       return incident_ == null
           ? com.google.irm.service.v1alpha2.api.Incident.getDefaultInstance()
@@ -322,6 +324,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
      *
      * <code>.google.cloud.irm.v1alpha2.Incident incident = 1;</code>
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
       return getIncident();
     }
@@ -945,6 +948,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * <code>repeated .google.cloud.irm.v1alpha2.SearchSimilarIncidentsResponse.Result results = 1;
    * </code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.Result>
       getResultsList() {
     return results_;
@@ -959,6 +963,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * <code>repeated .google.cloud.irm.v1alpha2.SearchSimilarIncidentsResponse.Result results = 1;
    * </code>
    */
+  @java.lang.Override
   public java.util.List<
           ? extends
               com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.ResultOrBuilder>
@@ -975,6 +980,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * <code>repeated .google.cloud.irm.v1alpha2.SearchSimilarIncidentsResponse.Result results = 1;
    * </code>
    */
+  @java.lang.Override
   public int getResultsCount() {
     return results_.size();
   }
@@ -988,6 +994,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * <code>repeated .google.cloud.irm.v1alpha2.SearchSimilarIncidentsResponse.Result results = 1;
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.Result getResults(
       int index) {
     return results_.get(index);
@@ -1002,6 +1009,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    * <code>repeated .google.cloud.irm.v1alpha2.SearchSimilarIncidentsResponse.Result results = 1;
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SearchSimilarIncidentsResponse.ResultOrBuilder
       getResultsOrBuilder(int index) {
     return results_.get(index);
@@ -1020,6 +1028,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -1042,6 +1051,7 @@ public final class SearchSimilarIncidentsResponse extends com.google.protobuf.Ge
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

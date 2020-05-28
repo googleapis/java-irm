@@ -311,6 +311,10 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
             };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -531,6 +535,10 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
         };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -786,6 +794,10 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
         };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -1131,6 +1143,10 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
           };
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
 
@@ -1178,6 +1194,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The uri.
      */
+    @java.lang.Override
     public java.lang.String getUri() {
       java.lang.Object ref = uri_;
       if (ref instanceof java.lang.String) {
@@ -1200,6 +1217,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The bytes for uri.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUriBytes() {
       java.lang.Object ref = uri_;
       if (ref instanceof java.lang.String) {
@@ -1225,6 +1243,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The displayName.
      */
+    @java.lang.Override
     public java.lang.String getDisplayName() {
       java.lang.Object ref = displayName_;
       if (ref instanceof java.lang.String) {
@@ -1247,6 +1266,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The bytes for displayName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getDisplayNameBytes() {
       java.lang.Object ref = displayName_;
       if (ref instanceof java.lang.String) {
@@ -1273,6 +1293,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for channelType.
      */
+    @java.lang.Override
     public int getChannelTypeValue() {
       return channelType_;
     }
@@ -1288,6 +1309,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The channelType.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Incident.CommunicationVenue.ChannelType
         getChannelType() {
       @SuppressWarnings("deprecation")
@@ -1891,6 +1913,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
        *
        * @return The enum numeric value on the wire for channelType.
        */
+      @java.lang.Override
       public int getChannelTypeValue() {
         return channelType_;
       }
@@ -1908,6 +1931,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
        * @return This builder for chaining.
        */
       public Builder setChannelTypeValue(int value) {
+
         channelType_ = value;
         onChanged();
         return this;
@@ -1924,6 +1948,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
        *
        * @return The channelType.
        */
+      @java.lang.Override
       public com.google.irm.service.v1alpha2.api.Incident.CommunicationVenue.ChannelType
           getChannelType() {
         @SuppressWarnings("deprecation")
@@ -2046,6 +2071,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -2069,6 +2095,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -2094,6 +2121,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The title.
    */
+  @java.lang.Override
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -2116,6 +2144,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for title.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getTitleBytes() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -2141,6 +2170,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The enum numeric value on the wire for escalationLevel.
    */
+  @java.lang.Override
   public int getEscalationLevelValue() {
     return escalationLevel_;
   }
@@ -2155,6 +2185,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The escalationLevel.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident.EscalationLevel getEscalationLevel() {
     @SuppressWarnings("deprecation")
     com.google.irm.service.v1alpha2.api.Incident.EscalationLevel result =
@@ -2178,6 +2209,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The etag.
    */
+  @java.lang.Override
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -2201,6 +2233,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for etag.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -2226,6 +2259,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The enum numeric value on the wire for severity.
    */
+  @java.lang.Override
   public int getSeverityValue() {
     return severity_;
   }
@@ -2240,6 +2274,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The severity.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident.Severity getSeverity() {
     @SuppressWarnings("deprecation")
     com.google.irm.service.v1alpha2.api.Incident.Severity result =
@@ -2262,6 +2297,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The enum numeric value on the wire for stage.
    */
+  @java.lang.Override
   public int getStageValue() {
     return stage_;
   }
@@ -2276,6 +2312,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The stage.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident.Stage getStage() {
     @SuppressWarnings("deprecation")
     com.google.irm.service.v1alpha2.api.Incident.Stage result =
@@ -2303,6 +2340,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The duplicateIncident.
    */
+  @java.lang.Override
   public java.lang.String getDuplicateIncident() {
     java.lang.Object ref = duplicateIncident_;
     if (ref instanceof java.lang.String) {
@@ -2330,6 +2368,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for duplicateIncident.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getDuplicateIncidentBytes() {
     java.lang.Object ref = duplicateIncident_;
     if (ref instanceof java.lang.String) {
@@ -2357,6 +2396,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the startTime field is set.
    */
+  @java.lang.Override
   public boolean hasStartTime() {
     return startTime_ != null;
   }
@@ -2373,6 +2413,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The startTime.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getStartTime() {
     return startTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : startTime_;
   }
@@ -2387,6 +2428,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.protobuf.Timestamp start_time = 7;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getStartTimeOrBuilder() {
     return getStartTime();
   }
@@ -2404,6 +2446,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the synopsis field is set.
    */
+  @java.lang.Override
   public boolean hasSynopsis() {
     return synopsis_ != null;
   }
@@ -2418,6 +2461,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The synopsis.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Synopsis getSynopsis() {
     return synopsis_ == null
         ? com.google.irm.service.v1alpha2.api.Synopsis.getDefaultInstance()
@@ -2432,6 +2476,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.cloud.irm.v1alpha2.Synopsis synopsis = 8;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SynopsisOrBuilder getSynopsisOrBuilder() {
     return getSynopsis();
   }
@@ -2450,6 +2495,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the communicationVenue field is set.
    */
+  @java.lang.Override
   public boolean hasCommunicationVenue() {
     return communicationVenue_ != null;
   }
@@ -2465,6 +2511,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The communicationVenue.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident.CommunicationVenue getCommunicationVenue() {
     return communicationVenue_ == null
         ? com.google.irm.service.v1alpha2.api.Incident.CommunicationVenue.getDefaultInstance()
@@ -2480,6 +2527,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.cloud.irm.v1alpha2.Incident.CommunicationVenue communication_venue = 10;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident.CommunicationVenueOrBuilder
       getCommunicationVenueOrBuilder() {
     return getCommunicationVenue();
@@ -3215,6 +3263,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for escalationLevel.
      */
+    @java.lang.Override
     public int getEscalationLevelValue() {
       return escalationLevel_;
     }
@@ -3231,6 +3280,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      * @return This builder for chaining.
      */
     public Builder setEscalationLevelValue(int value) {
+
       escalationLevel_ = value;
       onChanged();
       return this;
@@ -3246,6 +3296,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The escalationLevel.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Incident.EscalationLevel getEscalationLevel() {
       @SuppressWarnings("deprecation")
       com.google.irm.service.v1alpha2.api.Incident.EscalationLevel result =
@@ -3417,6 +3468,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for severity.
      */
+    @java.lang.Override
     public int getSeverityValue() {
       return severity_;
     }
@@ -3433,6 +3485,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      * @return This builder for chaining.
      */
     public Builder setSeverityValue(int value) {
+
       severity_ = value;
       onChanged();
       return this;
@@ -3448,6 +3501,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The severity.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Incident.Severity getSeverity() {
       @SuppressWarnings("deprecation")
       com.google.irm.service.v1alpha2.api.Incident.Severity result =
@@ -3507,6 +3561,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for stage.
      */
+    @java.lang.Override
     public int getStageValue() {
       return stage_;
     }
@@ -3523,6 +3578,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      * @return This builder for chaining.
      */
     public Builder setStageValue(int value) {
+
       stage_ = value;
       onChanged();
       return this;
@@ -3538,6 +3594,7 @@ public final class Incident extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The stage.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Incident.Stage getStage() {
       @SuppressWarnings("deprecation")
       com.google.irm.service.v1alpha2.api.Incident.Stage result =

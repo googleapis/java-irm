@@ -147,6 +147,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return Whether the signal field is set.
    */
+  @java.lang.Override
   public boolean hasSignal() {
     return signal_ != null;
   }
@@ -162,6 +163,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return The signal.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal getSignal() {
     return signal_ == null
         ? com.google.irm.service.v1alpha2.api.Signal.getDefaultInstance()
@@ -177,6 +179,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
     return getSignal();
   }
@@ -194,6 +197,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return Whether the updateMask field is set.
    */
+  @java.lang.Override
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
@@ -208,6 +212,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return The updateMask.
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
   }
@@ -220,6 +225,7 @@ public final class UpdateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
   }

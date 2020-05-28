@@ -146,6 +146,7 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -171,6 +172,7 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -198,6 +200,7 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    * @return Whether the incidentRoleAssignment field is set.
    */
+  @java.lang.Override
   public boolean hasIncidentRoleAssignment() {
     return incidentRoleAssignment_ != null;
   }
@@ -214,6 +217,7 @@ public final class CreateIncidentRoleAssignmentRequest
    *
    * @return The incidentRoleAssignment.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment getIncidentRoleAssignment() {
     return incidentRoleAssignment_ == null
         ? com.google.irm.service.v1alpha2.api.IncidentRoleAssignment.getDefaultInstance()
@@ -230,6 +234,7 @@ public final class CreateIncidentRoleAssignmentRequest
    * .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignment = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder
       getIncidentRoleAssignmentOrBuilder() {
     return getIncidentRoleAssignment();
