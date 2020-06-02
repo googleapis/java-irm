@@ -139,6 +139,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Artifact> getArtifactsList() {
     return artifacts_;
   }
@@ -151,6 +152,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.ArtifactOrBuilder>
       getArtifactsOrBuilderList() {
     return artifacts_;
@@ -164,6 +166,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 1;</code>
    */
+  @java.lang.Override
   public int getArtifactsCount() {
     return artifacts_.size();
   }
@@ -176,6 +179,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Artifact getArtifacts(int index) {
     return artifacts_.get(index);
   }
@@ -188,6 +192,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactsOrBuilder(int index) {
     return artifacts_.get(index);
   }
@@ -205,6 +210,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -227,6 +233,7 @@ public final class ListArtifactsResponse extends com.google.protobuf.GeneratedMe
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

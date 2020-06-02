@@ -143,6 +143,7 @@ public final class ForceIncidentRoleHandoverRequest extends com.google.protobuf.
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -167,6 +168,7 @@ public final class ForceIncidentRoleHandoverRequest extends com.google.protobuf.
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -195,6 +197,7 @@ public final class ForceIncidentRoleHandoverRequest extends com.google.protobuf.
    *
    * @return Whether the newAssignee field is set.
    */
+  @java.lang.Override
   public boolean hasNewAssignee() {
     return newAssignee_ != null;
   }
@@ -212,6 +215,7 @@ public final class ForceIncidentRoleHandoverRequest extends com.google.protobuf.
    *
    * @return The newAssignee.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.User getNewAssignee() {
     return newAssignee_ == null
         ? com.google.irm.service.v1alpha2.api.User.getDefaultInstance()
@@ -229,6 +233,7 @@ public final class ForceIncidentRoleHandoverRequest extends com.google.protobuf.
    * .google.cloud.irm.v1alpha2.User new_assignee = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getNewAssigneeOrBuilder() {
     return getNewAssignee();
   }

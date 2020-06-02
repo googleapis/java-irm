@@ -143,6 +143,7 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -168,6 +169,7 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -195,6 +197,7 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return Whether the subscription field is set.
    */
+  @java.lang.Override
   public boolean hasSubscription() {
     return subscription_ != null;
   }
@@ -211,6 +214,7 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return The subscription.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Subscription getSubscription() {
     return subscription_ == null
         ? com.google.irm.service.v1alpha2.api.Subscription.getDefaultInstance()
@@ -227,6 +231,7 @@ public final class CreateSubscriptionRequest extends com.google.protobuf.Generat
    * .google.cloud.irm.v1alpha2.Subscription subscription = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionOrBuilder() {
     return getSubscription();
   }

@@ -143,6 +143,7 @@ public final class CreateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -168,6 +169,7 @@ public final class CreateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -195,6 +197,7 @@ public final class CreateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the artifact field is set.
    */
+  @java.lang.Override
   public boolean hasArtifact() {
     return artifact_ != null;
   }
@@ -211,6 +214,7 @@ public final class CreateArtifactRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The artifact.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Artifact getArtifact() {
     return artifact_ == null
         ? com.google.irm.service.v1alpha2.api.Artifact.getDefaultInstance()
@@ -227,6 +231,7 @@ public final class CreateArtifactRequest extends com.google.protobuf.GeneratedMe
    * .google.cloud.irm.v1alpha2.Artifact artifact = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactOrBuilder() {
     return getArtifact();
   }

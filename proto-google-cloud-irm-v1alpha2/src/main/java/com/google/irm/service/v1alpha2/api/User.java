@@ -675,6 +675,7 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The userId.
      */
+    @java.lang.Override
     public java.lang.String getUserId() {
       java.lang.Object ref = "";
       if (userCase_ == 1) {
@@ -704,6 +705,7 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The bytes for userId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUserIdBytes() {
       java.lang.Object ref = "";
       if (userCase_ == 1) {
@@ -803,6 +805,7 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The email.
      */
+    @java.lang.Override
     public java.lang.String getEmail() {
       java.lang.Object ref = "";
       if (userCase_ == 2) {
@@ -833,6 +836,7 @@ public final class User extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The bytes for email.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getEmailBytes() {
       java.lang.Object ref = "";
       if (userCase_ == 2) {

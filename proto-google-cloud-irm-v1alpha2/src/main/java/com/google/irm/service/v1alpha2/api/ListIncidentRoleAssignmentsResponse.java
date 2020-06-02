@@ -145,6 +145,7 @@ public final class ListIncidentRoleAssignmentsResponse
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignments = 1;
    * </code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment>
       getIncidentRoleAssignmentsList() {
     return incidentRoleAssignments_;
@@ -159,6 +160,7 @@ public final class ListIncidentRoleAssignmentsResponse
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignments = 1;
    * </code>
    */
+  @java.lang.Override
   public java.util.List<
           ? extends com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder>
       getIncidentRoleAssignmentsOrBuilderList() {
@@ -174,6 +176,7 @@ public final class ListIncidentRoleAssignmentsResponse
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignments = 1;
    * </code>
    */
+  @java.lang.Override
   public int getIncidentRoleAssignmentsCount() {
     return incidentRoleAssignments_.size();
   }
@@ -187,6 +190,7 @@ public final class ListIncidentRoleAssignmentsResponse
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignments = 1;
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment getIncidentRoleAssignments(
       int index) {
     return incidentRoleAssignments_.get(index);
@@ -201,6 +205,7 @@ public final class ListIncidentRoleAssignmentsResponse
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment incident_role_assignments = 1;
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder
       getIncidentRoleAssignmentsOrBuilder(int index) {
     return incidentRoleAssignments_.get(index);
@@ -219,6 +224,7 @@ public final class ListIncidentRoleAssignmentsResponse
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -241,6 +247,7 @@ public final class ListIncidentRoleAssignmentsResponse
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

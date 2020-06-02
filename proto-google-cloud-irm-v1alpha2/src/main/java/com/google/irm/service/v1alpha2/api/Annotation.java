@@ -172,6 +172,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -195,6 +196,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -220,6 +222,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the author field is set.
    */
+  @java.lang.Override
   public boolean hasAuthor() {
     return author_ != null;
   }
@@ -234,6 +237,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The author.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.User getAuthor() {
     return author_ == null
         ? com.google.irm.service.v1alpha2.api.User.getDefaultInstance()
@@ -248,6 +252,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.cloud.irm.v1alpha2.User author = 2;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getAuthorOrBuilder() {
     return getAuthor();
   }
@@ -265,6 +270,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the createTime field is set.
    */
+  @java.lang.Override
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
@@ -279,6 +285,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The createTime.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
@@ -291,6 +298,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.protobuf.Timestamp create_time = 3;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
     return getCreateTime();
   }
@@ -308,6 +316,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The content.
    */
+  @java.lang.Override
   public java.lang.String getContent() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {
@@ -330,6 +339,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for content.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentBytes() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {
@@ -356,6 +366,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The contentType.
    */
+  @java.lang.Override
   public java.lang.String getContentType() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {
@@ -379,6 +390,7 @@ public final class Annotation extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for contentType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentTypeBytes() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {

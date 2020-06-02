@@ -148,6 +148,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return Whether the subscription field is set.
    */
+  @java.lang.Override
   public boolean hasSubscription() {
     return subscription_ != null;
   }
@@ -164,6 +165,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return The subscription.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Subscription getSubscription() {
     return subscription_ == null
         ? com.google.irm.service.v1alpha2.api.Subscription.getDefaultInstance()
@@ -180,6 +182,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    * .google.cloud.irm.v1alpha2.Subscription subscription = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionOrBuilder() {
     return getSubscription();
   }
@@ -197,6 +200,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return Whether the updateMask field is set.
    */
+  @java.lang.Override
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
@@ -211,6 +215,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * @return The updateMask.
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
   }
@@ -223,6 +228,7 @@ public final class UpdateSubscriptionRequest extends com.google.protobuf.Generat
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
   }

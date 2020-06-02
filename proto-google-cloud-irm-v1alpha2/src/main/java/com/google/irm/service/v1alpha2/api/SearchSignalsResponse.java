@@ -138,6 +138,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal signals = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Signal> getSignalsList() {
     return signals_;
   }
@@ -150,6 +151,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal signals = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.SignalOrBuilder>
       getSignalsOrBuilderList() {
     return signals_;
@@ -163,6 +165,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal signals = 1;</code>
    */
+  @java.lang.Override
   public int getSignalsCount() {
     return signals_.size();
   }
@@ -175,6 +178,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal signals = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal getSignals(int index) {
     return signals_.get(index);
   }
@@ -187,6 +191,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal signals = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalsOrBuilder(int index) {
     return signals_.get(index);
   }
@@ -204,6 +209,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -226,6 +232,7 @@ public final class SearchSignalsResponse extends com.google.protobuf.GeneratedMe
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

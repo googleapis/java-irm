@@ -284,6 +284,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -306,6 +307,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddressBytes() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -944,6 +946,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The name.
      */
+    @java.lang.Override
     public java.lang.String getName() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -966,6 +969,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The bytes for name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -1545,6 +1549,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    *
    * @return Whether the email field is set.
    */
+  @java.lang.Override
   public boolean hasEmail() {
     return endpointCase_ == 1;
   }
@@ -1559,6 +1564,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    *
    * @return The email.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.Email getEmail() {
     if (endpointCase_ == 1) {
       return (com.google.irm.service.v1alpha2.api.CommunicationChannel.Email) endpoint_;
@@ -1574,6 +1580,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    *
    * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.EmailOrBuilder
       getEmailOrBuilder() {
     if (endpointCase_ == 1) {
@@ -1596,6 +1603,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    *
    * @return Whether the notificationChannel field is set.
    */
+  @java.lang.Override
   public boolean hasNotificationChannel() {
     return endpointCase_ == 2;
   }
@@ -1612,6 +1620,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    *
    * @return The notificationChannel.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannel
       getNotificationChannel() {
     if (endpointCase_ == 2) {
@@ -1632,6 +1641,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
    * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannelOrBuilder
       getNotificationChannelOrBuilder() {
     if (endpointCase_ == 2) {
@@ -2053,6 +2063,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return Whether the email field is set.
      */
+    @java.lang.Override
     public boolean hasEmail() {
       return endpointCase_ == 1;
     }
@@ -2067,6 +2078,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The email.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.Email getEmail() {
       if (emailBuilder_ == null) {
         if (endpointCase_ == 1) {
@@ -2203,6 +2215,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * <code>.google.cloud.irm.v1alpha2.CommunicationChannel.Email email = 1;</code>
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.EmailOrBuilder
         getEmailOrBuilder() {
       if ((endpointCase_ == 1) && (emailBuilder_ != null)) {
@@ -2267,6 +2280,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return Whether the notificationChannel field is set.
      */
+    @java.lang.Override
     public boolean hasNotificationChannel() {
       return endpointCase_ == 2;
     }
@@ -2283,6 +2297,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      *
      * @return The notificationChannel.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannel
         getNotificationChannel() {
       if (notificationChannelBuilder_ == null) {
@@ -2439,6 +2454,7 @@ public final class CommunicationChannel extends com.google.protobuf.GeneratedMes
      * .google.cloud.irm.v1alpha2.CommunicationChannel.NotificationChannel notification_channel = 2;
      * </code>
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.CommunicationChannel.NotificationChannelOrBuilder
         getNotificationChannelOrBuilder() {
       if ((endpointCase_ == 2) && (notificationChannelBuilder_ != null)) {
