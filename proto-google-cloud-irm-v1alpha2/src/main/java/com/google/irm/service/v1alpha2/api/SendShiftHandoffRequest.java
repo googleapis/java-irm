@@ -328,6 +328,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      *
      * @return The name.
      */
+    @java.lang.Override
     public java.lang.String getName() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -351,6 +352,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      *
      * @return The bytes for name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -879,6 +881,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -904,6 +907,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -1055,6 +1059,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The subject.
    */
+  @java.lang.Override
   public java.lang.String getSubject() {
     java.lang.Object ref = subject_;
     if (ref instanceof java.lang.String) {
@@ -1077,6 +1082,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The bytes for subject.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getSubjectBytes() {
     java.lang.Object ref = subject_;
     if (ref instanceof java.lang.String) {
@@ -1102,6 +1108,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The notesContentType.
    */
+  @java.lang.Override
   public java.lang.String getNotesContentType() {
     java.lang.Object ref = notesContentType_;
     if (ref instanceof java.lang.String) {
@@ -1124,6 +1131,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The bytes for notesContentType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNotesContentTypeBytes() {
     java.lang.Object ref = notesContentType_;
     if (ref instanceof java.lang.String) {
@@ -1149,6 +1157,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The notesContent.
    */
+  @java.lang.Override
   public java.lang.String getNotesContent() {
     java.lang.Object ref = notesContent_;
     if (ref instanceof java.lang.String) {
@@ -1171,6 +1180,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The bytes for notesContent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNotesContentBytes() {
     java.lang.Object ref = notesContent_;
     if (ref instanceof java.lang.String) {
@@ -1197,6 +1207,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident>
       getIncidentsList() {
     return incidents_;
@@ -1212,6 +1223,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
+  @java.lang.Override
   public java.util.List<
           ? extends com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.IncidentOrBuilder>
       getIncidentsOrBuilderList() {
@@ -1228,6 +1240,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
+  @java.lang.Override
   public int getIncidentsCount() {
     return incidents_.size();
   }
@@ -1242,6 +1255,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.Incident getIncidents(
       int index) {
     return incidents_.get(index);
@@ -1257,6 +1271,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    * repeated .google.cloud.irm.v1alpha2.SendShiftHandoffRequest.Incident incidents = 7 [(.google.api.field_behavior) = OPTIONAL];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SendShiftHandoffRequest.IncidentOrBuilder
       getIncidentsOrBuilder(int index) {
     return incidents_.get(index);
@@ -1276,6 +1291,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
    *
    * @return The previewOnly.
    */
+  @java.lang.Override
   public boolean getPreviewOnly() {
     return previewOnly_;
   }
@@ -2993,6 +3009,7 @@ public final class SendShiftHandoffRequest extends com.google.protobuf.Generated
      *
      * @return The previewOnly.
      */
+    @java.lang.Override
     public boolean getPreviewOnly() {
       return previewOnly_;
     }

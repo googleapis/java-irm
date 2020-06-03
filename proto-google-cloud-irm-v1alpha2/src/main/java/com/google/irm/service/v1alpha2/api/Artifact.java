@@ -264,6 +264,10 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
         };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -310,6 +314,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -333,6 +338,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -358,6 +364,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The displayName.
    */
+  @java.lang.Override
   public java.lang.String getDisplayName() {
     java.lang.Object ref = displayName_;
     if (ref instanceof java.lang.String) {
@@ -380,6 +387,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for displayName.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getDisplayNameBytes() {
     java.lang.Object ref = displayName_;
     if (ref instanceof java.lang.String) {
@@ -407,6 +415,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The etag.
    */
+  @java.lang.Override
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -431,6 +440,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for etag.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -456,6 +466,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The url.
    */
+  @java.lang.Override
   public java.lang.String getUrl() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -478,6 +489,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for url.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getUrlBytes() {
     java.lang.Object ref = url_;
     if (ref instanceof java.lang.String) {
@@ -503,6 +515,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The enum numeric value on the wire for type.
    */
+  @java.lang.Override
   public int getTypeValue() {
     return type_;
   }
@@ -517,6 +530,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The type.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Artifact.Type getType() {
     @SuppressWarnings("deprecation")
     com.google.irm.service.v1alpha2.api.Artifact.Type result =
@@ -1354,6 +1368,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for type.
      */
+    @java.lang.Override
     public int getTypeValue() {
       return type_;
     }
@@ -1370,6 +1385,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      * @return This builder for chaining.
      */
     public Builder setTypeValue(int value) {
+
       type_ = value;
       onChanged();
       return this;
@@ -1385,6 +1401,7 @@ public final class Artifact extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The type.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Artifact.Type getType() {
       @SuppressWarnings("deprecation")
       com.google.irm.service.v1alpha2.api.Artifact.Type result =

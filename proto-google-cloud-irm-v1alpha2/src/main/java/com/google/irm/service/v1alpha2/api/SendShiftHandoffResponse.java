@@ -132,6 +132,7 @@ public final class SendShiftHandoffResponse extends com.google.protobuf.Generate
    *
    * @return The contentType.
    */
+  @java.lang.Override
   public java.lang.String getContentType() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {
@@ -154,6 +155,7 @@ public final class SendShiftHandoffResponse extends com.google.protobuf.Generate
    *
    * @return The bytes for contentType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentTypeBytes() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {
@@ -181,6 +183,7 @@ public final class SendShiftHandoffResponse extends com.google.protobuf.Generate
    *
    * @return The content.
    */
+  @java.lang.Override
   public java.lang.String getContent() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {
@@ -205,6 +208,7 @@ public final class SendShiftHandoffResponse extends com.google.protobuf.Generate
    *
    * @return The bytes for content.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentBytes() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {

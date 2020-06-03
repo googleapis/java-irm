@@ -216,6 +216,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * @return Whether the incident field is set.
    */
+  @java.lang.Override
   public boolean hasIncident() {
     return incident_ != null;
   }
@@ -232,6 +233,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * @return The incident.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident getIncident() {
     return incident_ == null
         ? com.google.irm.service.v1alpha2.api.Incident.getDefaultInstance()
@@ -248,6 +250,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
     return getIncident();
   }
@@ -265,6 +268,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * @return Whether the updateMask field is set.
    */
+  @java.lang.Override
   public boolean hasUpdateMask() {
     return updateMask_ != null;
   }
@@ -279,6 +283,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * @return The updateMask.
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
   }
@@ -291,6 +296,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>.google.protobuf.FieldMask update_mask = 2;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
   }
@@ -307,6 +313,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 3;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Subscription> getSubscriptionsList() {
     return subscriptions_;
   }
@@ -320,6 +327,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 3;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder>
       getSubscriptionsOrBuilderList() {
     return subscriptions_;
@@ -334,6 +342,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 3;</code>
    */
+  @java.lang.Override
   public int getSubscriptionsCount() {
     return subscriptions_.size();
   }
@@ -347,6 +356,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 3;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Subscription getSubscriptions(int index) {
     return subscriptions_.get(index);
   }
@@ -360,6 +370,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Subscription subscriptions = 3;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SubscriptionOrBuilder getSubscriptionsOrBuilder(
       int index) {
     return subscriptions_.get(index);
@@ -376,6 +387,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Tag tags = 4;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Tag> getTagsList() {
     return tags_;
   }
@@ -388,6 +400,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Tag tags = 4;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.TagOrBuilder>
       getTagsOrBuilderList() {
     return tags_;
@@ -401,6 +414,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Tag tags = 4;</code>
    */
+  @java.lang.Override
   public int getTagsCount() {
     return tags_.size();
   }
@@ -413,6 +427,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Tag tags = 4;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Tag getTags(int index) {
     return tags_.get(index);
   }
@@ -425,6 +440,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Tag tags = 4;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.TagOrBuilder getTagsOrBuilder(int index) {
     return tags_.get(index);
   }
@@ -441,6 +457,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment roles = 5;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.IncidentRoleAssignment> getRolesList() {
     return roles_;
   }
@@ -454,6 +471,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment roles = 5;</code>
    */
+  @java.lang.Override
   public java.util.List<
           ? extends com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder>
       getRolesOrBuilderList() {
@@ -469,6 +487,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment roles = 5;</code>
    */
+  @java.lang.Override
   public int getRolesCount() {
     return roles_.size();
   }
@@ -482,6 +501,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment roles = 5;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignment getRoles(int index) {
     return roles_.get(index);
   }
@@ -495,6 +515,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.IncidentRoleAssignment roles = 5;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentRoleAssignmentOrBuilder getRolesOrBuilder(
       int index) {
     return roles_.get(index);
@@ -511,6 +532,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Artifact> getArtifactsList() {
     return artifacts_;
   }
@@ -523,6 +545,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 6;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.ArtifactOrBuilder>
       getArtifactsOrBuilderList() {
     return artifacts_;
@@ -536,6 +559,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 6;</code>
    */
+  @java.lang.Override
   public int getArtifactsCount() {
     return artifacts_.size();
   }
@@ -548,6 +572,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 6;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Artifact getArtifacts(int index) {
     return artifacts_.get(index);
   }
@@ -560,6 +585,7 @@ public final class EscalateIncidentRequest extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Artifact artifacts = 6;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.ArtifactOrBuilder getArtifactsOrBuilder(int index) {
     return artifacts_.get(index);
   }

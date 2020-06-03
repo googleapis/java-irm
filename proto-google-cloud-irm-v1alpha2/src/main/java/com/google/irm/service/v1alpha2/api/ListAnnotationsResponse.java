@@ -139,6 +139,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Annotation annotations = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Annotation> getAnnotationsList() {
     return annotations_;
   }
@@ -151,6 +152,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Annotation annotations = 1;</code>
    */
+  @java.lang.Override
   public java.util.List<? extends com.google.irm.service.v1alpha2.api.AnnotationOrBuilder>
       getAnnotationsOrBuilderList() {
     return annotations_;
@@ -164,6 +166,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Annotation annotations = 1;</code>
    */
+  @java.lang.Override
   public int getAnnotationsCount() {
     return annotations_.size();
   }
@@ -176,6 +179,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Annotation annotations = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Annotation getAnnotations(int index) {
     return annotations_.get(index);
   }
@@ -188,6 +192,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Annotation annotations = 1;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.AnnotationOrBuilder getAnnotationsOrBuilder(
       int index) {
     return annotations_.get(index);
@@ -206,6 +211,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * @return The nextPageToken.
    */
+  @java.lang.Override
   public java.lang.String getNextPageToken() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {
@@ -228,6 +234,7 @@ public final class ListAnnotationsResponse extends com.google.protobuf.Generated
    *
    * @return The bytes for nextPageToken.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNextPageTokenBytes() {
     java.lang.Object ref = nextPageToken_;
     if (ref instanceof java.lang.String) {

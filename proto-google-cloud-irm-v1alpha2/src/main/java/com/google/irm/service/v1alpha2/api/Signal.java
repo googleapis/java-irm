@@ -361,6 +361,10 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
         };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
 
@@ -664,6 +668,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The uri.
      */
+    @java.lang.Override
     public java.lang.String getUri() {
       java.lang.Object ref = uri_;
       if (ref instanceof java.lang.String) {
@@ -686,6 +691,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The bytes for uri.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUriBytes() {
       java.lang.Object ref = uri_;
       if (ref instanceof java.lang.String) {
@@ -1087,6 +1093,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        *
        * @return The userType.
        */
+      @java.lang.Override
       public java.lang.String getUserType() {
         java.lang.Object ref = "";
         if (artifactTypeCase_ == 2) {
@@ -1114,6 +1121,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
        *
        * @return The bytes for userType.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getUserTypeBytes() {
         java.lang.Object ref = "";
         if (artifactTypeCase_ == 2) {
@@ -1365,6 +1373,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -1388,6 +1397,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -1414,6 +1424,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The etag.
    */
+  @java.lang.Override
   public java.lang.String getEtag() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -1437,6 +1448,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for etag.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getEtagBytes() {
     java.lang.Object ref = etag_;
     if (ref instanceof java.lang.String) {
@@ -1463,6 +1475,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The incident.
    */
+  @java.lang.Override
   public java.lang.String getIncident() {
     java.lang.Object ref = incident_;
     if (ref instanceof java.lang.String) {
@@ -1486,6 +1499,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for incident.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getIncidentBytes() {
     java.lang.Object ref = incident_;
     if (ref instanceof java.lang.String) {
@@ -1511,6 +1525,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the createTime field is set.
    */
+  @java.lang.Override
   public boolean hasCreateTime() {
     return createTime_ != null;
   }
@@ -1525,6 +1540,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The createTime.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCreateTime() {
     return createTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : createTime_;
   }
@@ -1537,6 +1553,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.protobuf.Timestamp create_time = 4;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCreateTimeOrBuilder() {
     return getCreateTime();
   }
@@ -1555,6 +1572,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the closeTime field is set.
    */
+  @java.lang.Override
   public boolean hasCloseTime() {
     return closeTime_ != null;
   }
@@ -1570,6 +1588,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The closeTime.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getCloseTime() {
     return closeTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : closeTime_;
   }
@@ -1583,6 +1602,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.protobuf.Timestamp close_time = 10;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getCloseTimeOrBuilder() {
     return getCloseTime();
   }
@@ -1601,6 +1621,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the detectTime field is set.
    */
+  @java.lang.Override
   public boolean hasDetectTime() {
     return detectTime_ != null;
   }
@@ -1616,6 +1637,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The detectTime.
    */
+  @java.lang.Override
   public com.google.protobuf.Timestamp getDetectTime() {
     return detectTime_ == null ? com.google.protobuf.Timestamp.getDefaultInstance() : detectTime_;
   }
@@ -1629,6 +1651,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.protobuf.Timestamp detect_time = 15;</code>
    */
+  @java.lang.Override
   public com.google.protobuf.TimestampOrBuilder getDetectTimeOrBuilder() {
     return getDetectTime();
   }
@@ -1648,6 +1671,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return Whether the creator field is set.
    */
+  @java.lang.Override
   public boolean hasCreator() {
     return creator_ != null;
   }
@@ -1664,6 +1688,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The creator.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.User getCreator() {
     return creator_ == null
         ? com.google.irm.service.v1alpha2.api.User.getDefaultInstance()
@@ -1680,6 +1705,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>.google.cloud.irm.v1alpha2.User creator = 5;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.UserOrBuilder getCreatorOrBuilder() {
     return getCreator();
   }
@@ -1698,6 +1724,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The title.
    */
+  @java.lang.Override
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -1721,6 +1748,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for title.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getTitleBytes() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -1749,6 +1777,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The contentType.
    */
+  @java.lang.Override
   public java.lang.String getContentType() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {
@@ -1774,6 +1803,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for contentType.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentTypeBytes() {
     java.lang.Object ref = contentType_;
     if (ref instanceof java.lang.String) {
@@ -1800,6 +1830,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The content.
    */
+  @java.lang.Override
   public java.lang.String getContent() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {
@@ -1823,6 +1854,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The bytes for content.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getContentBytes() {
     java.lang.Object ref = content_;
     if (ref instanceof java.lang.String) {
@@ -1849,6 +1881,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The enum numeric value on the wire for signalState.
    */
+  @java.lang.Override
   public int getSignalStateValue() {
     return signalState_;
   }
@@ -1864,6 +1897,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * @return The signalState.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal.State getSignalState() {
     @SuppressWarnings("deprecation")
     com.google.irm.service.v1alpha2.api.Signal.State result =
@@ -1885,6 +1919,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal.SignalArtifact signal_artifacts = 16;</code>
    */
+  @java.lang.Override
   public java.util.List<com.google.irm.service.v1alpha2.api.Signal.SignalArtifact>
       getSignalArtifactsList() {
     return signalArtifacts_;
@@ -1900,6 +1935,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal.SignalArtifact signal_artifacts = 16;</code>
    */
+  @java.lang.Override
   public java.util.List<
           ? extends com.google.irm.service.v1alpha2.api.Signal.SignalArtifactOrBuilder>
       getSignalArtifactsOrBuilderList() {
@@ -1916,6 +1952,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal.SignalArtifact signal_artifacts = 16;</code>
    */
+  @java.lang.Override
   public int getSignalArtifactsCount() {
     return signalArtifacts_.size();
   }
@@ -1930,6 +1967,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal.SignalArtifact signal_artifacts = 16;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal.SignalArtifact getSignalArtifacts(int index) {
     return signalArtifacts_.get(index);
   }
@@ -1944,6 +1982,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
    *
    * <code>repeated .google.cloud.irm.v1alpha2.Signal.SignalArtifact signal_artifacts = 16;</code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal.SignalArtifactOrBuilder
       getSignalArtifactsOrBuilder(int index) {
     return signalArtifacts_.get(index);
@@ -3988,6 +4027,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The enum numeric value on the wire for signalState.
      */
+    @java.lang.Override
     public int getSignalStateValue() {
       return signalState_;
     }
@@ -4005,6 +4045,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      * @return This builder for chaining.
      */
     public Builder setSignalStateValue(int value) {
+
       signalState_ = value;
       onChanged();
       return this;
@@ -4021,6 +4062,7 @@ public final class Signal extends com.google.protobuf.GeneratedMessageV3
      *
      * @return The signalState.
      */
+    @java.lang.Override
     public com.google.irm.service.v1alpha2.api.Signal.State getSignalState() {
       @SuppressWarnings("deprecation")
       com.google.irm.service.v1alpha2.api.Signal.State result =

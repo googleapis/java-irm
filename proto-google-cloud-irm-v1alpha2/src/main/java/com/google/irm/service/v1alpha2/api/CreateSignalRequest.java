@@ -143,6 +143,7 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -168,6 +169,7 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -194,6 +196,7 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return Whether the signal field is set.
    */
+  @java.lang.Override
   public boolean hasSignal() {
     return signal_ != null;
   }
@@ -209,6 +212,7 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    *
    * @return The signal.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Signal getSignal() {
     return signal_ == null
         ? com.google.irm.service.v1alpha2.api.Signal.getDefaultInstance()
@@ -224,6 +228,7 @@ public final class CreateSignalRequest extends com.google.protobuf.GeneratedMess
    * <code>.google.cloud.irm.v1alpha2.Signal signal = 2 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.SignalOrBuilder getSignalOrBuilder() {
     return getSignal();
   }

@@ -671,6 +671,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      * @return The csccFinding.
      */
+    @java.lang.Override
     public java.lang.String getCsccFinding() {
       java.lang.Object ref = "";
       if (alternateIdCase_ == 2) {
@@ -699,6 +700,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      * @return The bytes for csccFinding.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCsccFindingBytes() {
       java.lang.Object ref = "";
       if (alternateIdCase_ == 2) {
@@ -792,6 +794,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      * @return The stackdriverNotificationId.
      */
+    @java.lang.Override
     public java.lang.String getStackdriverNotificationId() {
       java.lang.Object ref = "";
       if (alternateIdCase_ == 3) {
@@ -819,6 +822,7 @@ public final class LookupSignalRequest extends com.google.protobuf.GeneratedMess
      *
      * @return The bytes for stackdriverNotificationId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getStackdriverNotificationIdBytes() {
       java.lang.Object ref = "";
       if (alternateIdCase_ == 3) {

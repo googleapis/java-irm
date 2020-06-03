@@ -142,6 +142,7 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return Whether the incident field is set.
    */
+  @java.lang.Override
   public boolean hasIncident() {
     return incident_ != null;
   }
@@ -158,6 +159,7 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The incident.
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.Incident getIncident() {
     return incident_ == null
         ? com.google.irm.service.v1alpha2.api.Incident.getDefaultInstance()
@@ -174,6 +176,7 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    * .google.cloud.irm.v1alpha2.Incident incident = 1 [(.google.api.field_behavior) = REQUIRED];
    * </code>
    */
+  @java.lang.Override
   public com.google.irm.service.v1alpha2.api.IncidentOrBuilder getIncidentOrBuilder() {
     return getIncident();
   }
@@ -196,6 +199,7 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The parent.
    */
+  @java.lang.Override
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
@@ -223,6 +227,7 @@ public final class CreateIncidentRequest extends com.google.protobuf.GeneratedMe
    *
    * @return The bytes for parent.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
     if (ref instanceof java.lang.String) {
