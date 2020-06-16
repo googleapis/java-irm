@@ -4,7 +4,7 @@
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-irm-parent</artifactId>
   <packaging>pom</packaging>
-  <version>0.2.2-SNAPSHOT</version><!-- {x-version-update:google-cloud-irm:current} -->
+  <version>0.2.2</version><!-- {x-version-update:google-cloud-irm:current} -->
   <name>Google Cloud irm Parent</name>
   <url>https://github.com/googleapis/java-irm</url>
   <description>
@@ -81,17 +81,17 @@
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-cloud-irm-v1alpha2</artifactId>
-        <version>0.2.2-SNAPSHOT</version><!-- {x-version-update:proto-google-cloud-irm-v1alpha2:current} -->
+        <version>0.2.2</version><!-- {x-version-update:proto-google-cloud-irm-v1alpha2:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-cloud-irm-v1alpha2</artifactId>
-        <version>0.2.2-SNAPSHOT</version><!-- {x-version-update:grpc-google-cloud-irm-v1alpha2:current} -->
+        <version>0.2.2</version><!-- {x-version-update:grpc-google-cloud-irm-v1alpha2:current} -->
       </dependency>
       <dependency>
         <groupId>com.google.cloud</groupId>
         <artifactId>google-cloud-irm</artifactId>
-        <version>0.2.2-SNAPSHOT</version><!-- {x-version-update:google-cloud-irm:current} -->
+        <version>0.2.2</version><!-- {x-version-update:google-cloud-irm:current} -->
       </dependency>
 
       <dependency>
