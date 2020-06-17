@@ -5,7 +5,7 @@
   <artifactId>google-cloud-google-cloud-irm-samples</artifactId>
   <version>0.0.1-SNAPSHOT</version><!-- This artifact should not be released -->
   <packaging>pom</packaging>
-  <name>Google Stackdriver Incident Response & Management Samples Parent</name>
+  <name>Google Stackdriver Incident Response &amp; Management Samples Parent</name>
   <url>https://github.com/googleapis/java-irm</url>
   <description>
     Java idiomatic client for Google Cloud Platform services.
