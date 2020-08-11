@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-irm.git",
-        "sha": "977db7c44a658c6aa29bf539316f43fd3047a30a"
+        "sha": "8e4255d8eb8e1b67fe1f055b8bc3df73d40d13c1"
       }
     },
     {
